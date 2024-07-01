@@ -1,37 +1,20 @@
-# Class-Incremental Learning
+## Class-Incremental Learning
 
-#### 介绍
+<div align=center><img src="https://markdownimg-hw.oss-cn-beijing.aliyuncs.com/logo.png" style="zoom: 60%;" /></div>
+<p></p>
+<div align=center><img src="https://visitor-badge.laobi.icu/badge?page_id=Geeks-Z.Class-Incremental-Learning&left_color=green&right_color=red" /> <img src="https://img.shields.io/github/last-commit/Geeks-Z/Class-Incremental-Learning" /> <img src="https://img.shields.io/github/license/Geeks-Z/Class-Incremental-Learning" /></div>
+
+## 介绍
+
 CIL（Class-Incremental Learning）类增量学习【Life-Long Machine Learning/Continual Learning】
 
-#### 软件架构
-软件架构说明
+## Class-Incremental Learning
 
-
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+| Title                                                                                                                                               | Venue | Year | Type    | Code                                                    | Code_Position                                    |
+| --------------------------------------------------------------------------------------------------------------------------------------------------- | ----- | ---- | ------- | ------------------------------------------------------- | ------------------------------------------------ |
+| [DualPrompt: Complementary Prompting for Rehearsal-free Continual Learning](https://arxiv.org/abs/2204.04799)                                       | ECCV  | 2022 | Prompt  | [Official](https://github.com/google-research/l2p)      | `📁 dualprompt-pytorch-master`                   |
+| [FOSTER: Feature Boosting and Compression for Class-Incremental Learning](https://arxiv.org/abs/2204.04662)                                         | ECCV  | 2022 | Prompt  | [Official](https://github.com/G-U-N/ECCV22-FOSTER)      | `📁 ECCV22-FOSTER-master`                        |
+| [PILOT: A Pre-Trained Model-Based Continual Learning Toolbox](https://arxiv.org/abs/2309.07117)                                                     |       |      | Toolbox | [Official](https://github.com/sun-hailong/LAMDA-PILOT)  | `📁 LAMDA-PILOT-main`                            |
+| [Learning to Prompt for Continual Learning](https://arxiv.org/abs/2112.08654)                                                                       | CVPR  | 2022 |         | [Official](https://github.com/google-research/l2p)      | `📁 Learn-to-prompt-for-Continual-Learning-main` |
+| [PyCIL: A Python Toolbox for Class-Incremental Learning](https://arxiv.org/abs/2112.12533)                                                          |       |      | Toolbox | [Official](https://github.com/G-U-N/PyCIL)              | `📁 PyCIL-master`                                |
+| [Revisiting Class-Incremental Learning with Pre-Trained Models: Generalizability and Adaptivity are All You Need](https://arxiv.org/pdf/2303.07338) |       |      |         | [Official](https://github.com/zhoudw-zdw/RevisitingCIL) | `📁 RevisitingCIL-main`                          |

@@ -1,0 +1,15 @@
+{
+    "prefix": "reproduce",
+    "dataset": "imagenet1000",
+    "memory_size": 20000,
+    "memory_per_class": 200,
+    "fixed_memory": false,
+    "shuffle": true,
+    "init_cls": 100,
+    "increment": 100,
+    "model_name": "icarl",
+    "convnet_type": "resnet18",
+    "device": [0, 1, 2, 3],
+    "seed": [1993]
+}
+

@@ -1,0 +1,174 @@
+2022-11-28 17:55:14,446 [trainer.py] => config: ./exps/wa.json
+2022-11-28 17:55:14,447 [trainer.py] => prefix: reproduce
+2022-11-28 17:55:14,447 [trainer.py] => dataset: cifar100
+2022-11-28 17:55:14,447 [trainer.py] => memory_size: 2000
+2022-11-28 17:55:14,447 [trainer.py] => memory_per_class: 20
+2022-11-28 17:55:14,447 [trainer.py] => fixed_memory: False
+2022-11-28 17:55:14,447 [trainer.py] => shuffle: True
+2022-11-28 17:55:14,448 [trainer.py] => init_cls: 10
+2022-11-28 17:55:14,448 [trainer.py] => increment: 10
+2022-11-28 17:55:14,448 [trainer.py] => model_name: wa
+2022-11-28 17:55:14,448 [trainer.py] => convnet_type: resnet32
+2022-11-28 17:55:14,448 [trainer.py] => device: [device(type='cuda', index=0), device(type='cuda', index=1), device(type='cuda', index=2), device(type='cuda', index=3)]
+2022-11-28 17:55:14,448 [trainer.py] => seed: 1993
+Files already downloaded and verified
+Files already downloaded and verified
+2022-11-28 17:55:16,973 [data_manager.py] => [68, 56, 78, 8, 23, 84, 90, 65, 74, 76, 40, 89, 3, 92, 55, 9, 26, 80, 43, 38, 58, 70, 77, 1, 85, 19, 17, 50, 28, 53, 13, 81, 45, 82, 6, 59, 83, 16, 15, 44, 91, 41, 72, 60, 79, 52, 20, 10, 31, 54, 37, 95, 14, 71, 96, 98, 97, 2, 64, 66, 42, 22, 35, 86, 24, 34, 87, 21, 99, 0, 88, 27, 18, 94, 11, 12, 47, 25, 30, 46, 62, 69, 36, 61, 7, 63, 75, 5, 32, 4, 51, 48, 73, 93, 39, 67, 29, 49, 57, 33]
+2022-11-28 17:55:17,274 [trainer.py] => All params: 464154
+2022-11-28 17:55:17,274 [trainer.py] => Trainable params: 464154
+2022-11-28 17:55:17,274 [wa.py] => Learning on 0-10
+2022-11-28 18:09:21,827 [wa.py] => Task 0, Epoch 200/200 => Loss 0.035, Train_accy 99.36, Test_accy 91.00
+2022-11-28 18:09:21,828 [base.py] => Reducing exemplars...(200 per classes)
+2022-11-28 18:09:21,828 [base.py] => Constructing exemplars...(200 per classes)
+2022-11-28 18:09:37,924 [wa.py] => Exemplar size: 2000
+2022-11-28 18:09:37,924 [trainer.py] => CNN: {'total': 91.0, '00-09': 91.0, 'old': 0, 'new': 91.0}
+2022-11-28 18:09:37,924 [trainer.py] => NME: {'total': 90.8, '00-09': 90.8, 'old': 0, 'new': 90.8}
+2022-11-28 18:09:37,925 [trainer.py] => CNN top1 curve: [91.0]
+2022-11-28 18:09:37,925 [trainer.py] => CNN top5 curve: [99.2]
+2022-11-28 18:09:37,925 [trainer.py] => NME top1 curve: [90.8]
+2022-11-28 18:09:37,925 [trainer.py] => NME top5 curve: [99.4]
+
+2022-11-28 18:09:37,925 [trainer.py] => All params: 464804
+2022-11-28 18:09:37,925 [trainer.py] => Trainable params: 464804
+2022-11-28 18:09:37,926 [wa.py] => Learning on 10-20
+2022-11-28 18:22:26,726 [wa.py] => Task 1, Epoch 170/170 => Loss 2.054, Train_accy 99.30
+alignweights,gamma= tensor(0.8076, device='cuda:0')
+2022-11-28 18:22:26,876 [base.py] => Reducing exemplars...(100 per classes)
+2022-11-28 18:22:32,919 [base.py] => Constructing exemplars...(100 per classes)
+alignweights,gamma= tensor(1.0000, device='cuda:0')
+2022-11-28 18:22:48,563 [wa.py] => Exemplar size: 2000
+2022-11-28 18:22:48,564 [trainer.py] => CNN: {'total': 77.3, '00-09': 82.1, '10-19': 72.5, 'old': 82.1, 'new': 72.5}
+2022-11-28 18:22:48,564 [trainer.py] => NME: {'total': 77.5, '00-09': 81.2, '10-19': 73.8, 'old': 81.2, 'new': 73.8}
+2022-11-28 18:22:48,564 [trainer.py] => CNN top1 curve: [91.0, 77.3]
+2022-11-28 18:22:48,564 [trainer.py] => CNN top5 curve: [99.2, 95.85]
+2022-11-28 18:22:48,564 [trainer.py] => NME top1 curve: [90.8, 77.5]
+2022-11-28 18:22:48,564 [trainer.py] => NME top5 curve: [99.4, 95.6]
+
+2022-11-28 18:22:48,564 [trainer.py] => All params: 465454
+2022-11-28 18:22:48,564 [trainer.py] => Trainable params: 465454
+2022-11-28 18:22:48,565 [wa.py] => Learning on 20-30
+2022-11-28 18:35:41,148 [wa.py] => Task 2, Epoch 170/170 => Loss 2.886, Train_accy 99.54
+alignweights,gamma= tensor(0.7427, device='cuda:0')
+2022-11-28 18:35:41,153 [base.py] => Reducing exemplars...(66 per classes)
+2022-11-28 18:35:52,964 [base.py] => Constructing exemplars...(66 per classes)
+alignweights,gamma= tensor(1., device='cuda:0')
+2022-11-28 18:36:08,336 [wa.py] => Exemplar size: 1980
+2022-11-28 18:36:08,340 [trainer.py] => CNN: {'total': 73.23, '00-09': 79.8, '10-19': 64.0, '20-29': 75.9, 'old': 71.9, 'new': 75.9}
+2022-11-28 18:36:08,340 [trainer.py] => NME: {'total': 73.37, '00-09': 76.8, '10-19': 63.2, '20-29': 80.1, 'old': 70.0, 'new': 80.1}
+2022-11-28 18:36:08,340 [trainer.py] => CNN top1 curve: [91.0, 77.3, 73.23]
+2022-11-28 18:36:08,344 [trainer.py] => CNN top5 curve: [99.2, 95.85, 94.23]
+2022-11-28 18:36:08,344 [trainer.py] => NME top1 curve: [90.8, 77.5, 73.37]
+2022-11-28 18:36:08,344 [trainer.py] => NME top5 curve: [99.4, 95.6, 93.93]
+
+2022-11-28 18:36:08,344 [trainer.py] => All params: 466104
+2022-11-28 18:36:08,345 [trainer.py] => Trainable params: 466104
+2022-11-28 18:36:08,346 [wa.py] => Learning on 30-40
+2022-11-28 18:49:08,040 [wa.py] => Task 3, Epoch 170/170 => Loss 3.786, Train_accy 99.57
+alignweights,gamma= tensor(0.6881, device='cuda:0')
+2022-11-28 18:49:08,067 [base.py] => Reducing exemplars...(50 per classes)
+2022-11-28 18:49:24,261 [base.py] => Constructing exemplars...(50 per classes)
+alignweights,gamma= tensor(1., device='cuda:0')
+2022-11-28 18:49:39,516 [wa.py] => Exemplar size: 2000
+2022-11-28 18:49:39,516 [trainer.py] => CNN: {'total': 69.7, '00-09': 74.3, '10-19': 61.5, '20-29': 71.1, '30-39': 71.9, 'old': 68.97, 'new': 71.9}
+2022-11-28 18:49:39,516 [trainer.py] => NME: {'total': 67.92, '00-09': 70.2, '10-19': 56.9, '20-29': 70.1, '30-39': 74.5, 'old': 65.73, 'new': 74.5}
+2022-11-28 18:49:39,516 [trainer.py] => CNN top1 curve: [91.0, 77.3, 73.23, 69.7]
+2022-11-28 18:49:39,516 [trainer.py] => CNN top5 curve: [99.2, 95.85, 94.23, 92.38]
+2022-11-28 18:49:39,516 [trainer.py] => NME top1 curve: [90.8, 77.5, 73.37, 67.92]
+2022-11-28 18:49:39,516 [trainer.py] => NME top5 curve: [99.4, 95.6, 93.93, 91.18]
+
+2022-11-28 18:49:39,516 [trainer.py] => All params: 466754
+2022-11-28 18:49:39,517 [trainer.py] => Trainable params: 466754
+2022-11-28 18:49:39,517 [wa.py] => Learning on 40-50
+2022-11-28 19:02:53,899 [wa.py] => Task 4, Epoch 170/170 => Loss 4.183, Train_accy 99.67
+alignweights,gamma= tensor(0.6761, device='cuda:0')
+2022-11-28 19:02:53,915 [base.py] => Reducing exemplars...(40 per classes)
+2022-11-28 19:03:16,164 [base.py] => Constructing exemplars...(40 per classes)
+alignweights,gamma= tensor(1., device='cuda:0')
+2022-11-28 19:03:31,645 [wa.py] => Exemplar size: 2000
+2022-11-28 19:03:31,645 [trainer.py] => CNN: {'total': 67.16, '00-09': 73.8, '10-19': 56.9, '20-29': 69.1, '30-39': 63.6, '40-49': 72.4, 'old': 65.85, 'new': 72.4}
+2022-11-28 19:03:31,645 [trainer.py] => NME: {'total': 65.1, '00-09': 67.8, '10-19': 50.5, '20-29': 67.4, '30-39': 62.3, '40-49': 77.5, 'old': 62.0, 'new': 77.5}
+2022-11-28 19:03:31,645 [trainer.py] => CNN top1 curve: [91.0, 77.3, 73.23, 69.7, 67.16]
+2022-11-28 19:03:31,645 [trainer.py] => CNN top5 curve: [99.2, 95.85, 94.23, 92.38, 90.44]
+2022-11-28 19:03:31,645 [trainer.py] => NME top1 curve: [90.8, 77.5, 73.37, 67.92, 65.1]
+2022-11-28 19:03:31,645 [trainer.py] => NME top5 curve: [99.4, 95.6, 93.93, 91.18, 89.06]
+
+2022-11-28 19:03:31,646 [trainer.py] => All params: 467404
+2022-11-28 19:03:31,646 [trainer.py] => Trainable params: 467404
+2022-11-28 19:03:31,646 [wa.py] => Learning on 50-60
+2022-11-28 19:17:12,037 [wa.py] => Task 5, Epoch 170/170 => Loss 4.790, Train_accy 99.56
+alignweights,gamma= tensor(0.6312, device='cuda:0')
+2022-11-28 19:17:12,065 [base.py] => Reducing exemplars...(33 per classes)
+2022-11-28 19:17:39,279 [base.py] => Constructing exemplars...(33 per classes)
+alignweights,gamma= tensor(1.0000, device='cuda:0')
+2022-11-28 19:17:55,172 [wa.py] => Exemplar size: 1980
+2022-11-28 19:17:55,172 [trainer.py] => CNN: {'total': 63.75, '00-09': 69.6, '10-19': 53.4, '20-29': 67.3, '30-39': 58.3, '40-49': 67.5, '50-59': 66.4, 'old': 63.22, 'new': 66.4}
+2022-11-28 19:17:55,173 [trainer.py] => NME: {'total': 61.57, '00-09': 62.4, '10-19': 46.6, '20-29': 61.9, '30-39': 56.0, '40-49': 67.6, '50-59': 74.9, 'old': 58.9, 'new': 74.9}
+2022-11-28 19:17:55,173 [trainer.py] => CNN top1 curve: [91.0, 77.3, 73.23, 69.7, 67.16, 63.75]
+2022-11-28 19:17:55,173 [trainer.py] => CNN top5 curve: [99.2, 95.85, 94.23, 92.38, 90.44, 88.25]
+2022-11-28 19:17:55,173 [trainer.py] => NME top1 curve: [90.8, 77.5, 73.37, 67.92, 65.1, 61.57]
+2022-11-28 19:17:55,186 [trainer.py] => NME top5 curve: [99.4, 95.6, 93.93, 91.18, 89.06, 86.1]
+
+2022-11-28 19:17:55,186 [trainer.py] => All params: 468054
+2022-11-28 19:17:55,187 [trainer.py] => Trainable params: 468054
+2022-11-28 19:17:55,187 [wa.py] => Learning on 60-70
+2022-11-28 19:31:29,373 [wa.py] => Task 6, Epoch 170/170 => Loss 5.079, Train_accy 99.77
+alignweights,gamma= tensor(0.6137, device='cuda:0')
+2022-11-28 19:31:29,377 [base.py] => Reducing exemplars...(28 per classes)
+2022-11-28 19:32:00,559 [base.py] => Constructing exemplars...(28 per classes)
+alignweights,gamma= tensor(1., device='cuda:0')
+2022-11-28 19:32:14,557 [wa.py] => Exemplar size: 1960
+2022-11-28 19:32:14,563 [trainer.py] => CNN: {'total': 60.93, '00-09': 66.8, '10-19': 50.0, '20-29': 67.2, '30-39': 54.4, '40-49': 64.2, '50-59': 56.3, '60-69': 67.6, 'old': 59.82, 'new': 67.6}
+2022-11-28 19:32:14,563 [trainer.py] => NME: {'total': 58.41, '00-09': 58.2, '10-19': 42.9, '20-29': 62.0, '30-39': 50.3, '40-49': 62.8, '50-59': 55.9, '60-69': 76.8, 'old': 55.35, 'new': 76.8}
+2022-11-28 19:32:14,563 [trainer.py] => CNN top1 curve: [91.0, 77.3, 73.23, 69.7, 67.16, 63.75, 60.93]
+2022-11-28 19:32:14,563 [trainer.py] => CNN top5 curve: [99.2, 95.85, 94.23, 92.38, 90.44, 88.25, 86.83]
+2022-11-28 19:32:14,563 [trainer.py] => NME top1 curve: [90.8, 77.5, 73.37, 67.92, 65.1, 61.57, 58.41]
+2022-11-28 19:32:14,563 [trainer.py] => NME top5 curve: [99.4, 95.6, 93.93, 91.18, 89.06, 86.1, 84.49]
+
+2022-11-28 19:32:14,563 [trainer.py] => All params: 468704
+2022-11-28 19:32:14,564 [trainer.py] => Trainable params: 468704
+2022-11-28 19:32:14,564 [wa.py] => Learning on 70-80
+2022-11-28 19:46:05,277 [wa.py] => Task 7, Epoch 170/170 => Loss 5.381, Train_accy 99.68
+alignweights,gamma= tensor(0.5978, device='cuda:0')
+2022-11-28 19:46:05,280 [base.py] => Reducing exemplars...(25 per classes)
+2022-11-28 19:46:46,456 [base.py] => Constructing exemplars...(25 per classes)
+alignweights,gamma= tensor(1.0000, device='cuda:0')
+2022-11-28 19:47:01,066 [wa.py] => Exemplar size: 2000
+2022-11-28 19:47:01,067 [trainer.py] => CNN: {'total': 57.91, '00-09': 65.5, '10-19': 49.9, '20-29': 65.8, '30-39': 51.8, '40-49': 61.1, '50-59': 51.7, '60-69': 59.6, '70-79': 57.9, 'old': 57.91, 'new': 57.9}
+2022-11-28 19:47:01,067 [trainer.py] => NME: {'total': 54.74, '00-09': 55.4, '10-19': 39.1, '20-29': 60.2, '30-39': 45.6, '40-49': 55.5, '50-59': 47.5, '60-69': 62.5, '70-79': 72.1, 'old': 52.26, 'new': 72.1}
+2022-11-28 19:47:01,067 [trainer.py] => CNN top1 curve: [91.0, 77.3, 73.23, 69.7, 67.16, 63.75, 60.93, 57.91]
+2022-11-28 19:47:01,067 [trainer.py] => CNN top5 curve: [99.2, 95.85, 94.23, 92.38, 90.44, 88.25, 86.83, 85.38]
+2022-11-28 19:47:01,067 [trainer.py] => NME top1 curve: [90.8, 77.5, 73.37, 67.92, 65.1, 61.57, 58.41, 54.74]
+2022-11-28 19:47:01,067 [trainer.py] => NME top5 curve: [99.4, 95.6, 93.93, 91.18, 89.06, 86.1, 84.49, 82.05]
+
+2022-11-28 19:47:01,067 [trainer.py] => All params: 469354
+2022-11-28 19:47:01,068 [trainer.py] => Trainable params: 469354
+2022-11-28 19:47:01,068 [wa.py] => Learning on 80-90
+2022-11-28 20:00:56,343 [wa.py] => Task 8, Epoch 170/170 => Loss 5.519, Train_accy 99.73
+alignweights,gamma= tensor(0.5944, device='cuda:0')
+2022-11-28 20:00:56,348 [base.py] => Reducing exemplars...(22 per classes)
+2022-11-28 20:01:44,738 [base.py] => Constructing exemplars...(22 per classes)
+alignweights,gamma= tensor(1., device='cuda:0')
+2022-11-28 20:02:01,323 [wa.py] => Exemplar size: 1980
+2022-11-28 20:02:01,323 [trainer.py] => CNN: {'total': 56.19, '00-09': 64.7, '10-19': 47.5, '20-29': 64.3, '30-39': 49.6, '40-49': 59.6, '50-59': 50.6, '60-69': 58.8, '70-79': 52.5, '80-89': 58.1, 'old': 55.95, 'new': 58.1}
+2022-11-28 20:02:01,323 [trainer.py] => NME: {'total': 53.27, '00-09': 54.1, '10-19': 35.8, '20-29': 56.7, '30-39': 43.8, '40-49': 53.8, '50-59': 46.5, '60-69': 58.1, '70-79': 59.5, '80-89': 71.1, 'old': 51.04, 'new': 71.1}
+2022-11-28 20:02:01,323 [trainer.py] => CNN top1 curve: [91.0, 77.3, 73.23, 69.7, 67.16, 63.75, 60.93, 57.91, 56.19]
+2022-11-28 20:02:01,334 [trainer.py] => CNN top5 curve: [99.2, 95.85, 94.23, 92.38, 90.44, 88.25, 86.83, 85.38, 83.52]
+2022-11-28 20:02:01,334 [trainer.py] => NME top1 curve: [90.8, 77.5, 73.37, 67.92, 65.1, 61.57, 58.41, 54.74, 53.27]
+2022-11-28 20:02:01,334 [trainer.py] => NME top5 curve: [99.4, 95.6, 93.93, 91.18, 89.06, 86.1, 84.49, 82.05, 80.03]
+
+2022-11-28 20:02:01,335 [trainer.py] => All params: 470004
+2022-11-28 20:02:01,335 [trainer.py] => Trainable params: 470004
+2022-11-28 20:02:01,336 [wa.py] => Learning on 90-100
+2022-11-28 20:16:08,168 [wa.py] => Task 9, Epoch 170/170 => Loss 5.799, Train_accy 99.70
+alignweights,gamma= tensor(0.5673, device='cuda:0')
+2022-11-28 20:16:08,171 [base.py] => Reducing exemplars...(20 per classes)
+2022-11-28 20:17:00,361 [base.py] => Constructing exemplars...(20 per classes)
+alignweights,gamma= tensor(1., device='cuda:0')
+2022-11-28 20:17:15,920 [wa.py] => Exemplar size: 2000
+2022-11-28 20:17:15,920 [trainer.py] => CNN: {'total': 53.49, '00-09': 62.9, '10-19': 48.7, '20-29': 62.7, '30-39': 47.6, '40-49': 57.7, '50-59': 48.4, '60-69': 55.3, '70-79': 47.4, '80-89': 48.2, '90-99': 56.0, 'old': 53.21, 'new': 56.0}
+2022-11-28 20:17:15,929 [trainer.py] => NME: {'total': 51.73, '00-09': 50.8, '10-19': 36.1, '20-29': 55.0, '30-39': 42.8, '40-49': 53.2, '50-59': 44.4, '60-69': 54.4, '70-79': 53.9, '80-89': 60.1, '90-99': 66.6, 'old': 50.08, 'new': 66.6}
+2022-11-28 20:17:15,929 [trainer.py] => CNN top1 curve: [91.0, 77.3, 73.23, 69.7, 67.16, 63.75, 60.93, 57.91, 56.19, 53.49]
+2022-11-28 20:17:15,929 [trainer.py] => CNN top5 curve: [99.2, 95.85, 94.23, 92.38, 90.44, 88.25, 86.83, 85.38, 83.52, 81.86]
+2022-11-28 20:17:15,929 [trainer.py] => NME top1 curve: [90.8, 77.5, 73.37, 67.92, 65.1, 61.57, 58.41, 54.74, 53.27, 51.73]
+2022-11-28 20:17:15,929 [trainer.py] => NME top5 curve: [99.4, 95.6, 93.93, 91.18, 89.06, 86.1, 84.49, 82.05, 80.03, 78.78]
+
