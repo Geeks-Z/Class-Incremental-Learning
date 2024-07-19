@@ -17,7 +17,7 @@ def load_json(setting_path):
 
 def setup_parser():
     parser = argparse.ArgumentParser(description='Reproduce of multiple pre-trained incremental learning algorthms.')
-    parser.add_argument('--config', type=str, default='./exps/foster_ina_B0_Inc20.json',
+    parser.add_argument('--config', type=str, default='./exps/icarl_cifar_B0_Inc5.json',
                         help='Json file of settings.')
     return parser
 

@@ -6,7 +6,7 @@
 
 ## 介绍
 
-CIL（Class-Incremental Learning）类增量学习【Life-Long Machine Learning/Continual Learning】
+CIL（Class-Incremental Learning）类增量学习【Life-Long Learning/Continual Learning】
 
 ## Class-Incremental Learning
 

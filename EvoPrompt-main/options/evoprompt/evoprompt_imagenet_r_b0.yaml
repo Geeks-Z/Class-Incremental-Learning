@@ -1,0 +1,82 @@
+dataset: imagenet_r
+model: evoprompt
+fast_dev_run: false
+debug_mode: false
+
+# general model config
+model_kwargs:
+  classifier_pool: cls_token
+  freeze_old_classifier: false
+  using_dynamic_classifier: false
+  num_layers: 12
+  query_function: whole
+  query_layer: 11
+  continuous_prompt_config:
+    hidden_dim: 16
+    use_bias: false
+    length: 5
+    dropout: 0.0
+
+attribution_aware_fusion: true
+use_optimal_transport_alignment: true
+compositional_initialization:
+  num_heads: 192
+  temp: 0.05
+
+# ema
+incremental_fusion:
+  across_task_meta_update: true
+  alpha: 0.5
+
+# backbone
+convnet_config:
+  model_name: vit_base_patch16_224 # vit_base_patch16_224, vit_base_patch16_224_in21k
+  pretrained: true
+
+# classifier
+classifier_name: linear
+classifier_config:
+  out_features: 200
+  bias: true
+
+# training strategy
+use_train_mask: true
+
+# optimizer
+grad_clip_norm: 1.0
+optimizer:
+  opt: adam
+  opt_eps: 0.00000001 # 1e-8
+  opt_betas: [0.9, 0.999]
+  clip_grad: 1.0
+  momentum: 0.9
+  weight_decay: 0.0
+  lr: 0.005
+
+lr_scheduler:
+  method: constant
+  lr_decay_rate: 0.1
+  lr_decay_epochs: [700, 800, 900]
+
+# memory
+herding_selection:
+  type: icarl
+fixed_memory: false
+memory_size: 0
+
+# Misc
+batch_size: 64
+eval_type: cnn
+start_epoch: 50
+epochs: 50
+workers: 16
+build_examplars_every_x_epochs: False
+eval_every_x_epochs: 4
+check_loss: false
+save_model: null # task, last, first
+log_past_task_accuracy: false
+
+# logger
+label: best
+exp_notes: best
+tags: []
