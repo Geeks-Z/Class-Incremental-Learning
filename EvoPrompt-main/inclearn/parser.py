@@ -48,7 +48,7 @@ def get_parser():
                         help="Initial increment, may be bigger.")
     parser.add_argument("-sampler", "--sampler",
                         help="Elements sampler.")
-    parser.add_argument("--data-path", default="/data/douillard/", type=str)
+    parser.add_argument("--data-path", default="/mnt/mydisk/ruoheng.li/lrh/Dataset", type=str)
 
     # Training related:
     parser.add_argument("-lr", "--lr", default=2., type=float,
