@@ -7,7 +7,7 @@
     "fixed_memory": true,
     "shuffle": true,
     "init_cls": 150,
-    "increment": 20,
+    "increment": 30,
     "model_name": "InfLoRA",
     "net_type": "sip",
     "embd_dim" : 768,

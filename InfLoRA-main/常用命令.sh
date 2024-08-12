@@ -9,7 +9,9 @@ conda activate cil
 
 nohup ./train.sh > ./res/2nd-baseline-rank4-alldataset.out 2>&1 &
 
-nohup ./train.sh > ./res/B50-rank4-alldatasets.out 2>&1 &
+nohup ./train.sh > ./res/2nd-B50-rank4-alldatasets.out 2>&1 &
+
+nohup ./train.sh > ./res/supp-B50-rank4-omn.out 2>&1 &
 
 
 ------------------------------
