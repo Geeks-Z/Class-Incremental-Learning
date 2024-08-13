@@ -1,0 +1,1205 @@
+nohup: ignoring input
+logs/cifar100/50_10_sip/InfLoRA/adam/4/0.95_1.0-0.0005/1993
+2024-08-12 23:27:11,253 [trainer.py] => config: ./configs/cifar100_inflora.json
+2024-08-12 23:27:11,253 [trainer.py] => device: [device(type='cuda', index=0)]
+2024-08-12 23:27:11,253 [trainer.py] => prefix: reproduce
+2024-08-12 23:27:11,253 [trainer.py] => dataset: cifar100
+2024-08-12 23:27:11,253 [trainer.py] => data_path: /mnt/mydisk/ruoheng.li/lrh/Dataset
+2024-08-12 23:27:11,253 [trainer.py] => memory_size: 0
+2024-08-12 23:27:11,253 [trainer.py] => memory_per_class: 0
+2024-08-12 23:27:11,253 [trainer.py] => fixed_memory: True
+2024-08-12 23:27:11,253 [trainer.py] => shuffle: True
+2024-08-12 23:27:11,253 [trainer.py] => init_cls: 50
+2024-08-12 23:27:11,253 [trainer.py] => increment: 10
+2024-08-12 23:27:11,253 [trainer.py] => model_name: InfLoRA
+2024-08-12 23:27:11,253 [trainer.py] => net_type: sip
+2024-08-12 23:27:11,253 [trainer.py] => embd_dim: 768
+2024-08-12 23:27:11,253 [trainer.py] => num_heads: 12
+2024-08-12 23:27:11,253 [trainer.py] => total_sessions: 6
+2024-08-12 23:27:11,253 [trainer.py] => seed: 1993
+2024-08-12 23:27:11,253 [trainer.py] => EPSILON: 1e-08
+2024-08-12 23:27:11,253 [trainer.py] => init_epoch: 20
+2024-08-12 23:27:11,253 [trainer.py] => optim: adam
+2024-08-12 23:27:11,253 [trainer.py] => init_lr: 0.0005
+2024-08-12 23:27:11,253 [trainer.py] => init_lr_decay: 0.1
+2024-08-12 23:27:11,253 [trainer.py] => init_weight_decay: 0.0
+2024-08-12 23:27:11,253 [trainer.py] => epochs: 20
+2024-08-12 23:27:11,253 [trainer.py] => lrate: 0.0005
+2024-08-12 23:27:11,254 [trainer.py] => lrate_decay: 0.1
+2024-08-12 23:27:11,254 [trainer.py] => batch_size: 48
+2024-08-12 23:27:11,254 [trainer.py] => weight_decay: 0.0
+2024-08-12 23:27:11,254 [trainer.py] => rank: 4
+2024-08-12 23:27:11,254 [trainer.py] => lamb: 0.95
+2024-08-12 23:27:11,254 [trainer.py] => lame: 1.0
+2024-08-12 23:27:11,254 [trainer.py] => num_workers: 16
+Files already downloaded and verified
+Files already downloaded and verified
+2024-08-12 23:27:12,719 [data_manager.py] => [68, 56, 78, 8, 23, 84, 90, 65, 74, 76, 40, 89, 3, 92, 55, 9, 26, 80, 43, 38, 58, 70, 77, 1, 85, 19, 17, 50, 28, 53, 13, 81, 45, 82, 6, 59, 83, 16, 15, 44, 91, 41, 72, 60, 79, 52, 20, 10, 31, 54, 37, 95, 14, 71, 96, 98, 97, 2, 64, 66, 42, 22, 35, 86, 24, 34, 87, 21, 99, 0, 88, 27, 18, 94, 11, 12, 47, 25, 30, 46, 62, 69, 36, 61, 7, 63, 75, 5, 32, 4, 51, 48, 73, 93, 39, 67, 29, 49, 57, 33]
+2024-08-12 23:27:16,350 [trainer.py] => All params: 108700587
+2024-08-12 23:27:16,351 [trainer.py] => Trainable params: 108700587
+2024-08-12 23:27:16,351 [inflora.py] => Learning on 0-50
+  0%|          | 0/20 [00:00<?, ?it/s]Task 0, Epoch 1/20 => Loss 0.839, Train_accy 77.43:   0%|          | 0/20 [02:49<?, ?it/s]Task 0, Epoch 1/20 => Loss 0.839, Train_accy 77.43:   5%|▌         | 1/20 [02:49<53:49, 169.95s/it]Task 0, Epoch 2/20 => Loss 0.516, Train_accy 85.02:   5%|▌         | 1/20 [05:40<53:49, 169.95s/it]Task 0, Epoch 2/20 => Loss 0.516, Train_accy 85.02:  10%|█         | 2/20 [05:40<51:10, 170.60s/it]Task 0, Epoch 3/20 => Loss 0.486, Train_accy 85.89:  10%|█         | 2/20 [08:30<51:10, 170.60s/it]Task 0, Epoch 3/20 => Loss 0.486, Train_accy 85.89:  15%|█▌        | 3/20 [08:30<48:10, 170.04s/it]Task 0, Epoch 4/20 => Loss 0.458, Train_accy 86.52:  15%|█▌        | 3/20 [11:20<48:10, 170.04s/it]Task 0, Epoch 4/20 => Loss 0.458, Train_accy 86.52:  20%|██        | 4/20 [11:20<45:18, 169.92s/it]Task 0, Epoch 5/20 => Loss 0.434, Train_accy 87.23:  20%|██        | 4/20 [14:10<45:18, 169.92s/it]Task 0, Epoch 5/20 => Loss 0.434, Train_accy 87.23:  25%|██▌       | 5/20 [14:10<42:30, 170.02s/it]Task 0, Epoch 6/20 => Loss 0.421, Train_accy 87.56:  25%|██▌       | 5/20 [16:59<42:30, 170.02s/it]Task 0, Epoch 6/20 => Loss 0.421, Train_accy 87.56:  30%|███       | 6/20 [16:59<39:38, 169.91s/it]Task 0, Epoch 7/20 => Loss 0.422, Train_accy 87.71:  30%|███       | 6/20 [19:48<39:38, 169.91s/it]Task 0, Epoch 7/20 => Loss 0.422, Train_accy 87.71:  35%|███▌      | 7/20 [19:48<36:44, 169.56s/it]Task 0, Epoch 8/20 => Loss 0.395, Train_accy 88.40:  35%|███▌      | 7/20 [22:38<36:44, 169.56s/it]Task 0, Epoch 8/20 => Loss 0.395, Train_accy 88.40:  40%|████      | 8/20 [22:38<33:55, 169.64s/it]Task 0, Epoch 9/20 => Loss 0.397, Train_accy 88.26:  40%|████      | 8/20 [25:28<33:55, 169.64s/it]Task 0, Epoch 9/20 => Loss 0.397, Train_accy 88.26:  45%|████▌     | 9/20 [25:28<31:05, 169.62s/it]Task 0, Epoch 10/20 => Loss 0.385, Train_accy 88.75:  45%|████▌     | 9/20 [28:17<31:05, 169.62s/it]Task 0, Epoch 10/20 => Loss 0.385, Train_accy 88.75:  50%|█████     | 10/20 [28:17<28:15, 169.52s/it]Task 0, Epoch 11/20 => Loss 0.372, Train_accy 89.00:  50%|█████     | 10/20 [31:08<28:15, 169.52s/it]Task 0, Epoch 11/20 => Loss 0.372, Train_accy 89.00:  55%|█████▌    | 11/20 [31:08<25:30, 170.06s/it]Task 0, Epoch 12/20 => Loss 0.353, Train_accy 89.69:  55%|█████▌    | 11/20 [33:57<25:30, 170.06s/it]Task 0, Epoch 12/20 => Loss 0.353, Train_accy 89.69:  60%|██████    | 12/20 [33:57<22:37, 169.72s/it]Task 0, Epoch 13/20 => Loss 0.355, Train_accy 89.58:  60%|██████    | 12/20 [36:48<22:37, 169.72s/it]Task 0, Epoch 13/20 => Loss 0.355, Train_accy 89.58:  65%|██████▌   | 13/20 [36:48<19:50, 170.06s/it]Task 0, Epoch 14/20 => Loss 0.333, Train_accy 90.06:  65%|██████▌   | 13/20 [39:37<19:50, 170.06s/it]Task 0, Epoch 14/20 => Loss 0.333, Train_accy 90.06:  70%|███████   | 14/20 [39:37<16:58, 169.79s/it]Task 0, Epoch 15/20 => Loss 0.327, Train_accy 90.28:  70%|███████   | 14/20 [42:27<16:58, 169.79s/it]Task 0, Epoch 15/20 => Loss 0.327, Train_accy 90.28:  75%|███████▌  | 15/20 [42:27<14:09, 169.80s/it]Task 0, Epoch 16/20 => Loss 0.330, Train_accy 90.29:  75%|███████▌  | 15/20 [45:18<14:09, 169.80s/it]Task 0, Epoch 16/20 => Loss 0.330, Train_accy 90.29:  80%|████████  | 16/20 [45:18<11:20, 170.03s/it]Task 0, Epoch 17/20 => Loss 0.317, Train_accy 90.54:  80%|████████  | 16/20 [48:09<11:20, 170.03s/it]Task 0, Epoch 17/20 => Loss 0.317, Train_accy 90.54:  85%|████████▌ | 17/20 [48:09<08:31, 170.52s/it]Task 0, Epoch 18/20 => Loss 0.320, Train_accy 90.58:  85%|████████▌ | 17/20 [51:00<08:31, 170.52s/it]Task 0, Epoch 18/20 => Loss 0.320, Train_accy 90.58:  90%|█████████ | 18/20 [51:00<05:41, 170.60s/it]Task 0, Epoch 19/20 => Loss 0.308, Train_accy 90.81:  90%|█████████ | 18/20 [53:50<05:41, 170.60s/it]Task 0, Epoch 19/20 => Loss 0.308, Train_accy 90.81:  95%|█████████▌| 19/20 [53:50<02:50, 170.26s/it]Task 0, Epoch 20/20 => Loss 0.302, Train_accy 91.12:  95%|█████████▌| 19/20 [56:40<02:50, 170.26s/it]Task 0, Epoch 20/20 => Loss 0.302, Train_accy 91.12: 100%|██████████| 20/20 [56:40<00:00, 170.20s/it]Task 0, Epoch 20/20 => Loss 0.302, Train_accy 91.12: 100%|██████████| 20/20 [56:40<00:00, 170.01s/it]
+2024-08-13 00:26:54,989 [inflora.py] => Task 0, Epoch 20/20 => Loss 0.302, Train_accy 91.12
+Threshold:  0.95
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 6/768 type remove
+Layer 2 : 9/768 type remove
+Layer 3 : 11/768 type remove
+Layer 4 : 10/768 type remove
+Layer 5 : 16/768 type remove
+Layer 6 : 21/768 type remove
+Layer 7 : 22/768 type remove
+Layer 8 : 28/768 type remove
+Layer 9 : 43/768 type remove
+Layer 10 : 49/768 type remove
+Layer 11 : 12/768 type remove
+Layer 12 : 53/768 type remove
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([768, 768])
+Layer 2 - Projection Matrix shape: torch.Size([768, 768])
+Layer 3 - Projection Matrix shape: torch.Size([768, 768])
+Layer 4 - Projection Matrix shape: torch.Size([768, 768])
+Layer 5 - Projection Matrix shape: torch.Size([768, 768])
+Layer 6 - Projection Matrix shape: torch.Size([768, 768])
+Layer 7 - Projection Matrix shape: torch.Size([768, 768])
+Layer 8 - Projection Matrix shape: torch.Size([768, 768])
+Layer 9 - Projection Matrix shape: torch.Size([768, 768])
+Layer 10 - Projection Matrix shape: torch.Size([768, 768])
+Layer 11 - Projection Matrix shape: torch.Size([768, 768])
+Layer 12 - Projection Matrix shape: torch.Size([768, 768])
+2024-08-13 00:30:07,351 [trainer.py] => Time:3770.999800682068
+5000 5000
+5000 5000
+2024-08-13 00:30:34,127 [trainer.py] => Time:26.77584409713745
+2024-08-13 00:30:34,127 [inflora.py] => Exemplar size: 0
+2024-08-13 00:30:34,128 [trainer.py] => CNN: {'total': 95.34, '00-49': 95.34, 'old': 0, 'new': 95.34}
+2024-08-13 00:30:34,128 [trainer.py] => CNN top1 curve: [95.34]
+2024-08-13 00:30:34,128 [trainer.py] => CNN top1 with task curve: [95.34]
+2024-08-13 00:30:34,128 [trainer.py] => CNN top1 task curve: [1.0]
+Average Accuracy (CNN): 95.34
+2024-08-13 00:30:34,130 [trainer.py] => All params: 108700587
+2024-08-13 00:30:34,131 [trainer.py] => Trainable params: 112178
+2024-08-13 00:30:34,131 [inflora.py] => Learning on 50-60
+  0%|          | 0/20 [00:00<?, ?it/s]Task 1, Epoch 1/20 => Loss 0.721, Train_accy 81.66:   0%|          | 0/20 [00:35<?, ?it/s]Task 1, Epoch 1/20 => Loss 0.721, Train_accy 81.66:   5%|▌         | 1/20 [00:35<11:05, 35.02s/it]Task 1, Epoch 2/20 => Loss 0.205, Train_accy 92.86:   5%|▌         | 1/20 [01:08<11:05, 35.02s/it]Task 1, Epoch 2/20 => Loss 0.205, Train_accy 92.86:  10%|█         | 2/20 [01:08<10:17, 34.32s/it]Task 1, Epoch 3/20 => Loss 0.188, Train_accy 93.46:  10%|█         | 2/20 [01:43<10:17, 34.32s/it]Task 1, Epoch 3/20 => Loss 0.188, Train_accy 93.46:  15%|█▌        | 3/20 [01:43<09:46, 34.50s/it]Task 1, Epoch 4/20 => Loss 0.172, Train_accy 94.18:  15%|█▌        | 3/20 [02:18<09:46, 34.50s/it]Task 1, Epoch 4/20 => Loss 0.172, Train_accy 94.18:  20%|██        | 4/20 [02:18<09:14, 34.63s/it]Task 1, Epoch 5/20 => Loss 0.151, Train_accy 95.18:  20%|██        | 4/20 [02:53<09:14, 34.63s/it]Task 1, Epoch 5/20 => Loss 0.151, Train_accy 95.18:  25%|██▌       | 5/20 [02:53<08:39, 34.64s/it]Task 1, Epoch 6/20 => Loss 0.140, Train_accy 95.32:  25%|██▌       | 5/20 [03:27<08:39, 34.64s/it]Task 1, Epoch 6/20 => Loss 0.140, Train_accy 95.32:  30%|███       | 6/20 [03:27<08:05, 34.69s/it]Task 1, Epoch 7/20 => Loss 0.142, Train_accy 95.14:  30%|███       | 6/20 [04:02<08:05, 34.69s/it]Task 1, Epoch 7/20 => Loss 0.142, Train_accy 95.14:  35%|███▌      | 7/20 [04:02<07:31, 34.72s/it]Task 1, Epoch 8/20 => Loss 0.134, Train_accy 95.34:  35%|███▌      | 7/20 [04:37<07:31, 34.72s/it]Task 1, Epoch 8/20 => Loss 0.134, Train_accy 95.34:  40%|████      | 8/20 [04:37<06:56, 34.71s/it]Task 1, Epoch 9/20 => Loss 0.133, Train_accy 95.48:  40%|████      | 8/20 [05:11<06:56, 34.71s/it]Task 1, Epoch 9/20 => Loss 0.133, Train_accy 95.48:  45%|████▌     | 9/20 [05:11<06:21, 34.70s/it]Task 1, Epoch 10/20 => Loss 0.136, Train_accy 95.62:  45%|████▌     | 9/20 [05:46<06:21, 34.70s/it]Task 1, Epoch 10/20 => Loss 0.136, Train_accy 95.62:  50%|█████     | 10/20 [05:46<05:46, 34.69s/it]Task 1, Epoch 11/20 => Loss 0.115, Train_accy 96.06:  50%|█████     | 10/20 [06:20<05:46, 34.69s/it]Task 1, Epoch 11/20 => Loss 0.115, Train_accy 96.06:  55%|█████▌    | 11/20 [06:20<05:09, 34.44s/it]Task 1, Epoch 12/20 => Loss 0.134, Train_accy 95.42:  55%|█████▌    | 11/20 [06:55<05:09, 34.44s/it]Task 1, Epoch 12/20 => Loss 0.134, Train_accy 95.42:  60%|██████    | 12/20 [06:55<04:36, 34.52s/it]Task 1, Epoch 13/20 => Loss 0.113, Train_accy 96.02:  60%|██████    | 12/20 [07:30<04:36, 34.52s/it]Task 1, Epoch 13/20 => Loss 0.113, Train_accy 96.02:  65%|██████▌   | 13/20 [07:30<04:02, 34.61s/it]Task 1, Epoch 14/20 => Loss 0.123, Train_accy 95.78:  65%|██████▌   | 13/20 [08:04<04:02, 34.61s/it]Task 1, Epoch 14/20 => Loss 0.123, Train_accy 95.78:  70%|███████   | 14/20 [08:04<03:28, 34.67s/it]Task 1, Epoch 15/20 => Loss 0.110, Train_accy 96.18:  70%|███████   | 14/20 [08:39<03:28, 34.67s/it]Task 1, Epoch 15/20 => Loss 0.110, Train_accy 96.18:  75%|███████▌  | 15/20 [08:39<02:53, 34.68s/it]Task 1, Epoch 16/20 => Loss 0.122, Train_accy 96.08:  75%|███████▌  | 15/20 [09:14<02:53, 34.68s/it]Task 1, Epoch 16/20 => Loss 0.122, Train_accy 96.08:  80%|████████  | 16/20 [09:14<02:18, 34.74s/it]Task 1, Epoch 17/20 => Loss 0.116, Train_accy 95.66:  80%|████████  | 16/20 [09:49<02:18, 34.74s/it]Task 1, Epoch 17/20 => Loss 0.116, Train_accy 95.66:  85%|████████▌ | 17/20 [09:49<01:44, 34.73s/it]Task 1, Epoch 18/20 => Loss 0.115, Train_accy 96.10:  85%|████████▌ | 17/20 [10:23<01:44, 34.73s/it]Task 1, Epoch 18/20 => Loss 0.115, Train_accy 96.10:  90%|█████████ | 18/20 [10:23<01:09, 34.72s/it]Task 1, Epoch 19/20 => Loss 0.098, Train_accy 96.58:  90%|█████████ | 18/20 [10:58<01:09, 34.72s/it]Task 1, Epoch 19/20 => Loss 0.098, Train_accy 96.58:  95%|█████████▌| 19/20 [10:58<00:34, 34.70s/it]Task 1, Epoch 20/20 => Loss 0.120, Train_accy 96.18:  95%|█████████▌| 19/20 [11:26<00:34, 34.70s/it]Task 1, Epoch 20/20 => Loss 0.120, Train_accy 96.18: 100%|██████████| 20/20 [11:26<00:00, 32.78s/it]Task 1, Epoch 20/20 => Loss 0.120, Train_accy 96.18: 100%|██████████| 20/20 [11:26<00:00, 34.34s/it]
+2024-08-13 00:43:28,510 [inflora.py] => Task 1, Epoch 20/20 => Loss 0.120, Train_accy 96.18
+Threshold:  0.9583333333333333
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 7/768 type remove
+Layer 2 : 11/768 type remove
+Layer 3 : 14/768 type remove
+Layer 4 : 13/768 type remove
+Layer 5 : 20/768 type remove
+Layer 6 : 26/768 type remove
+Layer 7 : 30/768 type remove
+Layer 8 : 41/768 type remove
+Layer 9 : 64/768 type remove
+Layer 10 : 71/768 type remove
+Layer 11 : 22/768 type remove
+Layer 12 : 68/768 type remove
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([768, 768])
+Layer 2 - Projection Matrix shape: torch.Size([768, 768])
+Layer 3 - Projection Matrix shape: torch.Size([768, 768])
+Layer 4 - Projection Matrix shape: torch.Size([768, 768])
+Layer 5 - Projection Matrix shape: torch.Size([768, 768])
+Layer 6 - Projection Matrix shape: torch.Size([768, 768])
+Layer 7 - Projection Matrix shape: torch.Size([768, 768])
+Layer 8 - Projection Matrix shape: torch.Size([768, 768])
+Layer 9 - Projection Matrix shape: torch.Size([768, 768])
+Layer 10 - Projection Matrix shape: torch.Size([768, 768])
+Layer 11 - Projection Matrix shape: torch.Size([768, 768])
+Layer 12 - Projection Matrix shape: torch.Size([768, 768])
+2024-08-13 00:44:26,354 [trainer.py] => Time:832.2221252918243
+6000 6000
+6000 6000
+2024-08-13 00:44:42,741 [trainer.py] => Time:16.386792421340942
+2024-08-13 00:44:42,741 [inflora.py] => Exemplar size: 0
+2024-08-13 00:44:42,741 [trainer.py] => CNN: {'total': 93.67, '00-49': 94.32, '50-99': 90.4, 'old': 94.32, 'new': 90.4}
+2024-08-13 00:44:42,741 [trainer.py] => CNN top1 curve: [95.34, 93.67]
+2024-08-13 00:44:42,741 [trainer.py] => CNN top1 with task curve: [95.34, 95.57]
+2024-08-13 00:44:42,742 [trainer.py] => CNN top1 task curve: [1.0, 0.9771666666666666]
+Average Accuracy (CNN): 94.5
+2024-08-13 00:44:42,744 [trainer.py] => All params: 108700587
+2024-08-13 00:44:42,746 [trainer.py] => Trainable params: 112178
+2024-08-13 00:44:42,746 [inflora.py] => Learning on 60-70
+  0%|          | 0/20 [00:00<?, ?it/s]Task 2, Epoch 1/20 => Loss 0.630, Train_accy 83.60:   0%|          | 0/20 [00:33<?, ?it/s]Task 2, Epoch 1/20 => Loss 0.630, Train_accy 83.60:   5%|▌         | 1/20 [00:33<10:27, 33.03s/it]Task 2, Epoch 2/20 => Loss 0.160, Train_accy 94.92:   5%|▌         | 1/20 [01:07<10:27, 33.03s/it]Task 2, Epoch 2/20 => Loss 0.160, Train_accy 94.92:  10%|█         | 2/20 [01:07<10:06, 33.71s/it]Task 2, Epoch 3/20 => Loss 0.123, Train_accy 96.18:  10%|█         | 2/20 [01:41<10:06, 33.71s/it]Task 2, Epoch 3/20 => Loss 0.123, Train_accy 96.18:  15%|█▌        | 3/20 [01:41<09:36, 33.89s/it]Task 2, Epoch 4/20 => Loss 0.118, Train_accy 95.78:  15%|█▌        | 3/20 [02:15<09:36, 33.89s/it]Task 2, Epoch 4/20 => Loss 0.118, Train_accy 95.78:  20%|██        | 4/20 [02:15<09:03, 33.98s/it]Task 2, Epoch 5/20 => Loss 0.122, Train_accy 96.12:  20%|██        | 4/20 [02:41<09:03, 33.98s/it]Task 2, Epoch 5/20 => Loss 0.122, Train_accy 96.12:  25%|██▌       | 5/20 [02:41<07:48, 31.21s/it]Task 2, Epoch 6/20 => Loss 0.108, Train_accy 96.56:  25%|██▌       | 5/20 [03:09<07:48, 31.21s/it]Task 2, Epoch 6/20 => Loss 0.108, Train_accy 96.56:  30%|███       | 6/20 [03:09<07:00, 30.04s/it]Task 2, Epoch 7/20 => Loss 0.105, Train_accy 96.64:  30%|███       | 6/20 [03:30<07:00, 30.04s/it]Task 2, Epoch 7/20 => Loss 0.105, Train_accy 96.64:  35%|███▌      | 7/20 [03:30<05:51, 27.01s/it]Task 2, Epoch 8/20 => Loss 0.112, Train_accy 96.56:  35%|███▌      | 7/20 [03:48<05:51, 27.01s/it]Task 2, Epoch 8/20 => Loss 0.112, Train_accy 96.56:  40%|████      | 8/20 [03:48<04:48, 24.05s/it]Task 2, Epoch 9/20 => Loss 0.092, Train_accy 96.84:  40%|████      | 8/20 [04:05<04:48, 24.05s/it]Task 2, Epoch 9/20 => Loss 0.092, Train_accy 96.84:  45%|████▌     | 9/20 [04:05<04:03, 22.13s/it]Task 2, Epoch 10/20 => Loss 0.113, Train_accy 96.22:  45%|████▌     | 9/20 [04:27<04:03, 22.13s/it]Task 2, Epoch 10/20 => Loss 0.113, Train_accy 96.22:  50%|█████     | 10/20 [04:27<03:40, 22.10s/it]Task 2, Epoch 11/20 => Loss 0.092, Train_accy 97.24:  50%|█████     | 10/20 [05:02<03:40, 22.10s/it]Task 2, Epoch 11/20 => Loss 0.092, Train_accy 97.24:  55%|█████▌    | 11/20 [05:02<03:54, 26.07s/it]Task 2, Epoch 12/20 => Loss 0.099, Train_accy 96.88:  55%|█████▌    | 11/20 [05:36<03:54, 26.07s/it]Task 2, Epoch 12/20 => Loss 0.099, Train_accy 96.88:  60%|██████    | 12/20 [05:36<03:47, 28.46s/it]Task 2, Epoch 13/20 => Loss 0.088, Train_accy 97.06:  60%|██████    | 12/20 [06:11<03:47, 28.46s/it]Task 2, Epoch 13/20 => Loss 0.088, Train_accy 97.06:  65%|██████▌   | 13/20 [06:11<03:32, 30.41s/it]Task 2, Epoch 14/20 => Loss 0.091, Train_accy 97.26:  65%|██████▌   | 13/20 [06:45<03:32, 30.41s/it]Task 2, Epoch 14/20 => Loss 0.091, Train_accy 97.26:  70%|███████   | 14/20 [06:45<03:08, 31.48s/it]Task 2, Epoch 15/20 => Loss 0.089, Train_accy 97.28:  70%|███████   | 14/20 [07:20<03:08, 31.48s/it]Task 2, Epoch 15/20 => Loss 0.089, Train_accy 97.28:  75%|███████▌  | 15/20 [07:20<02:42, 32.52s/it]Task 2, Epoch 16/20 => Loss 0.091, Train_accy 97.08:  75%|███████▌  | 15/20 [07:54<02:42, 32.52s/it]Task 2, Epoch 16/20 => Loss 0.091, Train_accy 97.08:  80%|████████  | 16/20 [07:54<02:11, 32.91s/it]Task 2, Epoch 17/20 => Loss 0.086, Train_accy 97.04:  80%|████████  | 16/20 [08:28<02:11, 32.91s/it]Task 2, Epoch 17/20 => Loss 0.086, Train_accy 97.04:  85%|████████▌ | 17/20 [08:28<01:39, 33.20s/it]Task 2, Epoch 18/20 => Loss 0.090, Train_accy 97.10:  85%|████████▌ | 17/20 [09:03<01:39, 33.20s/it]Task 2, Epoch 18/20 => Loss 0.090, Train_accy 97.10:  90%|█████████ | 18/20 [09:03<01:07, 33.70s/it]Task 2, Epoch 19/20 => Loss 0.073, Train_accy 97.64:  90%|█████████ | 18/20 [09:37<01:07, 33.70s/it]Task 2, Epoch 19/20 => Loss 0.073, Train_accy 97.64:  95%|█████████▌| 19/20 [09:37<00:33, 33.78s/it]Task 2, Epoch 20/20 => Loss 0.073, Train_accy 97.76:  95%|█████████▌| 19/20 [10:12<00:33, 33.78s/it]Task 2, Epoch 20/20 => Loss 0.073, Train_accy 97.76: 100%|██████████| 20/20 [10:12<00:00, 34.10s/it]Task 2, Epoch 20/20 => Loss 0.073, Train_accy 97.76: 100%|██████████| 20/20 [10:12<00:00, 30.60s/it]
+2024-08-13 00:56:54,253 [inflora.py] => Task 2, Epoch 20/20 => Loss 0.073, Train_accy 97.76
+Threshold:  0.9666666666666667
+Skip Updating DualGPM for layer: 1
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 7/768 type remove
+Layer 2 : 12/768 type remove
+Layer 3 : 16/768 type remove
+Layer 4 : 17/768 type remove
+Layer 5 : 26/768 type remove
+Layer 6 : 34/768 type remove
+Layer 7 : 41/768 type remove
+Layer 8 : 64/768 type remove
+Layer 9 : 99/768 type remove
+Layer 10 : 102/768 type remove
+Layer 11 : 38/768 type remove
+Layer 12 : 79/768 type remove
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([768, 768])
+Layer 2 - Projection Matrix shape: torch.Size([768, 768])
+Layer 3 - Projection Matrix shape: torch.Size([768, 768])
+Layer 4 - Projection Matrix shape: torch.Size([768, 768])
+Layer 5 - Projection Matrix shape: torch.Size([768, 768])
+Layer 6 - Projection Matrix shape: torch.Size([768, 768])
+Layer 7 - Projection Matrix shape: torch.Size([768, 768])
+Layer 8 - Projection Matrix shape: torch.Size([768, 768])
+Layer 9 - Projection Matrix shape: torch.Size([768, 768])
+Layer 10 - Projection Matrix shape: torch.Size([768, 768])
+Layer 11 - Projection Matrix shape: torch.Size([768, 768])
+Layer 12 - Projection Matrix shape: torch.Size([768, 768])
+2024-08-13 00:57:39,737 [trainer.py] => Time:776.9915583133698
+7000 7000
+7000 7000
+2024-08-13 00:58:15,532 [trainer.py] => Time:35.79476594924927
+2024-08-13 00:58:15,533 [inflora.py] => Exemplar size: 0
+2024-08-13 00:58:15,533 [trainer.py] => CNN: {'total': 79.9, '00-49': 93.82, '50-99': 45.1, 'old': 93.22, 'new': 0.0}
+2024-08-13 00:58:15,533 [trainer.py] => CNN top1 curve: [95.34, 93.67, 79.9]
+2024-08-13 00:58:15,533 [trainer.py] => CNN top1 with task curve: [95.34, 95.57, 81.69]
+2024-08-13 00:58:15,533 [trainer.py] => CNN top1 task curve: [1.0, 0.9771666666666666, 0.8427142857142857]
+Average Accuracy (CNN): 89.64
+2024-08-13 00:58:15,535 [trainer.py] => All params: 108700587
+2024-08-13 00:58:15,536 [trainer.py] => Trainable params: 112178
+2024-08-13 00:58:15,536 [inflora.py] => Learning on 70-80
+  0%|          | 0/20 [00:00<?, ?it/s]Task 3, Epoch 1/20 => Loss 0.642, Train_accy 81.74:   0%|          | 0/20 [00:33<?, ?it/s]Task 3, Epoch 1/20 => Loss 0.642, Train_accy 81.74:   5%|▌         | 1/20 [00:33<10:45, 33.96s/it]Task 3, Epoch 2/20 => Loss 0.201, Train_accy 93.36:   5%|▌         | 1/20 [01:07<10:45, 33.96s/it]Task 3, Epoch 2/20 => Loss 0.201, Train_accy 93.36:  10%|█         | 2/20 [01:07<10:11, 33.97s/it]Task 3, Epoch 3/20 => Loss 0.200, Train_accy 93.80:  10%|█         | 2/20 [01:43<10:11, 33.97s/it]Task 3, Epoch 3/20 => Loss 0.200, Train_accy 93.80:  15%|█▌        | 3/20 [01:43<09:46, 34.47s/it]Task 3, Epoch 4/20 => Loss 0.151, Train_accy 94.58:  15%|█▌        | 3/20 [02:17<09:46, 34.47s/it]Task 3, Epoch 4/20 => Loss 0.151, Train_accy 94.58:  20%|██        | 4/20 [02:17<09:09, 34.36s/it]Task 3, Epoch 5/20 => Loss 0.168, Train_accy 94.32:  20%|██        | 4/20 [02:52<09:09, 34.36s/it]Task 3, Epoch 5/20 => Loss 0.168, Train_accy 94.32:  25%|██▌       | 5/20 [02:52<08:39, 34.62s/it]Task 3, Epoch 6/20 => Loss 0.149, Train_accy 95.32:  25%|██▌       | 5/20 [03:26<08:39, 34.62s/it]Task 3, Epoch 6/20 => Loss 0.149, Train_accy 95.32:  30%|███       | 6/20 [03:26<08:01, 34.39s/it]Task 3, Epoch 7/20 => Loss 0.138, Train_accy 94.96:  30%|███       | 6/20 [04:01<08:01, 34.39s/it]Task 3, Epoch 7/20 => Loss 0.138, Train_accy 94.96:  35%|███▌      | 7/20 [04:01<07:29, 34.61s/it]Task 3, Epoch 8/20 => Loss 0.144, Train_accy 95.24:  35%|███▌      | 7/20 [04:35<07:29, 34.61s/it]Task 3, Epoch 8/20 => Loss 0.144, Train_accy 95.24:  40%|████      | 8/20 [04:35<06:52, 34.41s/it]Task 3, Epoch 9/20 => Loss 0.119, Train_accy 95.96:  40%|████      | 8/20 [05:10<06:52, 34.41s/it]Task 3, Epoch 9/20 => Loss 0.119, Train_accy 95.96:  45%|████▌     | 9/20 [05:10<06:20, 34.61s/it]Task 3, Epoch 10/20 => Loss 0.115, Train_accy 96.36:  45%|████▌     | 9/20 [05:45<06:20, 34.61s/it]Task 3, Epoch 10/20 => Loss 0.115, Train_accy 96.36:  50%|█████     | 10/20 [05:45<05:46, 34.67s/it]Task 3, Epoch 11/20 => Loss 0.127, Train_accy 95.58:  50%|█████     | 10/20 [06:19<05:46, 34.67s/it]Task 3, Epoch 11/20 => Loss 0.127, Train_accy 95.58:  55%|█████▌    | 11/20 [06:19<05:10, 34.46s/it]Task 3, Epoch 12/20 => Loss 0.119, Train_accy 96.18:  55%|█████▌    | 11/20 [06:54<05:10, 34.46s/it]Task 3, Epoch 12/20 => Loss 0.119, Train_accy 96.18:  60%|██████    | 12/20 [06:54<04:36, 34.61s/it]Task 3, Epoch 13/20 => Loss 0.115, Train_accy 95.98:  60%|██████    | 12/20 [07:28<04:36, 34.61s/it]Task 3, Epoch 13/20 => Loss 0.115, Train_accy 95.98:  65%|██████▌   | 13/20 [07:28<04:01, 34.45s/it]Task 3, Epoch 14/20 => Loss 0.130, Train_accy 95.62:  65%|██████▌   | 13/20 [08:03<04:01, 34.45s/it]Task 3, Epoch 14/20 => Loss 0.130, Train_accy 95.62:  70%|███████   | 14/20 [08:03<03:27, 34.62s/it]Task 3, Epoch 15/20 => Loss 0.126, Train_accy 95.74:  70%|███████   | 14/20 [08:37<03:27, 34.62s/it]Task 3, Epoch 15/20 => Loss 0.126, Train_accy 95.74:  75%|███████▌  | 15/20 [08:37<02:52, 34.44s/it]Task 3, Epoch 16/20 => Loss 0.114, Train_accy 96.18:  75%|███████▌  | 15/20 [09:12<02:52, 34.44s/it]Task 3, Epoch 16/20 => Loss 0.114, Train_accy 96.18:  80%|████████  | 16/20 [09:12<02:18, 34.74s/it]Task 3, Epoch 17/20 => Loss 0.114, Train_accy 96.20:  80%|████████  | 16/20 [09:46<02:18, 34.74s/it]Task 3, Epoch 17/20 => Loss 0.114, Train_accy 96.20:  85%|████████▌ | 17/20 [09:46<01:43, 34.50s/it]Task 3, Epoch 18/20 => Loss 0.122, Train_accy 95.74:  85%|████████▌ | 17/20 [10:20<01:43, 34.50s/it]Task 3, Epoch 18/20 => Loss 0.122, Train_accy 95.74:  90%|█████████ | 18/20 [10:20<01:08, 34.21s/it]Task 3, Epoch 19/20 => Loss 0.106, Train_accy 96.38:  90%|█████████ | 18/20 [10:47<01:08, 34.21s/it]Task 3, Epoch 19/20 => Loss 0.106, Train_accy 96.38:  95%|█████████▌| 19/20 [10:47<00:32, 32.22s/it]Task 3, Epoch 20/20 => Loss 0.096, Train_accy 96.90:  95%|█████████▌| 19/20 [11:11<00:32, 32.22s/it]Task 3, Epoch 20/20 => Loss 0.096, Train_accy 96.90: 100%|██████████| 20/20 [11:11<00:00, 29.72s/it]Task 3, Epoch 20/20 => Loss 0.096, Train_accy 96.90: 100%|██████████| 20/20 [11:11<00:00, 33.58s/it]
+2024-08-13 01:10:53,513 [inflora.py] => Task 3, Epoch 20/20 => Loss 0.096, Train_accy 96.90
+Threshold:  0.975
+Skip Updating DualGPM for layer: 1
+Skip Updating DualGPM for layer: 2
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 7/768 type remove
+Layer 2 : 12/768 type remove
+Layer 3 : 18/768 type remove
+Layer 4 : 21/768 type remove
+Layer 5 : 32/768 type remove
+Layer 6 : 45/768 type remove
+Layer 7 : 55/768 type remove
+Layer 8 : 87/768 type remove
+Layer 9 : 135/768 type remove
+Layer 10 : 160/768 type remove
+Layer 11 : 71/768 type remove
+Layer 12 : 136/768 type remove
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([768, 768])
+Layer 2 - Projection Matrix shape: torch.Size([768, 768])
+Layer 3 - Projection Matrix shape: torch.Size([768, 768])
+Layer 4 - Projection Matrix shape: torch.Size([768, 768])
+Layer 5 - Projection Matrix shape: torch.Size([768, 768])
+Layer 6 - Projection Matrix shape: torch.Size([768, 768])
+Layer 7 - Projection Matrix shape: torch.Size([768, 768])
+Layer 8 - Projection Matrix shape: torch.Size([768, 768])
+Layer 9 - Projection Matrix shape: torch.Size([768, 768])
+Layer 10 - Projection Matrix shape: torch.Size([768, 768])
+Layer 11 - Projection Matrix shape: torch.Size([768, 768])
+Layer 12 - Projection Matrix shape: torch.Size([768, 768])
+2024-08-13 01:11:40,598 [trainer.py] => Time:805.0615985393524
+8000 8000
+8000 8000
+2024-08-13 01:12:02,395 [trainer.py] => Time:21.79699945449829
+2024-08-13 01:12:02,396 [inflora.py] => Exemplar size: 0
+2024-08-13 01:12:02,396 [trainer.py] => CNN: {'total': 69.79, '00-49': 94.02, '50-99': 29.4, 'old': 79.76, 'new': 0.0}
+2024-08-13 01:12:02,397 [trainer.py] => CNN top1 curve: [95.34, 93.67, 79.9, 69.79]
+2024-08-13 01:12:02,397 [trainer.py] => CNN top1 with task curve: [95.34, 95.57, 81.69, 71.55]
+2024-08-13 01:12:02,397 [trainer.py] => CNN top1 task curve: [1.0, 0.9771666666666666, 0.8427142857142857, 0.744125]
+Average Accuracy (CNN): 84.68
+2024-08-13 01:12:02,401 [trainer.py] => All params: 108700587
+2024-08-13 01:12:02,404 [trainer.py] => Trainable params: 112178
+2024-08-13 01:12:02,404 [inflora.py] => Learning on 80-90
+  0%|          | 0/20 [00:00<?, ?it/s]Task 4, Epoch 1/20 => Loss 0.640, Train_accy 82.28:   0%|          | 0/20 [00:33<?, ?it/s]Task 4, Epoch 1/20 => Loss 0.640, Train_accy 82.28:   5%|▌         | 1/20 [00:33<10:45, 33.98s/it]Task 4, Epoch 2/20 => Loss 0.197, Train_accy 93.64:   5%|▌         | 1/20 [01:09<10:45, 33.98s/it]Task 4, Epoch 2/20 => Loss 0.197, Train_accy 93.64:  10%|█         | 2/20 [01:09<10:25, 34.72s/it]Task 4, Epoch 3/20 => Loss 0.174, Train_accy 94.16:  10%|█         | 2/20 [01:43<10:25, 34.72s/it]Task 4, Epoch 3/20 => Loss 0.174, Train_accy 94.16:  15%|█▌        | 3/20 [01:43<09:45, 34.42s/it]Task 4, Epoch 4/20 => Loss 0.148, Train_accy 95.04:  15%|█▌        | 3/20 [02:18<09:45, 34.42s/it]Task 4, Epoch 4/20 => Loss 0.148, Train_accy 95.04:  20%|██        | 4/20 [02:18<09:15, 34.71s/it]Task 4, Epoch 5/20 => Loss 0.138, Train_accy 95.38:  20%|██        | 4/20 [02:52<09:15, 34.71s/it]Task 4, Epoch 5/20 => Loss 0.138, Train_accy 95.38:  25%|██▌       | 5/20 [02:52<08:37, 34.47s/it]Task 4, Epoch 6/20 => Loss 0.133, Train_accy 95.86:  25%|██▌       | 5/20 [03:27<08:37, 34.47s/it]Task 4, Epoch 6/20 => Loss 0.133, Train_accy 95.86:  30%|███       | 6/20 [03:27<08:05, 34.69s/it]Task 4, Epoch 7/20 => Loss 0.126, Train_accy 95.68:  30%|███       | 6/20 [04:01<08:05, 34.69s/it]Task 4, Epoch 7/20 => Loss 0.126, Train_accy 95.68:  35%|███▌      | 7/20 [04:01<07:27, 34.45s/it]Task 4, Epoch 8/20 => Loss 0.134, Train_accy 95.48:  35%|███▌      | 7/20 [04:36<07:27, 34.45s/it]Task 4, Epoch 8/20 => Loss 0.134, Train_accy 95.48:  40%|████      | 8/20 [04:36<06:56, 34.67s/it]Task 4, Epoch 9/20 => Loss 0.123, Train_accy 95.94:  40%|████      | 8/20 [05:10<06:56, 34.67s/it]Task 4, Epoch 9/20 => Loss 0.123, Train_accy 95.94:  45%|████▌     | 9/20 [05:10<06:19, 34.51s/it]Task 4, Epoch 10/20 => Loss 0.130, Train_accy 95.98:  45%|████▌     | 9/20 [05:44<06:19, 34.51s/it]Task 4, Epoch 10/20 => Loss 0.130, Train_accy 95.98:  50%|█████     | 10/20 [05:44<05:43, 34.34s/it]Task 4, Epoch 11/20 => Loss 0.125, Train_accy 95.80:  50%|█████     | 10/20 [06:19<05:43, 34.34s/it]Task 4, Epoch 11/20 => Loss 0.125, Train_accy 95.80:  55%|█████▌    | 11/20 [06:19<05:11, 34.58s/it]Task 4, Epoch 12/20 => Loss 0.116, Train_accy 95.92:  55%|█████▌    | 11/20 [06:53<05:11, 34.58s/it]Task 4, Epoch 12/20 => Loss 0.116, Train_accy 95.92:  60%|██████    | 12/20 [06:53<04:35, 34.41s/it]Task 4, Epoch 13/20 => Loss 0.121, Train_accy 96.08:  60%|██████    | 12/20 [07:29<04:35, 34.41s/it]Task 4, Epoch 13/20 => Loss 0.121, Train_accy 96.08:  65%|██████▌   | 13/20 [07:29<04:02, 34.63s/it]Task 4, Epoch 14/20 => Loss 0.123, Train_accy 95.96:  65%|██████▌   | 13/20 [08:03<04:02, 34.63s/it]Task 4, Epoch 14/20 => Loss 0.123, Train_accy 95.96:  70%|███████   | 14/20 [08:03<03:26, 34.43s/it]Task 4, Epoch 15/20 => Loss 0.113, Train_accy 96.18:  70%|███████   | 14/20 [08:38<03:26, 34.43s/it]Task 4, Epoch 15/20 => Loss 0.113, Train_accy 96.18:  75%|███████▌  | 15/20 [08:38<02:53, 34.65s/it]Task 4, Epoch 16/20 => Loss 0.116, Train_accy 96.10:  75%|███████▌  | 15/20 [09:12<02:53, 34.65s/it]Task 4, Epoch 16/20 => Loss 0.116, Train_accy 96.10:  80%|████████  | 16/20 [09:12<02:18, 34.50s/it]Task 4, Epoch 17/20 => Loss 0.107, Train_accy 96.48:  80%|████████  | 16/20 [09:46<02:18, 34.50s/it]Task 4, Epoch 17/20 => Loss 0.107, Train_accy 96.48:  85%|████████▌ | 17/20 [09:46<01:43, 34.44s/it]Task 4, Epoch 18/20 => Loss 0.120, Train_accy 95.92:  85%|████████▌ | 17/20 [10:21<01:43, 34.44s/it]Task 4, Epoch 18/20 => Loss 0.120, Train_accy 95.92:  90%|█████████ | 18/20 [10:21<01:09, 34.66s/it]Task 4, Epoch 19/20 => Loss 0.095, Train_accy 97.00:  90%|█████████ | 18/20 [10:55<01:09, 34.66s/it]Task 4, Epoch 19/20 => Loss 0.095, Train_accy 97.00:  95%|█████████▌| 19/20 [10:55<00:34, 34.47s/it]Task 4, Epoch 20/20 => Loss 0.108, Train_accy 96.44:  95%|█████████▌| 19/20 [11:31<00:34, 34.47s/it]Task 4, Epoch 20/20 => Loss 0.108, Train_accy 96.44: 100%|██████████| 20/20 [11:31<00:00, 34.69s/it]Task 4, Epoch 20/20 => Loss 0.108, Train_accy 96.44: 100%|██████████| 20/20 [11:31<00:00, 34.55s/it]
+2024-08-13 01:25:07,603 [inflora.py] => Task 4, Epoch 20/20 => Loss 0.108, Train_accy 96.44
+Threshold:  0.9833333333333333
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 8/768 type remove
+Layer 2 : 13/768 type remove
+Layer 3 : 21/768 type remove
+Layer 4 : 27/768 type remove
+Layer 5 : 41/768 type remove
+Layer 6 : 64/768 type remove
+Layer 7 : 78/768 type remove
+Layer 8 : 125/768 type remove
+Layer 9 : 188/768 type remove
+Layer 10 : 221/768 type remove
+Layer 11 : 126/768 type remove
+Layer 12 : 176/768 type remove
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([768, 768])
+Layer 2 - Projection Matrix shape: torch.Size([768, 768])
+Layer 3 - Projection Matrix shape: torch.Size([768, 768])
+Layer 4 - Projection Matrix shape: torch.Size([768, 768])
+Layer 5 - Projection Matrix shape: torch.Size([768, 768])
+Layer 6 - Projection Matrix shape: torch.Size([768, 768])
+Layer 7 - Projection Matrix shape: torch.Size([768, 768])
+Layer 8 - Projection Matrix shape: torch.Size([768, 768])
+Layer 9 - Projection Matrix shape: torch.Size([768, 768])
+Layer 10 - Projection Matrix shape: torch.Size([768, 768])
+Layer 11 - Projection Matrix shape: torch.Size([768, 768])
+Layer 12 - Projection Matrix shape: torch.Size([768, 768])
+2024-08-13 01:25:53,846 [trainer.py] => Time:831.4423334598541
+9000 9000
+9000 9000
+2024-08-13 01:26:40,214 [trainer.py] => Time:46.3668577671051
+2024-08-13 01:26:40,214 [inflora.py] => Exemplar size: 0
+2024-08-13 01:26:40,214 [trainer.py] => CNN: {'total': 61.87, '00-49': 94.0, '50-99': 21.7, 'old': 69.6, 'new': 0.0}
+2024-08-13 01:26:40,214 [trainer.py] => CNN top1 curve: [95.34, 93.67, 79.9, 69.79, 61.87]
+2024-08-13 01:26:40,214 [trainer.py] => CNN top1 with task curve: [95.34, 95.57, 81.69, 71.55, 63.58]
+2024-08-13 01:26:40,214 [trainer.py] => CNN top1 task curve: [1.0, 0.9771666666666666, 0.8427142857142857, 0.744125, 0.6586666666666666]
+Average Accuracy (CNN): 80.11
+2024-08-13 01:26:40,216 [trainer.py] => All params: 108700587
+2024-08-13 01:26:40,217 [trainer.py] => Trainable params: 112178
+2024-08-13 01:26:40,217 [inflora.py] => Learning on 90-100
+  0%|          | 0/20 [00:00<?, ?it/s]Task 5, Epoch 1/20 => Loss 0.666, Train_accy 81.82:   0%|          | 0/20 [00:35<?, ?it/s]Task 5, Epoch 1/20 => Loss 0.666, Train_accy 81.82:   5%|▌         | 1/20 [00:35<11:07, 35.14s/it]Task 5, Epoch 2/20 => Loss 0.224, Train_accy 92.74:   5%|▌         | 1/20 [01:09<11:07, 35.14s/it]Task 5, Epoch 2/20 => Loss 0.224, Train_accy 92.74:  10%|█         | 2/20 [01:09<10:20, 34.48s/it]Task 5, Epoch 3/20 => Loss 0.218, Train_accy 92.74:  10%|█         | 2/20 [01:44<10:20, 34.48s/it]Task 5, Epoch 3/20 => Loss 0.218, Train_accy 92.74:  15%|█▌        | 3/20 [01:44<09:51, 34.81s/it]Task 5, Epoch 4/20 => Loss 0.170, Train_accy 94.44:  15%|█▌        | 3/20 [02:18<09:51, 34.81s/it]Task 5, Epoch 4/20 => Loss 0.170, Train_accy 94.44:  20%|██        | 4/20 [02:18<09:11, 34.49s/it]Task 5, Epoch 5/20 => Loss 0.163, Train_accy 94.94:  20%|██        | 4/20 [02:53<09:11, 34.49s/it]Task 5, Epoch 5/20 => Loss 0.163, Train_accy 94.94:  25%|██▌       | 5/20 [02:53<08:40, 34.71s/it]Task 5, Epoch 6/20 => Loss 0.177, Train_accy 94.14:  25%|██▌       | 5/20 [03:27<08:40, 34.71s/it]Task 5, Epoch 6/20 => Loss 0.177, Train_accy 94.14:  30%|███       | 6/20 [03:27<08:02, 34.45s/it]Task 5, Epoch 7/20 => Loss 0.149, Train_accy 94.84:  30%|███       | 6/20 [04:00<08:02, 34.45s/it]Task 5, Epoch 7/20 => Loss 0.149, Train_accy 94.84:  35%|███▌      | 7/20 [04:00<07:23, 34.11s/it]Task 5, Epoch 8/20 => Loss 0.158, Train_accy 94.54:  35%|███▌      | 7/20 [04:28<07:23, 34.11s/it]Task 5, Epoch 8/20 => Loss 0.158, Train_accy 94.54:  40%|████      | 8/20 [04:28<06:24, 32.05s/it]Task 5, Epoch 9/20 => Loss 0.146, Train_accy 95.14:  40%|████      | 8/20 [04:51<06:24, 32.05s/it]Task 5, Epoch 9/20 => Loss 0.146, Train_accy 95.14:  45%|████▌     | 9/20 [04:51<05:21, 29.25s/it]Task 5, Epoch 10/20 => Loss 0.136, Train_accy 94.96:  45%|████▌     | 9/20 [05:23<05:21, 29.25s/it]Task 5, Epoch 10/20 => Loss 0.136, Train_accy 94.96:  50%|█████     | 10/20 [05:23<04:59, 29.97s/it]Task 5, Epoch 11/20 => Loss 0.125, Train_accy 95.82:  50%|█████     | 10/20 [05:49<04:59, 29.97s/it]Task 5, Epoch 11/20 => Loss 0.125, Train_accy 95.82:  55%|█████▌    | 11/20 [05:49<04:20, 28.95s/it]Task 5, Epoch 12/20 => Loss 0.139, Train_accy 95.54:  55%|█████▌    | 11/20 [06:17<04:20, 28.95s/it]Task 5, Epoch 12/20 => Loss 0.139, Train_accy 95.54:  60%|██████    | 12/20 [06:17<03:48, 28.62s/it]Task 5, Epoch 13/20 => Loss 0.136, Train_accy 95.56:  60%|██████    | 12/20 [06:36<03:48, 28.62s/it]Task 5, Epoch 13/20 => Loss 0.136, Train_accy 95.56:  65%|██████▌   | 13/20 [06:36<03:00, 25.72s/it]Task 5, Epoch 14/20 => Loss 0.131, Train_accy 95.10:  65%|██████▌   | 13/20 [06:54<03:00, 25.72s/it]Task 5, Epoch 14/20 => Loss 0.131, Train_accy 95.10:  70%|███████   | 14/20 [06:54<02:20, 23.41s/it]Task 5, Epoch 15/20 => Loss 0.126, Train_accy 95.78:  70%|███████   | 14/20 [07:12<02:20, 23.41s/it]Task 5, Epoch 15/20 => Loss 0.126, Train_accy 95.78:  75%|███████▌  | 15/20 [07:12<01:48, 21.75s/it]Task 5, Epoch 16/20 => Loss 0.126, Train_accy 95.62:  75%|███████▌  | 15/20 [07:39<01:48, 21.75s/it]Task 5, Epoch 16/20 => Loss 0.126, Train_accy 95.62:  80%|████████  | 16/20 [07:39<01:33, 23.29s/it]Task 5, Epoch 17/20 => Loss 0.135, Train_accy 95.62:  80%|████████  | 16/20 [08:15<01:33, 23.29s/it]Task 5, Epoch 17/20 => Loss 0.135, Train_accy 95.62:  85%|████████▌ | 17/20 [08:15<01:21, 27.04s/it]Task 5, Epoch 18/20 => Loss 0.116, Train_accy 96.16:  85%|████████▌ | 17/20 [08:49<01:21, 27.04s/it]Task 5, Epoch 18/20 => Loss 0.116, Train_accy 96.16:  90%|█████████ | 18/20 [08:49<00:58, 29.27s/it]Task 5, Epoch 19/20 => Loss 0.116, Train_accy 96.06:  90%|█████████ | 18/20 [09:25<00:58, 29.27s/it]Task 5, Epoch 19/20 => Loss 0.116, Train_accy 96.06:  95%|█████████▌| 19/20 [09:25<00:31, 31.21s/it]Task 5, Epoch 20/20 => Loss 0.121, Train_accy 95.84:  95%|█████████▌| 19/20 [09:59<00:31, 31.21s/it]Task 5, Epoch 20/20 => Loss 0.121, Train_accy 95.84: 100%|██████████| 20/20 [09:59<00:00, 32.17s/it]Task 5, Epoch 20/20 => Loss 0.121, Train_accy 95.84: 100%|██████████| 20/20 [09:59<00:00, 29.99s/it]
+2024-08-13 01:38:04,833 [inflora.py] => Task 5, Epoch 20/20 => Loss 0.121, Train_accy 95.84
+Threshold:  0.9916666666666667
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 10/768 type remove
+Layer 2 : 16/768 type remove
+Layer 3 : 31/768 type remove
+Layer 4 : 42/768 type remove
+Layer 5 : 62/768 type remove
+Layer 6 : 101/768 type remove
+Layer 7 : 134/768 type remove
+Layer 8 : 205/768 type remove
+Layer 9 : 294/768 type remove
+Layer 10 : 337/768 type remove
+Layer 11 : 223/768 type remove
+Layer 12 : 292/768 type remove
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([768, 768])
+Layer 2 - Projection Matrix shape: torch.Size([768, 768])
+Layer 3 - Projection Matrix shape: torch.Size([768, 768])
+Layer 4 - Projection Matrix shape: torch.Size([768, 768])
+Layer 5 - Projection Matrix shape: torch.Size([768, 768])
+Layer 6 - Projection Matrix shape: torch.Size([768, 768])
+Layer 7 - Projection Matrix shape: torch.Size([768, 768])
+Layer 8 - Projection Matrix shape: torch.Size([768, 768])
+Layer 9 - Projection Matrix shape: torch.Size([768, 768])
+Layer 10 - Projection Matrix shape: torch.Size([768, 768])
+Layer 11 - Projection Matrix shape: torch.Size([768, 768])
+Layer 12 - Projection Matrix shape: torch.Size([768, 768])
+2024-08-13 01:38:52,548 [trainer.py] => Time:732.3301956653595
+10000 10000
+10000 10000
+2024-08-13 01:39:44,006 [trainer.py] => Time:51.45768117904663
+2024-08-13 01:39:44,006 [inflora.py] => Exemplar size: 0
+2024-08-13 01:39:44,006 [trainer.py] => CNN: {'total': 55.58, '00-49': 93.96, '50-99': 17.2, 'old': 61.76, 'new': 0.0}
+2024-08-13 01:39:44,006 [trainer.py] => CNN top1 curve: [95.34, 93.67, 79.9, 69.79, 61.87, 55.58]
+2024-08-13 01:39:44,006 [trainer.py] => CNN top1 with task curve: [95.34, 95.57, 81.69, 71.55, 63.58, 57.23]
+2024-08-13 01:39:44,006 [trainer.py] => CNN top1 task curve: [1.0, 0.9771666666666666, 0.8427142857142857, 0.744125, 0.6586666666666666, 0.5953]
+Average Accuracy (CNN): 76.02
+logs/cub/100_20_sip/InfLoRA/adam/4/0.95_1.0-0.0005/1993
+2024-08-13 01:39:47,279 [trainer.py] => config: ./configs/cub200_inflora.json
+2024-08-13 01:39:47,279 [trainer.py] => device: [device(type='cuda', index=0)]
+2024-08-13 01:39:47,279 [trainer.py] => prefix: reproduce
+2024-08-13 01:39:47,279 [trainer.py] => dataset: cub
+2024-08-13 01:39:47,279 [trainer.py] => data_path: /mnt/mydisk/ruoheng.li/lrh/Dataset
+2024-08-13 01:39:47,279 [trainer.py] => memory_size: 0
+2024-08-13 01:39:47,279 [trainer.py] => memory_per_class: 0
+2024-08-13 01:39:47,279 [trainer.py] => fixed_memory: True
+2024-08-13 01:39:47,279 [trainer.py] => shuffle: True
+2024-08-13 01:39:47,279 [trainer.py] => init_cls: 100
+2024-08-13 01:39:47,279 [trainer.py] => increment: 20
+2024-08-13 01:39:47,279 [trainer.py] => model_name: InfLoRA
+2024-08-13 01:39:47,279 [trainer.py] => net_type: sip
+2024-08-13 01:39:47,279 [trainer.py] => embd_dim: 768
+2024-08-13 01:39:47,279 [trainer.py] => num_heads: 12
+2024-08-13 01:39:47,279 [trainer.py] => total_sessions: 6
+2024-08-13 01:39:47,279 [trainer.py] => seed: 1993
+2024-08-13 01:39:47,279 [trainer.py] => EPSILON: 1e-08
+2024-08-13 01:39:47,279 [trainer.py] => init_epoch: 20
+2024-08-13 01:39:47,279 [trainer.py] => optim: adam
+2024-08-13 01:39:47,279 [trainer.py] => init_lr: 0.0005
+2024-08-13 01:39:47,279 [trainer.py] => init_lr_decay: 0.1
+2024-08-13 01:39:47,279 [trainer.py] => init_weight_decay: 0.0
+2024-08-13 01:39:47,279 [trainer.py] => epochs: 20
+2024-08-13 01:39:47,279 [trainer.py] => lrate: 0.0005
+2024-08-13 01:39:47,279 [trainer.py] => lrate_decay: 0.1
+2024-08-13 01:39:47,280 [trainer.py] => batch_size: 48
+2024-08-13 01:39:47,280 [trainer.py] => weight_decay: 0.0
+2024-08-13 01:39:47,280 [trainer.py] => rank: 4
+2024-08-13 01:39:47,280 [trainer.py] => lamb: 0.95
+2024-08-13 01:39:47,280 [trainer.py] => lame: 1.0
+2024-08-13 01:39:47,280 [trainer.py] => num_workers: 16
+2024-08-13 01:39:47,314 [data_manager.py] => [168, 136, 51, 9, 183, 101, 171, 99, 42, 159, 191, 70, 16, 188, 27, 10, 175, 26, 68, 187, 98, 6, 85, 35, 112, 43, 100, 0, 103, 181, 88, 59, 4, 2, 116, 174, 94, 80, 106, 1, 147, 17, 141, 131, 72, 23, 173, 54, 197, 118, 87, 32, 79, 104, 91, 19, 135, 107, 178, 36, 11, 199, 142, 8, 122, 3, 28, 57, 153, 172, 190, 56, 49, 44, 97, 62, 151, 169, 194, 55, 192, 12, 189, 78, 66, 180, 15, 137, 109, 134, 92, 119, 126, 52, 170, 40, 148, 65, 144, 64, 138, 45, 77, 89, 154, 90, 71, 193, 74, 30, 113, 143, 96, 84, 67, 50, 186, 156, 69, 21, 18, 111, 108, 58, 125, 157, 150, 110, 182, 129, 166, 83, 81, 60, 13, 165, 14, 176, 63, 117, 5, 22, 145, 121, 38, 41, 82, 127, 114, 20, 31, 53, 37, 163, 196, 130, 152, 162, 86, 76, 24, 34, 184, 149, 33, 128, 198, 155, 146, 167, 139, 120, 140, 102, 47, 25, 158, 123, 46, 164, 61, 7, 115, 75, 133, 160, 105, 132, 179, 124, 48, 73, 93, 39, 95, 195, 29, 177, 185, 161]
+2024-08-13 01:39:51,140 [trainer.py] => All params: 109161987
+2024-08-13 01:39:51,141 [trainer.py] => Trainable params: 109161987
+2024-08-13 01:39:51,141 [inflora.py] => Learning on 0-100
+  0%|          | 0/20 [00:00<?, ?it/s]Task 0, Epoch 1/20 => Loss 1.715, Train_accy 59.93:   0%|          | 0/20 [00:33<?, ?it/s]Task 0, Epoch 1/20 => Loss 1.715, Train_accy 59.93:   5%|▌         | 1/20 [00:33<10:35, 33.46s/it]Task 0, Epoch 2/20 => Loss 0.610, Train_accy 83.66:   5%|▌         | 1/20 [01:05<10:35, 33.46s/it]Task 0, Epoch 2/20 => Loss 0.610, Train_accy 83.66:  10%|█         | 2/20 [01:05<09:47, 32.65s/it]Task 0, Epoch 3/20 => Loss 0.483, Train_accy 86.88:  10%|█         | 2/20 [01:38<09:47, 32.65s/it]Task 0, Epoch 3/20 => Loss 0.483, Train_accy 86.88:  15%|█▌        | 3/20 [01:38<09:20, 33.00s/it]Task 0, Epoch 4/20 => Loss 0.415, Train_accy 88.62:  15%|█▌        | 3/20 [02:11<09:20, 33.00s/it]Task 0, Epoch 4/20 => Loss 0.415, Train_accy 88.62:  20%|██        | 4/20 [02:11<08:41, 32.62s/it]Task 0, Epoch 5/20 => Loss 0.396, Train_accy 89.16:  20%|██        | 4/20 [02:44<08:41, 32.62s/it]Task 0, Epoch 5/20 => Loss 0.396, Train_accy 89.16:  25%|██▌       | 5/20 [02:44<08:13, 32.89s/it]Task 0, Epoch 6/20 => Loss 0.356, Train_accy 90.39:  25%|██▌       | 5/20 [03:16<08:13, 32.89s/it]Task 0, Epoch 6/20 => Loss 0.356, Train_accy 90.39:  30%|███       | 6/20 [03:16<07:37, 32.65s/it]Task 0, Epoch 7/20 => Loss 0.340, Train_accy 90.73:  30%|███       | 6/20 [03:49<07:37, 32.65s/it]Task 0, Epoch 7/20 => Loss 0.340, Train_accy 90.73:  35%|███▌      | 7/20 [03:49<07:07, 32.88s/it]Task 0, Epoch 8/20 => Loss 0.323, Train_accy 91.20:  35%|███▌      | 7/20 [04:21<07:07, 32.88s/it]Task 0, Epoch 8/20 => Loss 0.323, Train_accy 91.20:  40%|████      | 8/20 [04:21<06:31, 32.63s/it]Task 0, Epoch 9/20 => Loss 0.299, Train_accy 91.67:  40%|████      | 8/20 [04:55<06:31, 32.63s/it]Task 0, Epoch 9/20 => Loss 0.299, Train_accy 91.67:  45%|████▌     | 9/20 [04:55<06:01, 32.87s/it]Task 0, Epoch 10/20 => Loss 0.306, Train_accy 91.48:  45%|████▌     | 9/20 [05:27<06:01, 32.87s/it]Task 0, Epoch 10/20 => Loss 0.306, Train_accy 91.48:  50%|█████     | 10/20 [05:27<05:26, 32.63s/it]Task 0, Epoch 11/20 => Loss 0.283, Train_accy 92.63:  50%|█████     | 10/20 [06:00<05:26, 32.63s/it]Task 0, Epoch 11/20 => Loss 0.283, Train_accy 92.63:  55%|█████▌    | 11/20 [06:00<04:55, 32.85s/it]Task 0, Epoch 12/20 => Loss 0.278, Train_accy 92.29:  55%|█████▌    | 11/20 [06:33<04:55, 32.85s/it]Task 0, Epoch 12/20 => Loss 0.278, Train_accy 92.29:  60%|██████    | 12/20 [06:33<04:21, 32.66s/it]Task 0, Epoch 13/20 => Loss 0.264, Train_accy 92.91:  60%|██████    | 12/20 [07:06<04:21, 32.66s/it]Task 0, Epoch 13/20 => Loss 0.264, Train_accy 92.91:  65%|██████▌   | 13/20 [07:06<03:50, 32.88s/it]Task 0, Epoch 14/20 => Loss 0.259, Train_accy 92.88:  65%|██████▌   | 13/20 [07:38<03:50, 32.88s/it]Task 0, Epoch 14/20 => Loss 0.259, Train_accy 92.88:  70%|███████   | 14/20 [07:38<03:15, 32.62s/it]Task 0, Epoch 15/20 => Loss 0.247, Train_accy 93.63:  70%|███████   | 14/20 [08:11<03:15, 32.62s/it]Task 0, Epoch 15/20 => Loss 0.247, Train_accy 93.63:  75%|███████▌  | 15/20 [08:11<02:44, 32.85s/it]Task 0, Epoch 16/20 => Loss 0.234, Train_accy 93.48:  75%|███████▌  | 15/20 [08:43<02:44, 32.85s/it]Task 0, Epoch 16/20 => Loss 0.234, Train_accy 93.48:  80%|████████  | 16/20 [08:43<02:10, 32.60s/it]Task 0, Epoch 17/20 => Loss 0.235, Train_accy 93.44:  80%|████████  | 16/20 [09:17<02:10, 32.60s/it]Task 0, Epoch 17/20 => Loss 0.235, Train_accy 93.44:  85%|████████▌ | 17/20 [09:17<01:38, 32.83s/it]Task 0, Epoch 18/20 => Loss 0.237, Train_accy 94.08:  85%|████████▌ | 17/20 [09:49<01:38, 32.83s/it]Task 0, Epoch 18/20 => Loss 0.237, Train_accy 94.08:  90%|█████████ | 18/20 [09:49<01:05, 32.64s/it]Task 0, Epoch 19/20 => Loss 0.218, Train_accy 94.06:  90%|█████████ | 18/20 [10:22<01:05, 32.64s/it]Task 0, Epoch 19/20 => Loss 0.218, Train_accy 94.06:  95%|█████████▌| 19/20 [10:22<00:32, 32.86s/it]Task 0, Epoch 20/20 => Loss 0.205, Train_accy 94.59:  95%|█████████▌| 19/20 [10:54<00:32, 32.86s/it]Task 0, Epoch 20/20 => Loss 0.205, Train_accy 94.59: 100%|██████████| 20/20 [10:54<00:00, 32.62s/it]Task 0, Epoch 20/20 => Loss 0.205, Train_accy 94.59: 100%|██████████| 20/20 [10:54<00:00, 32.74s/it]
+2024-08-13 01:52:13,043 [inflora.py] => Task 0, Epoch 20/20 => Loss 0.205, Train_accy 94.59
+Threshold:  0.95
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 6/768 type remove
+Layer 2 : 8/768 type remove
+Layer 3 : 11/768 type remove
+Layer 4 : 11/768 type remove
+Layer 5 : 16/768 type remove
+Layer 6 : 17/768 type remove
+Layer 7 : 15/768 type remove
+Layer 8 : 15/768 type remove
+Layer 9 : 15/768 type remove
+Layer 10 : 14/768 type remove
+Layer 11 : 4/768 type remove
+Layer 12 : 5/768 type remove
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([768, 768])
+Layer 2 - Projection Matrix shape: torch.Size([768, 768])
+Layer 3 - Projection Matrix shape: torch.Size([768, 768])
+Layer 4 - Projection Matrix shape: torch.Size([768, 768])
+Layer 5 - Projection Matrix shape: torch.Size([768, 768])
+Layer 6 - Projection Matrix shape: torch.Size([768, 768])
+Layer 7 - Projection Matrix shape: torch.Size([768, 768])
+Layer 8 - Projection Matrix shape: torch.Size([768, 768])
+Layer 9 - Projection Matrix shape: torch.Size([768, 768])
+Layer 10 - Projection Matrix shape: torch.Size([768, 768])
+Layer 11 - Projection Matrix shape: torch.Size([768, 768])
+Layer 12 - Projection Matrix shape: torch.Size([768, 768])
+2024-08-13 01:52:53,939 [trainer.py] => Time:782.797545671463
+1188 1188
+1188 1188
+2024-08-13 01:53:01,097 [trainer.py] => Time:7.1576011180877686
+2024-08-13 01:53:01,097 [inflora.py] => Exemplar size: 0
+2024-08-13 01:53:01,098 [trainer.py] => CNN: {'total': 91.84, '00-99': 91.84, 'old': 0, 'new': 91.84}
+2024-08-13 01:53:01,098 [trainer.py] => CNN top1 curve: [91.84]
+2024-08-13 01:53:01,098 [trainer.py] => CNN top1 with task curve: [91.84]
+2024-08-13 01:53:01,098 [trainer.py] => CNN top1 task curve: [1.0]
+Average Accuracy (CNN): 91.84
+2024-08-13 01:53:01,100 [trainer.py] => All params: 109161987
+2024-08-13 01:53:01,102 [trainer.py] => Trainable params: 150628
+2024-08-13 01:53:01,102 [inflora.py] => Learning on 100-120
+  0%|          | 0/20 [00:00<?, ?it/s]Task 1, Epoch 1/20 => Loss 2.624, Train_accy 45.48:   0%|          | 0/20 [00:05<?, ?it/s]Task 1, Epoch 1/20 => Loss 2.624, Train_accy 45.48:   5%|▌         | 1/20 [00:05<01:53,  5.97s/it]Task 1, Epoch 2/20 => Loss 0.353, Train_accy 90.86:   5%|▌         | 1/20 [00:11<01:53,  5.97s/it]Task 1, Epoch 2/20 => Loss 0.353, Train_accy 90.86:  10%|█         | 2/20 [00:11<01:47,  5.99s/it]Task 1, Epoch 3/20 => Loss 0.264, Train_accy 92.75:  10%|█         | 2/20 [00:17<01:47,  5.99s/it]Task 1, Epoch 3/20 => Loss 0.264, Train_accy 92.75:  15%|█▌        | 3/20 [00:17<01:41,  6.00s/it]Task 1, Epoch 4/20 => Loss 0.172, Train_accy 95.48:  15%|█▌        | 3/20 [00:24<01:41,  6.00s/it]Task 1, Epoch 4/20 => Loss 0.172, Train_accy 95.48:  20%|██        | 4/20 [00:24<01:37,  6.12s/it]Task 1, Epoch 5/20 => Loss 0.189, Train_accy 94.54:  20%|██        | 4/20 [00:29<01:37,  6.12s/it]Task 1, Epoch 5/20 => Loss 0.189, Train_accy 94.54:  25%|██▌       | 5/20 [00:29<01:27,  5.83s/it]Task 1, Epoch 6/20 => Loss 0.149, Train_accy 95.69:  25%|██▌       | 5/20 [00:34<01:27,  5.83s/it]Task 1, Epoch 6/20 => Loss 0.149, Train_accy 95.69:  30%|███       | 6/20 [00:34<01:14,  5.35s/it]Task 1, Epoch 7/20 => Loss 0.133, Train_accy 96.22:  30%|███       | 6/20 [00:39<01:14,  5.35s/it]Task 1, Epoch 7/20 => Loss 0.133, Train_accy 96.22:  35%|███▌      | 7/20 [00:39<01:10,  5.46s/it]Task 1, Epoch 8/20 => Loss 0.127, Train_accy 96.11:  35%|███▌      | 7/20 [00:47<01:10,  5.46s/it]Task 1, Epoch 8/20 => Loss 0.127, Train_accy 96.11:  40%|████      | 8/20 [00:47<01:13,  6.11s/it]Task 1, Epoch 9/20 => Loss 0.119, Train_accy 96.64:  40%|████      | 8/20 [00:54<01:13,  6.11s/it]Task 1, Epoch 9/20 => Loss 0.119, Train_accy 96.64:  45%|████▌     | 9/20 [00:54<01:12,  6.56s/it]Task 1, Epoch 10/20 => Loss 0.111, Train_accy 96.53:  45%|████▌     | 9/20 [01:02<01:12,  6.56s/it]Task 1, Epoch 10/20 => Loss 0.111, Train_accy 96.53:  50%|█████     | 10/20 [01:02<01:08,  6.86s/it]Task 1, Epoch 11/20 => Loss 0.136, Train_accy 95.27:  50%|█████     | 10/20 [01:07<01:08,  6.86s/it]Task 1, Epoch 11/20 => Loss 0.136, Train_accy 95.27:  55%|█████▌    | 11/20 [01:07<00:57,  6.43s/it]Task 1, Epoch 12/20 => Loss 0.113, Train_accy 96.22:  55%|█████▌    | 11/20 [01:13<00:57,  6.43s/it]Task 1, Epoch 12/20 => Loss 0.113, Train_accy 96.22:  60%|██████    | 12/20 [01:13<00:49,  6.21s/it]Task 1, Epoch 13/20 => Loss 0.129, Train_accy 95.48:  60%|██████    | 12/20 [01:19<00:49,  6.21s/it]Task 1, Epoch 13/20 => Loss 0.129, Train_accy 95.48:  65%|██████▌   | 13/20 [01:19<00:42,  6.10s/it]Task 1, Epoch 14/20 => Loss 0.118, Train_accy 96.22:  65%|██████▌   | 13/20 [01:25<00:42,  6.10s/it]Task 1, Epoch 14/20 => Loss 0.118, Train_accy 96.22:  70%|███████   | 14/20 [01:25<00:35,  5.98s/it]Task 1, Epoch 15/20 => Loss 0.099, Train_accy 96.85:  70%|███████   | 14/20 [01:30<00:35,  5.98s/it]Task 1, Epoch 15/20 => Loss 0.099, Train_accy 96.85:  75%|███████▌  | 15/20 [01:30<00:29,  5.90s/it]Task 1, Epoch 16/20 => Loss 0.108, Train_accy 96.64:  75%|███████▌  | 15/20 [01:36<00:29,  5.90s/it]Task 1, Epoch 16/20 => Loss 0.108, Train_accy 96.64:  80%|████████  | 16/20 [01:36<00:23,  5.96s/it]Task 1, Epoch 17/20 => Loss 0.121, Train_accy 95.80:  80%|████████  | 16/20 [01:42<00:23,  5.96s/it]Task 1, Epoch 17/20 => Loss 0.121, Train_accy 95.80:  85%|████████▌ | 17/20 [01:42<00:18,  6.01s/it]Task 1, Epoch 18/20 => Loss 0.109, Train_accy 96.85:  85%|████████▌ | 17/20 [01:49<00:18,  6.01s/it]Task 1, Epoch 18/20 => Loss 0.109, Train_accy 96.85:  90%|█████████ | 18/20 [01:49<00:12,  6.03s/it]Task 1, Epoch 19/20 => Loss 0.110, Train_accy 96.01:  90%|█████████ | 18/20 [01:55<00:12,  6.03s/it]Task 1, Epoch 19/20 => Loss 0.110, Train_accy 96.01:  95%|█████████▌| 19/20 [01:55<00:06,  6.06s/it]Task 1, Epoch 20/20 => Loss 0.135, Train_accy 95.80:  95%|█████████▌| 19/20 [02:01<00:06,  6.06s/it]Task 1, Epoch 20/20 => Loss 0.135, Train_accy 95.80: 100%|██████████| 20/20 [02:01<00:00,  6.05s/it]Task 1, Epoch 20/20 => Loss 0.135, Train_accy 95.80: 100%|██████████| 20/20 [02:01<00:00,  6.06s/it]
+2024-08-13 01:56:14,928 [inflora.py] => Task 1, Epoch 20/20 => Loss 0.135, Train_accy 95.80
+Threshold:  0.9583333333333333
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 7/768 type remove
+Layer 2 : 10/768 type remove
+Layer 3 : 13/768 type remove
+Layer 4 : 14/768 type remove
+Layer 5 : 21/768 type remove
+Layer 6 : 21/768 type remove
+Layer 7 : 21/768 type remove
+Layer 8 : 21/768 type remove
+Layer 9 : 21/768 type remove
+Layer 10 : 21/768 type remove
+Layer 11 : 9/768 type remove
+Layer 12 : 11/768 type remove
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([768, 768])
+Layer 2 - Projection Matrix shape: torch.Size([768, 768])
+Layer 3 - Projection Matrix shape: torch.Size([768, 768])
+Layer 4 - Projection Matrix shape: torch.Size([768, 768])
+Layer 5 - Projection Matrix shape: torch.Size([768, 768])
+Layer 6 - Projection Matrix shape: torch.Size([768, 768])
+Layer 7 - Projection Matrix shape: torch.Size([768, 768])
+Layer 8 - Projection Matrix shape: torch.Size([768, 768])
+Layer 9 - Projection Matrix shape: torch.Size([768, 768])
+Layer 10 - Projection Matrix shape: torch.Size([768, 768])
+Layer 11 - Projection Matrix shape: torch.Size([768, 768])
+Layer 12 - Projection Matrix shape: torch.Size([768, 768])
+2024-08-13 01:56:53,218 [trainer.py] => Time:232.11554336547852
+1416 1416
+1416 1416
+2024-08-13 01:56:56,476 [trainer.py] => Time:3.258591890335083
+2024-08-13 01:56:56,477 [inflora.py] => Exemplar size: 0
+2024-08-13 01:56:56,477 [trainer.py] => CNN: {'total': 86.65, '00-99': 91.33, '100-199': 62.28, 'old': 91.33, 'new': 62.28}
+2024-08-13 01:56:56,477 [trainer.py] => CNN top1 curve: [91.84, 86.65]
+2024-08-13 01:56:56,477 [trainer.py] => CNN top1 with task curve: [91.84, 92.44]
+2024-08-13 01:56:56,477 [trainer.py] => CNN top1 task curve: [1.0, 0.9357344632768362]
+Average Accuracy (CNN): 89.24
+2024-08-13 01:56:56,479 [trainer.py] => All params: 109161987
+2024-08-13 01:56:56,480 [trainer.py] => Trainable params: 150628
+2024-08-13 01:56:56,480 [inflora.py] => Learning on 120-140
+  0%|          | 0/20 [00:00<?, ?it/s]Task 2, Epoch 1/20 => Loss 2.171, Train_accy 46.44:   0%|          | 0/20 [00:07<?, ?it/s]Task 2, Epoch 1/20 => Loss 2.171, Train_accy 46.44:   5%|▌         | 1/20 [00:07<02:22,  7.48s/it]Task 2, Epoch 2/20 => Loss 0.538, Train_accy 82.81:   5%|▌         | 1/20 [00:15<02:22,  7.48s/it]Task 2, Epoch 2/20 => Loss 0.538, Train_accy 82.81:  10%|█         | 2/20 [00:15<02:15,  7.53s/it]Task 2, Epoch 3/20 => Loss 0.457, Train_accy 84.91:  10%|█         | 2/20 [00:21<02:15,  7.53s/it]Task 2, Epoch 3/20 => Loss 0.457, Train_accy 84.91:  15%|█▌        | 3/20 [00:21<02:00,  7.09s/it]Task 2, Epoch 4/20 => Loss 0.319, Train_accy 89.41:  15%|█▌        | 3/20 [00:29<02:00,  7.09s/it]Task 2, Epoch 4/20 => Loss 0.319, Train_accy 89.41:  20%|██        | 4/20 [00:29<01:57,  7.32s/it]Task 2, Epoch 5/20 => Loss 0.329, Train_accy 89.20:  20%|██        | 4/20 [00:36<01:57,  7.32s/it]Task 2, Epoch 5/20 => Loss 0.329, Train_accy 89.20:  25%|██▌       | 5/20 [00:36<01:51,  7.41s/it]Task 2, Epoch 6/20 => Loss 0.259, Train_accy 93.08:  25%|██▌       | 5/20 [00:44<01:51,  7.41s/it]Task 2, Epoch 6/20 => Loss 0.259, Train_accy 93.08:  30%|███       | 6/20 [00:44<01:44,  7.47s/it]Task 2, Epoch 7/20 => Loss 0.255, Train_accy 92.77:  30%|███       | 6/20 [00:51<01:44,  7.47s/it]Task 2, Epoch 7/20 => Loss 0.255, Train_accy 92.77:  35%|███▌      | 7/20 [00:51<01:37,  7.49s/it]Task 2, Epoch 8/20 => Loss 0.217, Train_accy 93.61:  35%|███▌      | 7/20 [00:59<01:37,  7.49s/it]Task 2, Epoch 8/20 => Loss 0.217, Train_accy 93.61:  40%|████      | 8/20 [00:59<01:30,  7.57s/it]Task 2, Epoch 9/20 => Loss 0.240, Train_accy 92.03:  40%|████      | 8/20 [01:07<01:30,  7.57s/it]Task 2, Epoch 9/20 => Loss 0.240, Train_accy 92.03:  45%|████▌     | 9/20 [01:07<01:23,  7.59s/it]Task 2, Epoch 10/20 => Loss 0.230, Train_accy 93.08:  45%|████▌     | 9/20 [01:14<01:23,  7.59s/it]Task 2, Epoch 10/20 => Loss 0.230, Train_accy 93.08:  50%|█████     | 10/20 [01:14<01:13,  7.38s/it]Task 2, Epoch 11/20 => Loss 0.202, Train_accy 93.61:  50%|█████     | 10/20 [01:21<01:13,  7.38s/it]Task 2, Epoch 11/20 => Loss 0.202, Train_accy 93.61:  55%|█████▌    | 11/20 [01:21<01:07,  7.47s/it]Task 2, Epoch 12/20 => Loss 0.232, Train_accy 93.50:  55%|█████▌    | 11/20 [01:29<01:07,  7.47s/it]Task 2, Epoch 12/20 => Loss 0.232, Train_accy 93.50:  60%|██████    | 12/20 [01:29<01:00,  7.52s/it]Task 2, Epoch 13/20 => Loss 0.187, Train_accy 94.03:  60%|██████    | 12/20 [01:37<01:00,  7.52s/it]Task 2, Epoch 13/20 => Loss 0.187, Train_accy 94.03:  65%|██████▌   | 13/20 [01:37<00:52,  7.54s/it]Task 2, Epoch 14/20 => Loss 0.174, Train_accy 94.76:  65%|██████▌   | 13/20 [01:44<00:52,  7.54s/it]Task 2, Epoch 14/20 => Loss 0.174, Train_accy 94.76:  70%|███████   | 14/20 [01:44<00:45,  7.54s/it]Task 2, Epoch 15/20 => Loss 0.205, Train_accy 93.29:  70%|███████   | 14/20 [01:52<00:45,  7.54s/it]Task 2, Epoch 15/20 => Loss 0.205, Train_accy 93.29:  75%|███████▌  | 15/20 [01:52<00:37,  7.54s/it]Task 2, Epoch 16/20 => Loss 0.216, Train_accy 93.19:  75%|███████▌  | 15/20 [01:59<00:37,  7.54s/it]Task 2, Epoch 16/20 => Loss 0.216, Train_accy 93.19:  80%|████████  | 16/20 [01:59<00:30,  7.55s/it]Task 2, Epoch 17/20 => Loss 0.215, Train_accy 92.98:  80%|████████  | 16/20 [02:07<00:30,  7.55s/it]Task 2, Epoch 17/20 => Loss 0.215, Train_accy 92.98:  85%|████████▌ | 17/20 [02:07<00:22,  7.55s/it]Task 2, Epoch 18/20 => Loss 0.219, Train_accy 93.40:  85%|████████▌ | 17/20 [02:13<00:22,  7.55s/it]Task 2, Epoch 18/20 => Loss 0.219, Train_accy 93.40:  90%|█████████ | 18/20 [02:13<00:14,  7.15s/it]Task 2, Epoch 19/20 => Loss 0.207, Train_accy 93.08:  90%|█████████ | 18/20 [02:21<00:14,  7.15s/it]Task 2, Epoch 19/20 => Loss 0.207, Train_accy 93.08:  95%|█████████▌| 19/20 [02:21<00:07,  7.29s/it]Task 2, Epoch 20/20 => Loss 0.157, Train_accy 95.39:  95%|█████████▌| 19/20 [02:28<00:07,  7.29s/it]Task 2, Epoch 20/20 => Loss 0.157, Train_accy 95.39: 100%|██████████| 20/20 [02:28<00:00,  7.37s/it]Task 2, Epoch 20/20 => Loss 0.157, Train_accy 95.39: 100%|██████████| 20/20 [02:28<00:00,  7.44s/it]
+2024-08-13 02:00:53,631 [inflora.py] => Task 2, Epoch 20/20 => Loss 0.157, Train_accy 95.39
+Threshold:  0.9666666666666667
+Skip Updating DualGPM for layer: 1
+Skip Updating DualGPM for layer: 2
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 7/768 type remove
+Layer 2 : 10/768 type remove
+Layer 3 : 15/768 type remove
+Layer 4 : 17/768 type remove
+Layer 5 : 27/768 type remove
+Layer 6 : 28/768 type remove
+Layer 7 : 27/768 type remove
+Layer 8 : 26/768 type remove
+Layer 9 : 26/768 type remove
+Layer 10 : 27/768 type remove
+Layer 11 : 14/768 type remove
+Layer 12 : 15/768 type remove
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([768, 768])
+Layer 2 - Projection Matrix shape: torch.Size([768, 768])
+Layer 3 - Projection Matrix shape: torch.Size([768, 768])
+Layer 4 - Projection Matrix shape: torch.Size([768, 768])
+Layer 5 - Projection Matrix shape: torch.Size([768, 768])
+Layer 6 - Projection Matrix shape: torch.Size([768, 768])
+Layer 7 - Projection Matrix shape: torch.Size([768, 768])
+Layer 8 - Projection Matrix shape: torch.Size([768, 768])
+Layer 9 - Projection Matrix shape: torch.Size([768, 768])
+Layer 10 - Projection Matrix shape: torch.Size([768, 768])
+Layer 11 - Projection Matrix shape: torch.Size([768, 768])
+Layer 12 - Projection Matrix shape: torch.Size([768, 768])
+2024-08-13 02:01:16,421 [trainer.py] => Time:259.94133615493774
+1641 1641
+1641 1641
+2024-08-13 02:01:23,358 [trainer.py] => Time:6.93677020072937
+2024-08-13 02:01:23,359 [inflora.py] => Exemplar size: 0
+2024-08-13 02:01:23,359 [trainer.py] => CNN: {'total': 74.47, '00-99': 91.08, '100-199': 30.91, 'old': 86.3, 'new': 0.0}
+2024-08-13 02:01:23,359 [trainer.py] => CNN top1 curve: [91.84, 86.65, 74.47]
+2024-08-13 02:01:23,359 [trainer.py] => CNN top1 with task curve: [91.84, 92.44, 80.07]
+2024-08-13 02:01:23,359 [trainer.py] => CNN top1 task curve: [1.0, 0.9357344632768362, 0.7982937233394272]
+Average Accuracy (CNN): 84.32
+2024-08-13 02:01:23,361 [trainer.py] => All params: 109161987
+2024-08-13 02:01:23,362 [trainer.py] => Trainable params: 150628
+2024-08-13 02:01:23,362 [inflora.py] => Learning on 140-160
+  0%|          | 0/20 [00:00<?, ?it/s]Task 3, Epoch 1/20 => Loss 2.221, Train_accy 47.93:   0%|          | 0/20 [00:07<?, ?it/s]Task 3, Epoch 1/20 => Loss 2.221, Train_accy 47.93:   5%|▌         | 1/20 [00:07<02:20,  7.38s/it]Task 3, Epoch 2/20 => Loss 0.446, Train_accy 86.41:   5%|▌         | 1/20 [00:14<02:20,  7.38s/it]Task 3, Epoch 2/20 => Loss 0.446, Train_accy 86.41:  10%|█         | 2/20 [00:14<02:12,  7.38s/it]Task 3, Epoch 3/20 => Loss 0.260, Train_accy 92.28:  10%|█         | 2/20 [00:22<02:12,  7.38s/it]Task 3, Epoch 3/20 => Loss 0.260, Train_accy 92.28:  15%|█▌        | 3/20 [00:22<02:05,  7.40s/it]Task 3, Epoch 4/20 => Loss 0.258, Train_accy 92.39:  15%|█▌        | 3/20 [00:29<02:05,  7.40s/it]Task 3, Epoch 4/20 => Loss 0.258, Train_accy 92.39:  20%|██        | 4/20 [00:29<01:58,  7.41s/it]Task 3, Epoch 5/20 => Loss 0.223, Train_accy 94.02:  20%|██        | 4/20 [00:36<01:58,  7.41s/it]Task 3, Epoch 5/20 => Loss 0.223, Train_accy 94.02:  25%|██▌       | 5/20 [00:36<01:50,  7.40s/it]Task 3, Epoch 6/20 => Loss 0.190, Train_accy 94.35:  25%|██▌       | 5/20 [00:44<01:50,  7.40s/it]Task 3, Epoch 6/20 => Loss 0.190, Train_accy 94.35:  30%|███       | 6/20 [00:44<01:43,  7.42s/it]Task 3, Epoch 7/20 => Loss 0.204, Train_accy 94.35:  30%|███       | 6/20 [00:50<01:43,  7.42s/it]Task 3, Epoch 7/20 => Loss 0.204, Train_accy 94.35:  35%|███▌      | 7/20 [00:50<01:30,  6.93s/it]Task 3, Epoch 8/20 => Loss 0.171, Train_accy 94.67:  35%|███▌      | 7/20 [00:57<01:30,  6.93s/it]Task 3, Epoch 8/20 => Loss 0.171, Train_accy 94.67:  40%|████      | 8/20 [00:57<01:24,  7.08s/it]Task 3, Epoch 9/20 => Loss 0.180, Train_accy 95.43:  40%|████      | 8/20 [01:05<01:24,  7.08s/it]Task 3, Epoch 9/20 => Loss 0.180, Train_accy 95.43:  45%|████▌     | 9/20 [01:05<01:19,  7.19s/it]Task 3, Epoch 10/20 => Loss 0.192, Train_accy 93.91:  45%|████▌     | 9/20 [01:12<01:19,  7.19s/it]Task 3, Epoch 10/20 => Loss 0.192, Train_accy 93.91:  50%|█████     | 10/20 [01:12<01:12,  7.30s/it]Task 3, Epoch 11/20 => Loss 0.164, Train_accy 95.54:  50%|█████     | 10/20 [01:20<01:12,  7.30s/it]Task 3, Epoch 11/20 => Loss 0.164, Train_accy 95.54:  55%|█████▌    | 11/20 [01:20<01:06,  7.34s/it]Task 3, Epoch 12/20 => Loss 0.195, Train_accy 93.59:  55%|█████▌    | 11/20 [01:27<01:06,  7.34s/it]Task 3, Epoch 12/20 => Loss 0.195, Train_accy 93.59:  60%|██████    | 12/20 [01:27<00:58,  7.36s/it]Task 3, Epoch 13/20 => Loss 0.139, Train_accy 96.20:  60%|██████    | 12/20 [01:34<00:58,  7.36s/it]Task 3, Epoch 13/20 => Loss 0.139, Train_accy 96.20:  65%|██████▌   | 13/20 [01:34<00:51,  7.36s/it]Task 3, Epoch 14/20 => Loss 0.207, Train_accy 94.46:  65%|██████▌   | 13/20 [01:42<00:51,  7.36s/it]Task 3, Epoch 14/20 => Loss 0.207, Train_accy 94.46:  70%|███████   | 14/20 [01:42<00:44,  7.39s/it]Task 3, Epoch 15/20 => Loss 0.123, Train_accy 96.63:  70%|███████   | 14/20 [01:48<00:44,  7.39s/it]Task 3, Epoch 15/20 => Loss 0.123, Train_accy 96.63:  75%|███████▌  | 15/20 [01:48<00:34,  6.99s/it]Task 3, Epoch 16/20 => Loss 0.132, Train_accy 95.54:  75%|███████▌  | 15/20 [01:55<00:34,  6.99s/it]Task 3, Epoch 16/20 => Loss 0.132, Train_accy 95.54:  80%|████████  | 16/20 [01:55<00:28,  7.13s/it]Task 3, Epoch 17/20 => Loss 0.145, Train_accy 95.98:  80%|████████  | 16/20 [02:03<00:28,  7.13s/it]Task 3, Epoch 17/20 => Loss 0.145, Train_accy 95.98:  85%|████████▌ | 17/20 [02:03<00:21,  7.19s/it]Task 3, Epoch 18/20 => Loss 0.142, Train_accy 96.30:  85%|████████▌ | 17/20 [02:10<00:21,  7.19s/it]Task 3, Epoch 18/20 => Loss 0.142, Train_accy 96.30:  90%|█████████ | 18/20 [02:10<00:14,  7.30s/it]Task 3, Epoch 19/20 => Loss 0.115, Train_accy 96.30:  90%|█████████ | 18/20 [02:18<00:14,  7.30s/it]Task 3, Epoch 19/20 => Loss 0.115, Train_accy 96.30:  95%|█████████▌| 19/20 [02:18<00:07,  7.33s/it]Task 3, Epoch 20/20 => Loss 0.152, Train_accy 95.98:  95%|█████████▌| 19/20 [02:25<00:07,  7.33s/it]Task 3, Epoch 20/20 => Loss 0.152, Train_accy 95.98: 100%|██████████| 20/20 [02:25<00:00,  7.34s/it]Task 3, Epoch 20/20 => Loss 0.152, Train_accy 95.98: 100%|██████████| 20/20 [02:25<00:00,  7.28s/it]
+2024-08-13 02:04:58,506 [inflora.py] => Task 3, Epoch 20/20 => Loss 0.152, Train_accy 95.98
+Threshold:  0.975
+Skip Updating DualGPM for layer: 1
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 7/768 type remove
+Layer 2 : 11/768 type remove
+Layer 3 : 19/768 type remove
+Layer 4 : 22/768 type remove
+Layer 5 : 34/768 type remove
+Layer 6 : 35/768 type remove
+Layer 7 : 33/768 type remove
+Layer 8 : 34/768 type remove
+Layer 9 : 35/768 type remove
+Layer 10 : 38/768 type remove
+Layer 11 : 22/768 type remove
+Layer 12 : 21/768 type remove
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([768, 768])
+Layer 2 - Projection Matrix shape: torch.Size([768, 768])
+Layer 3 - Projection Matrix shape: torch.Size([768, 768])
+Layer 4 - Projection Matrix shape: torch.Size([768, 768])
+Layer 5 - Projection Matrix shape: torch.Size([768, 768])
+Layer 6 - Projection Matrix shape: torch.Size([768, 768])
+Layer 7 - Projection Matrix shape: torch.Size([768, 768])
+Layer 8 - Projection Matrix shape: torch.Size([768, 768])
+Layer 9 - Projection Matrix shape: torch.Size([768, 768])
+Layer 10 - Projection Matrix shape: torch.Size([768, 768])
+Layer 11 - Projection Matrix shape: torch.Size([768, 768])
+Layer 12 - Projection Matrix shape: torch.Size([768, 768])
+2024-08-13 02:05:18,451 [trainer.py] => Time:235.08850812911987
+1891 1891
+1891 1891
+2024-08-13 02:05:29,623 [trainer.py] => Time:11.172276020050049
+2024-08-13 02:05:29,623 [inflora.py] => Exemplar size: 0
+2024-08-13 02:05:29,623 [trainer.py] => CNN: {'total': 63.93, '00-99': 90.4, '100-199': 19.2, 'old': 73.67, 'new': 0.0}
+2024-08-13 02:05:29,623 [trainer.py] => CNN top1 curve: [91.84, 86.65, 74.47, 63.93]
+2024-08-13 02:05:29,623 [trainer.py] => CNN top1 with task curve: [91.84, 92.44, 80.07, 69.33]
+2024-08-13 02:05:29,624 [trainer.py] => CNN top1 task curve: [1.0, 0.9357344632768362, 0.7982937233394272, 0.6869381279746166]
+Average Accuracy (CNN): 79.22
+2024-08-13 02:05:29,625 [trainer.py] => All params: 109161987
+2024-08-13 02:05:29,626 [trainer.py] => Trainable params: 150628
+2024-08-13 02:05:29,626 [inflora.py] => Learning on 160-180
+  0%|          | 0/20 [00:00<?, ?it/s]Task 4, Epoch 1/20 => Loss 2.130, Train_accy 50.84:   0%|          | 0/20 [00:07<?, ?it/s]Task 4, Epoch 1/20 => Loss 2.130, Train_accy 50.84:   5%|▌         | 1/20 [00:07<02:25,  7.66s/it]Task 4, Epoch 2/20 => Loss 0.393, Train_accy 88.73:   5%|▌         | 1/20 [00:15<02:25,  7.66s/it]Task 4, Epoch 2/20 => Loss 0.393, Train_accy 88.73:  10%|█         | 2/20 [00:15<02:17,  7.66s/it]Task 4, Epoch 3/20 => Loss 0.269, Train_accy 91.86:  10%|█         | 2/20 [00:23<02:17,  7.66s/it]Task 4, Epoch 3/20 => Loss 0.269, Train_accy 91.86:  15%|█▌        | 3/20 [00:23<02:10,  7.68s/it]Task 4, Epoch 4/20 => Loss 0.227, Train_accy 93.01:  15%|█▌        | 3/20 [00:29<02:10,  7.68s/it]Task 4, Epoch 4/20 => Loss 0.227, Train_accy 93.01:  20%|██        | 4/20 [00:29<01:54,  7.16s/it]Task 4, Epoch 5/20 => Loss 0.231, Train_accy 92.80:  20%|██        | 4/20 [00:37<01:54,  7.16s/it]Task 4, Epoch 5/20 => Loss 0.231, Train_accy 92.80:  25%|██▌       | 5/20 [00:37<01:50,  7.34s/it]Task 4, Epoch 6/20 => Loss 0.216, Train_accy 94.05:  25%|██▌       | 5/20 [00:44<01:50,  7.34s/it]Task 4, Epoch 6/20 => Loss 0.216, Train_accy 94.05:  30%|███       | 6/20 [00:44<01:44,  7.46s/it]Task 4, Epoch 7/20 => Loss 0.158, Train_accy 95.62:  30%|███       | 6/20 [00:52<01:44,  7.46s/it]Task 4, Epoch 7/20 => Loss 0.158, Train_accy 95.62:  35%|███▌      | 7/20 [00:52<01:37,  7.53s/it]Task 4, Epoch 8/20 => Loss 0.165, Train_accy 94.47:  35%|███▌      | 7/20 [01:00<01:37,  7.53s/it]Task 4, Epoch 8/20 => Loss 0.165, Train_accy 94.47:  40%|████      | 8/20 [01:00<01:30,  7.58s/it]Task 4, Epoch 9/20 => Loss 0.206, Train_accy 93.22:  40%|████      | 8/20 [01:07<01:30,  7.58s/it]Task 4, Epoch 9/20 => Loss 0.206, Train_accy 93.22:  45%|████▌     | 9/20 [01:07<01:23,  7.63s/it]Task 4, Epoch 10/20 => Loss 0.203, Train_accy 93.95:  45%|████▌     | 9/20 [01:15<01:23,  7.63s/it]Task 4, Epoch 10/20 => Loss 0.203, Train_accy 93.95:  50%|█████     | 10/20 [01:15<01:16,  7.65s/it]Task 4, Epoch 11/20 => Loss 0.212, Train_accy 93.32:  50%|█████     | 10/20 [01:23<01:16,  7.65s/it]Task 4, Epoch 11/20 => Loss 0.212, Train_accy 93.32:  55%|█████▌    | 11/20 [01:23<01:08,  7.66s/it]Task 4, Epoch 12/20 => Loss 0.169, Train_accy 94.57:  55%|█████▌    | 11/20 [01:30<01:08,  7.66s/it]Task 4, Epoch 12/20 => Loss 0.169, Train_accy 94.57:  60%|██████    | 12/20 [01:30<01:00,  7.53s/it]Task 4, Epoch 13/20 => Loss 0.161, Train_accy 95.41:  60%|██████    | 12/20 [01:38<01:00,  7.53s/it]Task 4, Epoch 13/20 => Loss 0.161, Train_accy 95.41:  65%|██████▌   | 13/20 [01:38<00:53,  7.57s/it]Task 4, Epoch 14/20 => Loss 0.161, Train_accy 95.30:  65%|██████▌   | 13/20 [01:45<00:53,  7.57s/it]Task 4, Epoch 14/20 => Loss 0.161, Train_accy 95.30:  70%|███████   | 14/20 [01:45<00:45,  7.60s/it]Task 4, Epoch 15/20 => Loss 0.160, Train_accy 94.78:  70%|███████   | 14/20 [01:53<00:45,  7.60s/it]Task 4, Epoch 15/20 => Loss 0.160, Train_accy 94.78:  75%|███████▌  | 15/20 [01:53<00:38,  7.64s/it]Task 4, Epoch 16/20 => Loss 0.162, Train_accy 95.30:  75%|███████▌  | 15/20 [02:01<00:38,  7.64s/it]Task 4, Epoch 16/20 => Loss 0.162, Train_accy 95.30:  80%|████████  | 16/20 [02:01<00:30,  7.67s/it]Task 4, Epoch 17/20 => Loss 0.143, Train_accy 95.51:  80%|████████  | 16/20 [02:08<00:30,  7.67s/it]Task 4, Epoch 17/20 => Loss 0.143, Train_accy 95.51:  85%|████████▌ | 17/20 [02:08<00:22,  7.66s/it]Task 4, Epoch 18/20 => Loss 0.193, Train_accy 94.15:  85%|████████▌ | 17/20 [02:16<00:22,  7.66s/it]Task 4, Epoch 18/20 => Loss 0.193, Train_accy 94.15:  90%|█████████ | 18/20 [02:16<00:15,  7.67s/it]Task 4, Epoch 19/20 => Loss 0.173, Train_accy 94.57:  90%|█████████ | 18/20 [02:22<00:15,  7.67s/it]Task 4, Epoch 19/20 => Loss 0.173, Train_accy 94.57:  95%|█████████▌| 19/20 [02:22<00:07,  7.27s/it]Task 4, Epoch 20/20 => Loss 0.142, Train_accy 95.62:  95%|█████████▌| 19/20 [02:30<00:07,  7.27s/it]Task 4, Epoch 20/20 => Loss 0.142, Train_accy 95.62: 100%|██████████| 20/20 [02:30<00:00,  7.40s/it]Task 4, Epoch 20/20 => Loss 0.142, Train_accy 95.62: 100%|██████████| 20/20 [02:30<00:00,  7.53s/it]
+2024-08-13 02:09:09,487 [inflora.py] => Task 4, Epoch 20/20 => Loss 0.142, Train_accy 95.62
+Threshold:  0.9833333333333333
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 8/768 type remove
+Layer 2 : 12/768 type remove
+Layer 3 : 26/768 type remove
+Layer 4 : 33/768 type remove
+Layer 5 : 48/768 type remove
+Layer 6 : 49/768 type remove
+Layer 7 : 46/768 type remove
+Layer 8 : 47/768 type remove
+Layer 9 : 50/768 type remove
+Layer 10 : 55/768 type remove
+Layer 11 : 34/768 type remove
+Layer 12 : 30/768 type remove
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([768, 768])
+Layer 2 - Projection Matrix shape: torch.Size([768, 768])
+Layer 3 - Projection Matrix shape: torch.Size([768, 768])
+Layer 4 - Projection Matrix shape: torch.Size([768, 768])
+Layer 5 - Projection Matrix shape: torch.Size([768, 768])
+Layer 6 - Projection Matrix shape: torch.Size([768, 768])
+Layer 7 - Projection Matrix shape: torch.Size([768, 768])
+Layer 8 - Projection Matrix shape: torch.Size([768, 768])
+Layer 9 - Projection Matrix shape: torch.Size([768, 768])
+Layer 10 - Projection Matrix shape: torch.Size([768, 768])
+Layer 11 - Projection Matrix shape: torch.Size([768, 768])
+Layer 12 - Projection Matrix shape: torch.Size([768, 768])
+2024-08-13 02:09:27,254 [trainer.py] => Time:237.62711453437805
+2128 2128
+2128 2128
+2024-08-13 02:09:39,721 [trainer.py] => Time:12.46704649925232
+2024-08-13 02:09:39,721 [inflora.py] => Exemplar size: 0
+2024-08-13 02:09:39,721 [trainer.py] => CNN: {'total': 56.25, '00-99': 89.39, '100-199': 14.36, 'old': 63.3, 'new': 0.0}
+2024-08-13 02:09:39,722 [trainer.py] => CNN top1 curve: [91.84, 86.65, 74.47, 63.93, 56.25]
+2024-08-13 02:09:39,722 [trainer.py] => CNN top1 with task curve: [91.84, 92.44, 80.07, 69.33, 61.51]
+2024-08-13 02:09:39,722 [trainer.py] => CNN top1 task curve: [1.0, 0.9357344632768362, 0.7982937233394272, 0.6869381279746166, 0.6033834586466166]
+Average Accuracy (CNN): 74.63
+2024-08-13 02:09:39,723 [trainer.py] => All params: 109161987
+2024-08-13 02:09:39,725 [trainer.py] => Trainable params: 150628
+2024-08-13 02:09:39,725 [inflora.py] => Learning on 180-200
+  0%|          | 0/20 [00:00<?, ?it/s]Task 5, Epoch 1/20 => Loss 2.232, Train_accy 49.68:   0%|          | 0/20 [00:06<?, ?it/s]Task 5, Epoch 1/20 => Loss 2.232, Train_accy 49.68:   5%|▌         | 1/20 [00:06<02:01,  6.40s/it]Task 5, Epoch 2/20 => Loss 0.418, Train_accy 87.61:   5%|▌         | 1/20 [00:14<02:01,  6.40s/it]Task 5, Epoch 2/20 => Loss 0.418, Train_accy 87.61:  10%|█         | 2/20 [00:14<02:10,  7.24s/it]Task 5, Epoch 3/20 => Loss 0.280, Train_accy 91.81:  10%|█         | 2/20 [00:21<02:10,  7.24s/it]Task 5, Epoch 3/20 => Loss 0.280, Train_accy 91.81:  15%|█▌        | 3/20 [00:21<02:06,  7.46s/it]Task 5, Epoch 4/20 => Loss 0.274, Train_accy 91.70:  15%|█▌        | 3/20 [00:29<02:06,  7.46s/it]Task 5, Epoch 4/20 => Loss 0.274, Train_accy 91.70:  20%|██        | 4/20 [00:29<02:01,  7.57s/it]Task 5, Epoch 5/20 => Loss 0.260, Train_accy 91.91:  20%|██        | 4/20 [00:37<02:01,  7.57s/it]Task 5, Epoch 5/20 => Loss 0.260, Train_accy 91.91:  25%|██▌       | 5/20 [00:37<01:54,  7.60s/it]Task 5, Epoch 6/20 => Loss 0.221, Train_accy 93.17:  25%|██▌       | 5/20 [00:45<01:54,  7.60s/it]Task 5, Epoch 6/20 => Loss 0.221, Train_accy 93.17:  30%|███       | 6/20 [00:45<01:46,  7.63s/it]Task 5, Epoch 7/20 => Loss 0.184, Train_accy 94.96:  30%|███       | 6/20 [00:52<01:46,  7.63s/it]Task 5, Epoch 7/20 => Loss 0.184, Train_accy 94.96:  35%|███▌      | 7/20 [00:52<01:39,  7.66s/it]Task 5, Epoch 8/20 => Loss 0.181, Train_accy 93.91:  35%|███▌      | 7/20 [00:59<01:39,  7.66s/it]Task 5, Epoch 8/20 => Loss 0.181, Train_accy 93.91:  40%|████      | 8/20 [00:59<01:30,  7.51s/it]Task 5, Epoch 9/20 => Loss 0.189, Train_accy 94.12:  40%|████      | 8/20 [01:07<01:30,  7.51s/it]Task 5, Epoch 9/20 => Loss 0.189, Train_accy 94.12:  45%|████▌     | 9/20 [01:07<01:23,  7.61s/it]Task 5, Epoch 10/20 => Loss 0.176, Train_accy 94.85:  45%|████▌     | 9/20 [01:15<01:23,  7.61s/it]Task 5, Epoch 10/20 => Loss 0.176, Train_accy 94.85:  50%|█████     | 10/20 [01:15<01:16,  7.63s/it]Task 5, Epoch 11/20 => Loss 0.181, Train_accy 94.64:  50%|█████     | 10/20 [01:23<01:16,  7.63s/it]Task 5, Epoch 11/20 => Loss 0.181, Train_accy 94.64:  55%|█████▌    | 11/20 [01:23<01:08,  7.65s/it]Task 5, Epoch 12/20 => Loss 0.165, Train_accy 94.64:  55%|█████▌    | 11/20 [01:30<01:08,  7.65s/it]Task 5, Epoch 12/20 => Loss 0.165, Train_accy 94.64:  60%|██████    | 12/20 [01:30<01:01,  7.65s/it]Task 5, Epoch 13/20 => Loss 0.168, Train_accy 94.96:  60%|██████    | 12/20 [01:38<01:01,  7.65s/it]Task 5, Epoch 13/20 => Loss 0.168, Train_accy 94.96:  65%|██████▌   | 13/20 [01:38<00:53,  7.66s/it]Task 5, Epoch 14/20 => Loss 0.145, Train_accy 95.90:  65%|██████▌   | 13/20 [01:46<00:53,  7.66s/it]Task 5, Epoch 14/20 => Loss 0.145, Train_accy 95.90:  70%|███████   | 14/20 [01:46<00:46,  7.69s/it]Task 5, Epoch 15/20 => Loss 0.173, Train_accy 95.06:  70%|███████   | 14/20 [01:53<00:46,  7.69s/it]Task 5, Epoch 15/20 => Loss 0.173, Train_accy 95.06:  75%|███████▌  | 15/20 [01:53<00:38,  7.71s/it]Task 5, Epoch 16/20 => Loss 0.136, Train_accy 95.69:  75%|███████▌  | 15/20 [02:00<00:38,  7.71s/it]Task 5, Epoch 16/20 => Loss 0.136, Train_accy 95.69:  80%|████████  | 16/20 [02:00<00:29,  7.28s/it]Task 5, Epoch 17/20 => Loss 0.169, Train_accy 94.43:  80%|████████  | 16/20 [02:08<00:29,  7.28s/it]Task 5, Epoch 17/20 => Loss 0.169, Train_accy 94.43:  85%|████████▌ | 17/20 [02:08<00:22,  7.44s/it]Task 5, Epoch 18/20 => Loss 0.180, Train_accy 94.43:  85%|████████▌ | 17/20 [02:15<00:22,  7.44s/it]Task 5, Epoch 18/20 => Loss 0.180, Train_accy 94.43:  90%|█████████ | 18/20 [02:15<00:15,  7.52s/it]Task 5, Epoch 19/20 => Loss 0.163, Train_accy 95.06:  90%|█████████ | 18/20 [02:23<00:15,  7.52s/it]Task 5, Epoch 19/20 => Loss 0.163, Train_accy 95.06:  95%|█████████▌| 19/20 [02:23<00:07,  7.58s/it]Task 5, Epoch 20/20 => Loss 0.145, Train_accy 95.38:  95%|█████████▌| 19/20 [02:31<00:07,  7.58s/it]Task 5, Epoch 20/20 => Loss 0.145, Train_accy 95.38: 100%|██████████| 20/20 [02:31<00:00,  7.66s/it]Task 5, Epoch 20/20 => Loss 0.145, Train_accy 95.38: 100%|██████████| 20/20 [02:31<00:00,  7.57s/it]
+2024-08-13 02:13:18,693 [inflora.py] => Task 5, Epoch 20/20 => Loss 0.145, Train_accy 95.38
+Threshold:  0.9916666666666667
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 9/768 type remove
+Layer 2 : 17/768 type remove
+Layer 3 : 49/768 type remove
+Layer 4 : 63/768 type remove
+Layer 5 : 84/768 type remove
+Layer 6 : 89/768 type remove
+Layer 7 : 87/768 type remove
+Layer 8 : 94/768 type remove
+Layer 9 : 101/768 type remove
+Layer 10 : 112/768 type remove
+Layer 11 : 70/768 type remove
+Layer 12 : 51/768 type remove
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([768, 768])
+Layer 2 - Projection Matrix shape: torch.Size([768, 768])
+Layer 3 - Projection Matrix shape: torch.Size([768, 768])
+Layer 4 - Projection Matrix shape: torch.Size([768, 768])
+Layer 5 - Projection Matrix shape: torch.Size([768, 768])
+Layer 6 - Projection Matrix shape: torch.Size([768, 768])
+Layer 7 - Projection Matrix shape: torch.Size([768, 768])
+Layer 8 - Projection Matrix shape: torch.Size([768, 768])
+Layer 9 - Projection Matrix shape: torch.Size([768, 768])
+Layer 10 - Projection Matrix shape: torch.Size([768, 768])
+Layer 11 - Projection Matrix shape: torch.Size([768, 768])
+Layer 12 - Projection Matrix shape: torch.Size([768, 768])
+2024-08-13 02:13:34,410 [trainer.py] => Time:234.6853380203247
+2358 2358
+2358 2358
+2024-08-13 02:13:41,645 [trainer.py] => Time:7.23375678062439
+2024-08-13 02:13:41,645 [inflora.py] => Exemplar size: 0
+2024-08-13 02:13:41,645 [trainer.py] => CNN: {'total': 49.96, '00-99': 87.96, '100-199': 11.37, 'old': 55.36, 'new': 0.0}
+2024-08-13 02:13:41,645 [trainer.py] => CNN top1 curve: [91.84, 86.65, 74.47, 63.93, 56.25, 49.96]
+2024-08-13 02:13:41,645 [trainer.py] => CNN top1 with task curve: [91.84, 92.44, 80.07, 69.33, 61.51, 55.39]
+2024-08-13 02:13:41,645 [trainer.py] => CNN top1 task curve: [1.0, 0.9357344632768362, 0.7982937233394272, 0.6869381279746166, 0.6033834586466166, 0.5335029686174725]
+Average Accuracy (CNN): 70.52
+logs/imagenet_a/100_20_sip/InfLoRA/adam/4/0.95_1.0-0.0005/1993
+2024-08-13 02:13:45,123 [trainer.py] => config: ./configs/ina_inflora.json
+2024-08-13 02:13:45,142 [trainer.py] => device: [device(type='cuda', index=0)]
+2024-08-13 02:13:45,142 [trainer.py] => prefix: reproduce
+2024-08-13 02:13:45,142 [trainer.py] => dataset: imagenet_a
+2024-08-13 02:13:45,143 [trainer.py] => data_path: /mnt/mydisk/ruoheng.li/lrh/Dataset
+2024-08-13 02:13:45,143 [trainer.py] => memory_size: 0
+2024-08-13 02:13:45,143 [trainer.py] => memory_per_class: 0
+2024-08-13 02:13:45,143 [trainer.py] => fixed_memory: True
+2024-08-13 02:13:45,143 [trainer.py] => shuffle: True
+2024-08-13 02:13:45,143 [trainer.py] => init_cls: 100
+2024-08-13 02:13:45,143 [trainer.py] => increment: 20
+2024-08-13 02:13:45,143 [trainer.py] => model_name: InfLoRA
+2024-08-13 02:13:45,143 [trainer.py] => net_type: sip
+2024-08-13 02:13:45,143 [trainer.py] => embd_dim: 768
+2024-08-13 02:13:45,143 [trainer.py] => num_heads: 12
+2024-08-13 02:13:45,143 [trainer.py] => total_sessions: 6
+2024-08-13 02:13:45,143 [trainer.py] => seed: 1993
+2024-08-13 02:13:45,143 [trainer.py] => EPSILON: 1e-08
+2024-08-13 02:13:45,143 [trainer.py] => init_epoch: 20
+2024-08-13 02:13:45,143 [trainer.py] => optim: adam
+2024-08-13 02:13:45,143 [trainer.py] => init_lr: 0.0005
+2024-08-13 02:13:45,143 [trainer.py] => init_lr_decay: 0.1
+2024-08-13 02:13:45,143 [trainer.py] => init_weight_decay: 0.0
+2024-08-13 02:13:45,143 [trainer.py] => epochs: 20
+2024-08-13 02:13:45,143 [trainer.py] => lrate: 0.0005
+2024-08-13 02:13:45,143 [trainer.py] => lrate_decay: 0.1
+2024-08-13 02:13:45,143 [trainer.py] => batch_size: 48
+2024-08-13 02:13:45,143 [trainer.py] => weight_decay: 0.0
+2024-08-13 02:13:45,143 [trainer.py] => rank: 4
+2024-08-13 02:13:45,143 [trainer.py] => lamb: 0.95
+2024-08-13 02:13:45,143 [trainer.py] => lame: 1.0
+2024-08-13 02:13:45,143 [trainer.py] => num_workers: 16
+2024-08-13 02:13:45,169 [data_manager.py] => [168, 136, 51, 9, 183, 101, 171, 99, 42, 159, 191, 70, 16, 188, 27, 10, 175, 26, 68, 187, 98, 6, 85, 35, 112, 43, 100, 0, 103, 181, 88, 59, 4, 2, 116, 174, 94, 80, 106, 1, 147, 17, 141, 131, 72, 23, 173, 54, 197, 118, 87, 32, 79, 104, 91, 19, 135, 107, 178, 36, 11, 199, 142, 8, 122, 3, 28, 57, 153, 172, 190, 56, 49, 44, 97, 62, 151, 169, 194, 55, 192, 12, 189, 78, 66, 180, 15, 137, 109, 134, 92, 119, 126, 52, 170, 40, 148, 65, 144, 64, 138, 45, 77, 89, 154, 90, 71, 193, 74, 30, 113, 143, 96, 84, 67, 50, 186, 156, 69, 21, 18, 111, 108, 58, 125, 157, 150, 110, 182, 129, 166, 83, 81, 60, 13, 165, 14, 176, 63, 117, 5, 22, 145, 121, 38, 41, 82, 127, 114, 20, 31, 53, 37, 163, 196, 130, 152, 162, 86, 76, 24, 34, 184, 149, 33, 128, 198, 155, 146, 167, 139, 120, 140, 102, 47, 25, 158, 123, 46, 164, 61, 7, 115, 75, 133, 160, 105, 132, 179, 124, 48, 73, 93, 39, 95, 195, 29, 177, 185, 161]
+2024-08-13 02:13:49,836 [trainer.py] => All params: 109161987
+2024-08-13 02:13:49,838 [trainer.py] => Trainable params: 109161987
+2024-08-13 02:13:49,838 [inflora.py] => Learning on 0-100
+  0%|          | 0/20 [00:00<?, ?it/s]Task 0, Epoch 1/20 => Loss 3.509, Train_accy 24.26:   0%|          | 0/20 [00:18<?, ?it/s]Task 0, Epoch 1/20 => Loss 3.509, Train_accy 24.26:   5%|▌         | 1/20 [00:18<05:48, 18.35s/it]Task 0, Epoch 2/20 => Loss 1.577, Train_accy 60.70:   5%|▌         | 1/20 [00:30<05:48, 18.35s/it]Task 0, Epoch 2/20 => Loss 1.577, Train_accy 60.70:  10%|█         | 2/20 [00:30<04:28, 14.89s/it]Task 0, Epoch 3/20 => Loss 1.052, Train_accy 72.04:  10%|█         | 2/20 [00:42<04:28, 14.89s/it]Task 0, Epoch 3/20 => Loss 1.052, Train_accy 72.04:  15%|█▌        | 3/20 [00:42<03:50, 13.57s/it]Task 0, Epoch 4/20 => Loss 0.841, Train_accy 77.57:  15%|█▌        | 3/20 [00:54<03:50, 13.57s/it]Task 0, Epoch 4/20 => Loss 0.841, Train_accy 77.57:  20%|██        | 4/20 [00:54<03:25, 12.85s/it]Task 0, Epoch 5/20 => Loss 0.713, Train_accy 81.03:  20%|██        | 4/20 [01:06<03:25, 12.85s/it]Task 0, Epoch 5/20 => Loss 0.713, Train_accy 81.03:  25%|██▌       | 5/20 [01:06<03:07, 12.53s/it]Task 0, Epoch 6/20 => Loss 0.605, Train_accy 84.19:  25%|██▌       | 5/20 [01:18<03:07, 12.53s/it]Task 0, Epoch 6/20 => Loss 0.605, Train_accy 84.19:  30%|███       | 6/20 [01:18<02:52, 12.34s/it]Task 0, Epoch 7/20 => Loss 0.539, Train_accy 86.02:  30%|███       | 6/20 [01:35<02:52, 12.34s/it]Task 0, Epoch 7/20 => Loss 0.539, Train_accy 86.02:  35%|███▌      | 7/20 [01:35<03:02, 14.03s/it]Task 0, Epoch 8/20 => Loss 0.461, Train_accy 88.02:  35%|███▌      | 7/20 [01:59<03:02, 14.03s/it]Task 0, Epoch 8/20 => Loss 0.461, Train_accy 88.02:  40%|████      | 8/20 [01:59<03:23, 16.92s/it]Task 0, Epoch 9/20 => Loss 0.431, Train_accy 88.51:  40%|████      | 8/20 [02:22<03:23, 16.92s/it]Task 0, Epoch 9/20 => Loss 0.431, Train_accy 88.51:  45%|████▌     | 9/20 [02:22<03:27, 18.89s/it]Task 0, Epoch 10/20 => Loss 0.438, Train_accy 88.39:  45%|████▌     | 9/20 [02:44<03:27, 18.89s/it]Task 0, Epoch 10/20 => Loss 0.438, Train_accy 88.39:  50%|█████     | 10/20 [02:44<03:17, 19.80s/it]Task 0, Epoch 11/20 => Loss 0.410, Train_accy 88.84:  50%|█████     | 10/20 [03:07<03:17, 19.80s/it]Task 0, Epoch 11/20 => Loss 0.410, Train_accy 88.84:  55%|█████▌    | 11/20 [03:07<03:07, 20.82s/it]Task 0, Epoch 12/20 => Loss 0.394, Train_accy 89.42:  55%|█████▌    | 11/20 [03:29<03:07, 20.82s/it]Task 0, Epoch 12/20 => Loss 0.394, Train_accy 89.42:  60%|██████    | 12/20 [03:29<02:48, 21.10s/it]Task 0, Epoch 13/20 => Loss 0.363, Train_accy 90.46:  60%|██████    | 12/20 [03:52<02:48, 21.10s/it]Task 0, Epoch 13/20 => Loss 0.363, Train_accy 90.46:  65%|██████▌   | 13/20 [03:52<02:32, 21.74s/it]Task 0, Epoch 14/20 => Loss 0.381, Train_accy 90.43:  65%|██████▌   | 13/20 [04:15<02:32, 21.74s/it]Task 0, Epoch 14/20 => Loss 0.381, Train_accy 90.43:  70%|███████   | 14/20 [04:15<02:12, 22.14s/it]Task 0, Epoch 15/20 => Loss 0.322, Train_accy 91.73:  70%|███████   | 14/20 [04:37<02:12, 22.14s/it]Task 0, Epoch 15/20 => Loss 0.322, Train_accy 91.73:  75%|███████▌  | 15/20 [04:37<01:50, 22.02s/it]Task 0, Epoch 16/20 => Loss 0.341, Train_accy 91.03:  75%|███████▌  | 15/20 [05:00<01:50, 22.02s/it]Task 0, Epoch 16/20 => Loss 0.341, Train_accy 91.03:  80%|████████  | 16/20 [05:00<01:29, 22.37s/it]Task 0, Epoch 17/20 => Loss 0.295, Train_accy 92.28:  80%|████████  | 16/20 [05:22<01:29, 22.37s/it]Task 0, Epoch 17/20 => Loss 0.295, Train_accy 92.28:  85%|████████▌ | 17/20 [05:22<01:07, 22.40s/it]Task 0, Epoch 18/20 => Loss 0.293, Train_accy 92.01:  85%|████████▌ | 17/20 [05:45<01:07, 22.40s/it]Task 0, Epoch 18/20 => Loss 0.293, Train_accy 92.01:  90%|█████████ | 18/20 [05:45<00:45, 22.62s/it]Task 0, Epoch 19/20 => Loss 0.280, Train_accy 93.01:  90%|█████████ | 18/20 [06:09<00:45, 22.62s/it]Task 0, Epoch 19/20 => Loss 0.280, Train_accy 93.01:  95%|█████████▌| 19/20 [06:09<00:22, 22.81s/it]Task 0, Epoch 20/20 => Loss 0.287, Train_accy 92.16:  95%|█████████▌| 19/20 [06:30<00:22, 22.81s/it]Task 0, Epoch 20/20 => Loss 0.287, Train_accy 92.16: 100%|██████████| 20/20 [06:30<00:00, 22.43s/it]Task 0, Epoch 20/20 => Loss 0.287, Train_accy 92.16: 100%|██████████| 20/20 [06:30<00:00, 19.53s/it]
+2024-08-13 02:21:59,920 [inflora.py] => Task 0, Epoch 20/20 => Loss 0.287, Train_accy 92.16
+Threshold:  0.95
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 6/768 type remove
+Layer 2 : 9/768 type remove
+Layer 3 : 12/768 type remove
+Layer 4 : 11/768 type remove
+Layer 5 : 18/768 type remove
+Layer 6 : 19/768 type remove
+Layer 7 : 18/768 type remove
+Layer 8 : 22/768 type remove
+Layer 9 : 41/768 type remove
+Layer 10 : 51/768 type remove
+Layer 11 : 10/768 type remove
+Layer 12 : 13/768 type remove
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([768, 768])
+Layer 2 - Projection Matrix shape: torch.Size([768, 768])
+Layer 3 - Projection Matrix shape: torch.Size([768, 768])
+Layer 4 - Projection Matrix shape: torch.Size([768, 768])
+Layer 5 - Projection Matrix shape: torch.Size([768, 768])
+Layer 6 - Projection Matrix shape: torch.Size([768, 768])
+Layer 7 - Projection Matrix shape: torch.Size([768, 768])
+Layer 8 - Projection Matrix shape: torch.Size([768, 768])
+Layer 9 - Projection Matrix shape: torch.Size([768, 768])
+Layer 10 - Projection Matrix shape: torch.Size([768, 768])
+Layer 11 - Projection Matrix shape: torch.Size([768, 768])
+Layer 12 - Projection Matrix shape: torch.Size([768, 768])
+2024-08-13 02:22:30,161 [trainer.py] => Time:520.3230848312378
+841 841
+841 841
+2024-08-13 02:22:35,429 [trainer.py] => Time:5.267648696899414
+2024-08-13 02:22:35,429 [inflora.py] => Exemplar size: 0
+2024-08-13 02:22:35,431 [trainer.py] => CNN: {'total': 69.8, '00-99': 69.8, 'old': 0, 'new': 69.8}
+2024-08-13 02:22:35,431 [trainer.py] => CNN top1 curve: [69.8]
+2024-08-13 02:22:35,431 [trainer.py] => CNN top1 with task curve: [69.8]
+2024-08-13 02:22:35,431 [trainer.py] => CNN top1 task curve: [1.0]
+Average Accuracy (CNN): 69.8
+2024-08-13 02:22:35,433 [trainer.py] => All params: 109161987
+2024-08-13 02:22:35,435 [trainer.py] => Trainable params: 150628
+2024-08-13 02:22:35,435 [inflora.py] => Learning on 100-120
+  0%|          | 0/20 [00:00<?, ?it/s]Task 1, Epoch 1/20 => Loss 3.985, Train_accy 17.40:   0%|          | 0/20 [00:04<?, ?it/s]Task 1, Epoch 1/20 => Loss 3.985, Train_accy 17.40:   5%|▌         | 1/20 [00:04<01:26,  4.55s/it]Task 1, Epoch 2/20 => Loss 1.558, Train_accy 61.19:   5%|▌         | 1/20 [00:09<01:26,  4.55s/it]Task 1, Epoch 2/20 => Loss 1.558, Train_accy 61.19:  10%|█         | 2/20 [00:09<01:21,  4.51s/it]Task 1, Epoch 3/20 => Loss 0.979, Train_accy 74.00:  10%|█         | 2/20 [00:13<01:21,  4.51s/it]Task 1, Epoch 3/20 => Loss 0.979, Train_accy 74.00:  15%|█▌        | 3/20 [00:13<01:15,  4.45s/it]Task 1, Epoch 4/20 => Loss 0.611, Train_accy 82.60:  15%|█▌        | 3/20 [00:17<01:15,  4.45s/it]Task 1, Epoch 4/20 => Loss 0.611, Train_accy 82.60:  20%|██        | 4/20 [00:17<01:11,  4.44s/it]Task 1, Epoch 5/20 => Loss 0.487, Train_accy 87.76:  20%|██        | 4/20 [00:22<01:11,  4.44s/it]Task 1, Epoch 5/20 => Loss 0.487, Train_accy 87.76:  25%|██▌       | 5/20 [00:22<01:06,  4.43s/it]Task 1, Epoch 6/20 => Loss 0.379, Train_accy 90.25:  25%|██▌       | 5/20 [00:26<01:06,  4.43s/it]Task 1, Epoch 6/20 => Loss 0.379, Train_accy 90.25:  30%|███       | 6/20 [00:26<01:02,  4.45s/it]Task 1, Epoch 7/20 => Loss 0.288, Train_accy 91.78:  30%|███       | 6/20 [00:31<01:02,  4.45s/it]Task 1, Epoch 7/20 => Loss 0.288, Train_accy 91.78:  35%|███▌      | 7/20 [00:31<00:57,  4.44s/it]Task 1, Epoch 8/20 => Loss 0.312, Train_accy 91.59:  35%|███▌      | 7/20 [00:35<00:57,  4.44s/it]Task 1, Epoch 8/20 => Loss 0.312, Train_accy 91.59:  40%|████      | 8/20 [00:35<00:53,  4.43s/it]Task 1, Epoch 9/20 => Loss 0.258, Train_accy 93.50:  40%|████      | 8/20 [00:39<00:53,  4.43s/it]Task 1, Epoch 9/20 => Loss 0.258, Train_accy 93.50:  45%|████▌     | 9/20 [00:39<00:48,  4.42s/it]Task 1, Epoch 10/20 => Loss 0.200, Train_accy 94.26:  45%|████▌     | 9/20 [00:44<00:48,  4.42s/it]Task 1, Epoch 10/20 => Loss 0.200, Train_accy 94.26:  50%|█████     | 10/20 [00:44<00:44,  4.43s/it]Task 1, Epoch 11/20 => Loss 0.197, Train_accy 94.84:  50%|█████     | 10/20 [00:48<00:44,  4.43s/it]Task 1, Epoch 11/20 => Loss 0.197, Train_accy 94.84:  55%|█████▌    | 11/20 [00:48<00:39,  4.43s/it]Task 1, Epoch 12/20 => Loss 0.199, Train_accy 94.84:  55%|█████▌    | 11/20 [00:51<00:39,  4.43s/it]Task 1, Epoch 12/20 => Loss 0.199, Train_accy 94.84:  60%|██████    | 12/20 [00:51<00:32,  4.01s/it]Task 1, Epoch 13/20 => Loss 0.195, Train_accy 93.88:  60%|██████    | 12/20 [00:56<00:32,  4.01s/it]Task 1, Epoch 13/20 => Loss 0.195, Train_accy 93.88:  65%|██████▌   | 13/20 [00:56<00:28,  4.13s/it]Task 1, Epoch 14/20 => Loss 0.146, Train_accy 96.37:  65%|██████▌   | 13/20 [01:00<00:28,  4.13s/it]Task 1, Epoch 14/20 => Loss 0.146, Train_accy 96.37:  70%|███████   | 14/20 [01:00<00:25,  4.23s/it]Task 1, Epoch 15/20 => Loss 0.189, Train_accy 95.03:  70%|███████   | 14/20 [01:05<00:25,  4.23s/it]Task 1, Epoch 15/20 => Loss 0.189, Train_accy 95.03:  75%|███████▌  | 15/20 [01:05<00:21,  4.31s/it]Task 1, Epoch 16/20 => Loss 0.141, Train_accy 95.79:  75%|███████▌  | 15/20 [01:09<00:21,  4.31s/it]Task 1, Epoch 16/20 => Loss 0.141, Train_accy 95.79:  80%|████████  | 16/20 [01:09<00:17,  4.35s/it]Task 1, Epoch 17/20 => Loss 0.137, Train_accy 96.37:  80%|████████  | 16/20 [01:14<00:17,  4.35s/it]Task 1, Epoch 17/20 => Loss 0.137, Train_accy 96.37:  85%|████████▌ | 17/20 [01:14<00:13,  4.36s/it]Task 1, Epoch 18/20 => Loss 0.139, Train_accy 96.94:  85%|████████▌ | 17/20 [01:18<00:13,  4.36s/it]Task 1, Epoch 18/20 => Loss 0.139, Train_accy 96.94:  90%|█████████ | 18/20 [01:18<00:08,  4.37s/it]Task 1, Epoch 19/20 => Loss 0.116, Train_accy 97.71:  90%|█████████ | 18/20 [01:22<00:08,  4.37s/it]Task 1, Epoch 19/20 => Loss 0.116, Train_accy 97.71:  95%|█████████▌| 19/20 [01:22<00:04,  4.38s/it]Task 1, Epoch 20/20 => Loss 0.115, Train_accy 96.56:  95%|█████████▌| 19/20 [01:27<00:04,  4.38s/it]Task 1, Epoch 20/20 => Loss 0.115, Train_accy 96.56: 100%|██████████| 20/20 [01:27<00:00,  4.37s/it]Task 1, Epoch 20/20 => Loss 0.115, Train_accy 96.56: 100%|██████████| 20/20 [01:27<00:00,  4.36s/it]
+2024-08-13 02:25:07,505 [inflora.py] => Task 1, Epoch 20/20 => Loss 0.115, Train_accy 96.56
+Threshold:  0.9583333333333333
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 7/768 type remove
+Layer 2 : 10/768 type remove
+Layer 3 : 14/768 type remove
+Layer 4 : 14/768 type remove
+Layer 5 : 22/768 type remove
+Layer 6 : 24/768 type remove
+Layer 7 : 24/768 type remove
+Layer 8 : 31/768 type remove
+Layer 9 : 59/768 type remove
+Layer 10 : 75/768 type remove
+Layer 11 : 22/768 type remove
+Layer 12 : 25/768 type remove
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([768, 768])
+Layer 2 - Projection Matrix shape: torch.Size([768, 768])
+Layer 3 - Projection Matrix shape: torch.Size([768, 768])
+Layer 4 - Projection Matrix shape: torch.Size([768, 768])
+Layer 5 - Projection Matrix shape: torch.Size([768, 768])
+Layer 6 - Projection Matrix shape: torch.Size([768, 768])
+Layer 7 - Projection Matrix shape: torch.Size([768, 768])
+Layer 8 - Projection Matrix shape: torch.Size([768, 768])
+Layer 9 - Projection Matrix shape: torch.Size([768, 768])
+Layer 10 - Projection Matrix shape: torch.Size([768, 768])
+Layer 11 - Projection Matrix shape: torch.Size([768, 768])
+Layer 12 - Projection Matrix shape: torch.Size([768, 768])
+2024-08-13 02:25:17,531 [trainer.py] => Time:162.09625148773193
+975 975
+975 975
+2024-08-13 02:25:23,614 [trainer.py] => Time:6.082622528076172
+2024-08-13 02:25:23,615 [inflora.py] => Exemplar size: 0
+2024-08-13 02:25:23,615 [trainer.py] => CNN: {'total': 66.67, '00-99': 67.18, '100-199': 63.43, 'old': 67.18, 'new': 63.43}
+2024-08-13 02:25:23,615 [trainer.py] => CNN top1 curve: [69.8, 66.67]
+2024-08-13 02:25:23,615 [trainer.py] => CNN top1 with task curve: [69.8, 70.97]
+2024-08-13 02:25:23,615 [trainer.py] => CNN top1 task curve: [1.0, 0.9046153846153846]
+Average Accuracy (CNN): 68.24
+2024-08-13 02:25:23,617 [trainer.py] => All params: 109161987
+2024-08-13 02:25:23,618 [trainer.py] => Trainable params: 150628
+2024-08-13 02:25:23,618 [inflora.py] => Learning on 120-140
+  0%|          | 0/20 [00:00<?, ?it/s]Task 2, Epoch 1/20 => Loss 4.420, Train_accy 9.83:   0%|          | 0/20 [00:04<?, ?it/s]Task 2, Epoch 1/20 => Loss 4.420, Train_accy 9.83:   5%|▌         | 1/20 [00:04<01:26,  4.56s/it]Task 2, Epoch 2/20 => Loss 2.012, Train_accy 45.64:   5%|▌         | 1/20 [00:09<01:26,  4.56s/it]Task 2, Epoch 2/20 => Loss 2.012, Train_accy 45.64:  10%|█         | 2/20 [00:09<01:22,  4.58s/it]Task 2, Epoch 3/20 => Loss 1.194, Train_accy 62.89:  10%|█         | 2/20 [00:13<01:22,  4.58s/it]Task 2, Epoch 3/20 => Loss 1.194, Train_accy 62.89:  15%|█▌        | 3/20 [00:13<01:17,  4.58s/it]Task 2, Epoch 4/20 => Loss 0.846, Train_accy 73.10:  15%|█▌        | 3/20 [00:18<01:17,  4.58s/it]Task 2, Epoch 4/20 => Loss 0.846, Train_accy 73.10:  20%|██        | 4/20 [00:18<01:13,  4.58s/it]Task 2, Epoch 5/20 => Loss 0.708, Train_accy 79.78:  20%|██        | 4/20 [00:22<01:13,  4.58s/it]Task 2, Epoch 5/20 => Loss 0.708, Train_accy 79.78:  25%|██▌       | 5/20 [00:22<01:08,  4.57s/it]Task 2, Epoch 6/20 => Loss 0.515, Train_accy 85.90:  25%|██▌       | 5/20 [00:27<01:08,  4.57s/it]Task 2, Epoch 6/20 => Loss 0.515, Train_accy 85.90:  30%|███       | 6/20 [00:27<01:04,  4.58s/it]Task 2, Epoch 7/20 => Loss 0.426, Train_accy 88.50:  30%|███       | 6/20 [00:32<01:04,  4.58s/it]Task 2, Epoch 7/20 => Loss 0.426, Train_accy 88.50:  35%|███▌      | 7/20 [00:32<00:59,  4.59s/it]Task 2, Epoch 8/20 => Loss 0.390, Train_accy 89.24:  35%|███▌      | 7/20 [00:35<00:59,  4.59s/it]Task 2, Epoch 8/20 => Loss 0.390, Train_accy 89.24:  40%|████      | 8/20 [00:35<00:51,  4.32s/it]Task 2, Epoch 9/20 => Loss 0.370, Train_accy 89.24:  40%|████      | 8/20 [00:40<00:51,  4.32s/it]Task 2, Epoch 9/20 => Loss 0.370, Train_accy 89.24:  45%|████▌     | 9/20 [00:40<00:48,  4.41s/it]Task 2, Epoch 10/20 => Loss 0.297, Train_accy 91.47:  45%|████▌     | 9/20 [00:44<00:48,  4.41s/it]Task 2, Epoch 10/20 => Loss 0.297, Train_accy 91.47:  50%|█████     | 10/20 [00:44<00:44,  4.46s/it]Task 2, Epoch 11/20 => Loss 0.266, Train_accy 93.88:  50%|█████     | 10/20 [00:49<00:44,  4.46s/it]Task 2, Epoch 11/20 => Loss 0.266, Train_accy 93.88:  55%|█████▌    | 11/20 [00:49<00:40,  4.52s/it]Task 2, Epoch 12/20 => Loss 0.213, Train_accy 95.36:  55%|█████▌    | 11/20 [00:54<00:40,  4.52s/it]Task 2, Epoch 12/20 => Loss 0.213, Train_accy 95.36:  60%|██████    | 12/20 [00:54<00:36,  4.56s/it]Task 2, Epoch 13/20 => Loss 0.272, Train_accy 93.69:  60%|██████    | 12/20 [00:58<00:36,  4.56s/it]Task 2, Epoch 13/20 => Loss 0.272, Train_accy 93.69:  65%|██████▌   | 13/20 [00:58<00:32,  4.60s/it]Task 2, Epoch 14/20 => Loss 0.264, Train_accy 94.43:  65%|██████▌   | 13/20 [01:03<00:32,  4.60s/it]Task 2, Epoch 14/20 => Loss 0.264, Train_accy 94.43:  70%|███████   | 14/20 [01:03<00:27,  4.62s/it]Task 2, Epoch 15/20 => Loss 0.243, Train_accy 92.21:  70%|███████   | 14/20 [01:08<00:27,  4.62s/it]Task 2, Epoch 15/20 => Loss 0.243, Train_accy 92.21:  75%|███████▌  | 15/20 [01:08<00:23,  4.64s/it]Task 2, Epoch 16/20 => Loss 0.268, Train_accy 93.69:  75%|███████▌  | 15/20 [01:12<00:23,  4.64s/it]Task 2, Epoch 16/20 => Loss 0.268, Train_accy 93.69:  80%|████████  | 16/20 [01:12<00:18,  4.62s/it]Task 2, Epoch 17/20 => Loss 0.223, Train_accy 93.69:  80%|████████  | 16/20 [01:17<00:18,  4.62s/it]Task 2, Epoch 17/20 => Loss 0.223, Train_accy 93.69:  85%|████████▌ | 17/20 [01:17<00:13,  4.61s/it]Task 2, Epoch 18/20 => Loss 0.221, Train_accy 94.25:  85%|████████▌ | 17/20 [01:22<00:13,  4.61s/it]Task 2, Epoch 18/20 => Loss 0.221, Train_accy 94.25:  90%|█████████ | 18/20 [01:22<00:09,  4.59s/it]Task 2, Epoch 19/20 => Loss 0.202, Train_accy 94.99:  90%|█████████ | 18/20 [01:25<00:09,  4.59s/it]Task 2, Epoch 19/20 => Loss 0.202, Train_accy 94.99:  95%|█████████▌| 19/20 [01:25<00:04,  4.18s/it]Task 2, Epoch 20/20 => Loss 0.191, Train_accy 95.36:  95%|█████████▌| 19/20 [01:29<00:04,  4.18s/it]Task 2, Epoch 20/20 => Loss 0.191, Train_accy 95.36: 100%|██████████| 20/20 [01:29<00:00,  4.30s/it]Task 2, Epoch 20/20 => Loss 0.191, Train_accy 95.36: 100%|██████████| 20/20 [01:29<00:00,  4.49s/it]
+2024-08-13 02:28:01,315 [inflora.py] => Task 2, Epoch 20/20 => Loss 0.191, Train_accy 95.36
+Threshold:  0.9666666666666667
+Skip Updating DualGPM for layer: 1
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 7/768 type remove
+Layer 2 : 12/768 type remove
+Layer 3 : 17/768 type remove
+Layer 4 : 17/768 type remove
+Layer 5 : 28/768 type remove
+Layer 6 : 29/768 type remove
+Layer 7 : 29/768 type remove
+Layer 8 : 40/768 type remove
+Layer 9 : 82/768 type remove
+Layer 10 : 112/768 type remove
+Layer 11 : 38/768 type remove
+Layer 12 : 47/768 type remove
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([768, 768])
+Layer 2 - Projection Matrix shape: torch.Size([768, 768])
+Layer 3 - Projection Matrix shape: torch.Size([768, 768])
+Layer 4 - Projection Matrix shape: torch.Size([768, 768])
+Layer 5 - Projection Matrix shape: torch.Size([768, 768])
+Layer 6 - Projection Matrix shape: torch.Size([768, 768])
+Layer 7 - Projection Matrix shape: torch.Size([768, 768])
+Layer 8 - Projection Matrix shape: torch.Size([768, 768])
+Layer 9 - Projection Matrix shape: torch.Size([768, 768])
+Layer 10 - Projection Matrix shape: torch.Size([768, 768])
+Layer 11 - Projection Matrix shape: torch.Size([768, 768])
+Layer 12 - Projection Matrix shape: torch.Size([768, 768])
+2024-08-13 02:28:14,217 [trainer.py] => Time:170.59922647476196
+1121 1121
+1121 1121
+2024-08-13 02:28:21,106 [trainer.py] => Time:6.888516902923584
+2024-08-13 02:28:21,107 [inflora.py] => Exemplar size: 0
+2024-08-13 02:28:21,107 [trainer.py] => CNN: {'total': 56.47, '00-99': 65.99, '100-199': 27.86, 'old': 64.92, 'new': 0.0}
+2024-08-13 02:28:21,107 [trainer.py] => CNN top1 curve: [69.8, 66.67, 56.47]
+2024-08-13 02:28:21,107 [trainer.py] => CNN top1 with task curve: [69.8, 70.97, 61.73]
+2024-08-13 02:28:21,107 [trainer.py] => CNN top1 task curve: [1.0, 0.9046153846153846, 0.7662801070472792]
+Average Accuracy (CNN): 64.31
+2024-08-13 02:28:21,109 [trainer.py] => All params: 109161987
+2024-08-13 02:28:21,110 [trainer.py] => Trainable params: 150628
+2024-08-13 02:28:21,110 [inflora.py] => Learning on 140-160
+  0%|          | 0/20 [00:00<?, ?it/s]Task 3, Epoch 1/20 => Loss 4.723, Train_accy 9.98:   0%|          | 0/20 [00:04<?, ?it/s]Task 3, Epoch 1/20 => Loss 4.723, Train_accy 9.98:   5%|▌         | 1/20 [00:04<01:26,  4.54s/it]Task 3, Epoch 2/20 => Loss 1.848, Train_accy 47.27:   5%|▌         | 1/20 [00:08<01:26,  4.54s/it]Task 3, Epoch 2/20 => Loss 1.848, Train_accy 47.27:  10%|█         | 2/20 [00:08<01:17,  4.31s/it]Task 3, Epoch 3/20 => Loss 1.202, Train_accy 63.47:  10%|█         | 2/20 [00:13<01:17,  4.31s/it]Task 3, Epoch 3/20 => Loss 1.202, Train_accy 63.47:  15%|█▌        | 3/20 [00:13<01:15,  4.45s/it]Task 3, Epoch 4/20 => Loss 0.917, Train_accy 75.14:  15%|█▌        | 3/20 [00:17<01:15,  4.45s/it]Task 3, Epoch 4/20 => Loss 0.917, Train_accy 75.14:  20%|██        | 4/20 [00:17<01:12,  4.53s/it]Task 3, Epoch 5/20 => Loss 0.732, Train_accy 79.47:  20%|██        | 4/20 [00:22<01:12,  4.53s/it]Task 3, Epoch 5/20 => Loss 0.732, Train_accy 79.47:  25%|██▌       | 5/20 [00:22<01:08,  4.55s/it]Task 3, Epoch 6/20 => Loss 0.602, Train_accy 85.31:  25%|██▌       | 5/20 [00:27<01:08,  4.55s/it]Task 3, Epoch 6/20 => Loss 0.602, Train_accy 85.31:  30%|███       | 6/20 [00:27<01:04,  4.58s/it]Task 3, Epoch 7/20 => Loss 0.472, Train_accy 86.63:  30%|███       | 6/20 [00:31<01:04,  4.58s/it]Task 3, Epoch 7/20 => Loss 0.472, Train_accy 86.63:  35%|███▌      | 7/20 [00:31<00:59,  4.59s/it]Task 3, Epoch 8/20 => Loss 0.370, Train_accy 91.15:  35%|███▌      | 7/20 [00:36<00:59,  4.59s/it]Task 3, Epoch 8/20 => Loss 0.370, Train_accy 91.15:  40%|████      | 8/20 [00:36<00:55,  4.59s/it]Task 3, Epoch 9/20 => Loss 0.373, Train_accy 90.96:  40%|████      | 8/20 [00:41<00:55,  4.59s/it]Task 3, Epoch 9/20 => Loss 0.373, Train_accy 90.96:  45%|████▌     | 9/20 [00:41<00:50,  4.62s/it]Task 3, Epoch 10/20 => Loss 0.444, Train_accy 91.53:  45%|████▌     | 9/20 [00:45<00:50,  4.62s/it]Task 3, Epoch 10/20 => Loss 0.444, Train_accy 91.53:  50%|█████     | 10/20 [00:45<00:45,  4.60s/it]Task 3, Epoch 11/20 => Loss 0.244, Train_accy 94.35:  50%|█████     | 10/20 [00:50<00:45,  4.60s/it]Task 3, Epoch 11/20 => Loss 0.244, Train_accy 94.35:  55%|█████▌    | 11/20 [00:50<00:41,  4.59s/it]Task 3, Epoch 12/20 => Loss 0.239, Train_accy 93.97:  55%|█████▌    | 11/20 [00:54<00:41,  4.59s/it]Task 3, Epoch 12/20 => Loss 0.239, Train_accy 93.97:  60%|██████    | 12/20 [00:54<00:36,  4.59s/it]Task 3, Epoch 13/20 => Loss 0.244, Train_accy 93.22:  60%|██████    | 12/20 [00:59<00:36,  4.59s/it]Task 3, Epoch 13/20 => Loss 0.244, Train_accy 93.22:  65%|██████▌   | 13/20 [00:59<00:32,  4.57s/it]Task 3, Epoch 14/20 => Loss 0.243, Train_accy 93.60:  65%|██████▌   | 13/20 [01:03<00:32,  4.57s/it]Task 3, Epoch 14/20 => Loss 0.243, Train_accy 93.60:  70%|███████   | 14/20 [01:03<00:27,  4.58s/it]Task 3, Epoch 15/20 => Loss 0.252, Train_accy 93.97:  70%|███████   | 14/20 [01:08<00:27,  4.58s/it]Task 3, Epoch 15/20 => Loss 0.252, Train_accy 93.97:  75%|███████▌  | 15/20 [01:08<00:23,  4.63s/it]Task 3, Epoch 16/20 => Loss 0.209, Train_accy 94.92:  75%|███████▌  | 15/20 [01:13<00:23,  4.63s/it]Task 3, Epoch 16/20 => Loss 0.209, Train_accy 94.92:  80%|████████  | 16/20 [01:13<00:18,  4.65s/it]Task 3, Epoch 17/20 => Loss 0.202, Train_accy 95.10:  80%|████████  | 16/20 [01:17<00:18,  4.65s/it]Task 3, Epoch 17/20 => Loss 0.202, Train_accy 95.10:  85%|████████▌ | 17/20 [01:17<00:13,  4.64s/it]Task 3, Epoch 18/20 => Loss 0.187, Train_accy 95.48:  85%|████████▌ | 17/20 [01:22<00:13,  4.64s/it]Task 3, Epoch 18/20 => Loss 0.187, Train_accy 95.48:  90%|█████████ | 18/20 [01:22<00:09,  4.63s/it]Task 3, Epoch 19/20 => Loss 0.293, Train_accy 94.54:  90%|█████████ | 18/20 [01:27<00:09,  4.63s/it]Task 3, Epoch 19/20 => Loss 0.293, Train_accy 94.54:  95%|█████████▌| 19/20 [01:27<00:04,  4.59s/it]Task 3, Epoch 20/20 => Loss 0.181, Train_accy 96.23:  95%|█████████▌| 19/20 [01:31<00:04,  4.59s/it]Task 3, Epoch 20/20 => Loss 0.181, Train_accy 96.23: 100%|██████████| 20/20 [01:31<00:00,  4.60s/it]Task 3, Epoch 20/20 => Loss 0.181, Train_accy 96.23: 100%|██████████| 20/20 [01:31<00:00,  4.59s/it]
+2024-08-13 02:30:59,608 [inflora.py] => Task 3, Epoch 20/20 => Loss 0.181, Train_accy 96.23
+Threshold:  0.975
+Skip Updating DualGPM for layer: 1
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 7/768 type remove
+Layer 2 : 13/768 type remove
+Layer 3 : 23/768 type remove
+Layer 4 : 22/768 type remove
+Layer 5 : 35/768 type remove
+Layer 6 : 37/768 type remove
+Layer 7 : 37/768 type remove
+Layer 8 : 54/768 type remove
+Layer 9 : 105/768 type remove
+Layer 10 : 147/768 type remove
+Layer 11 : 56/768 type remove
+Layer 12 : 73/768 type remove
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([768, 768])
+Layer 2 - Projection Matrix shape: torch.Size([768, 768])
+Layer 3 - Projection Matrix shape: torch.Size([768, 768])
+Layer 4 - Projection Matrix shape: torch.Size([768, 768])
+Layer 5 - Projection Matrix shape: torch.Size([768, 768])
+Layer 6 - Projection Matrix shape: torch.Size([768, 768])
+Layer 7 - Projection Matrix shape: torch.Size([768, 768])
+Layer 8 - Projection Matrix shape: torch.Size([768, 768])
+Layer 9 - Projection Matrix shape: torch.Size([768, 768])
+Layer 10 - Projection Matrix shape: torch.Size([768, 768])
+Layer 11 - Projection Matrix shape: torch.Size([768, 768])
+Layer 12 - Projection Matrix shape: torch.Size([768, 768])
+2024-08-13 02:31:12,272 [trainer.py] => Time:171.16115045547485
+1248 1248
+1248 1248
+2024-08-13 02:31:19,070 [trainer.py] => Time:6.798295974731445
+2024-08-13 02:31:19,070 [inflora.py] => Exemplar size: 0
+2024-08-13 02:31:19,070 [trainer.py] => CNN: {'total': 50.0, '00-99': 64.68, '100-199': 19.66, 'old': 55.66, 'new': 0.0}
+2024-08-13 02:31:19,070 [trainer.py] => CNN top1 curve: [69.8, 66.67, 56.47, 50.0]
+2024-08-13 02:31:19,070 [trainer.py] => CNN top1 with task curve: [69.8, 70.97, 61.73, 55.45]
+2024-08-13 02:31:19,070 [trainer.py] => CNN top1 task curve: [1.0, 0.9046153846153846, 0.7662801070472792, 0.6794871794871795]
+Average Accuracy (CNN): 60.74
+2024-08-13 02:31:19,072 [trainer.py] => All params: 109161987
+2024-08-13 02:31:19,073 [trainer.py] => Trainable params: 150628
+2024-08-13 02:31:19,073 [inflora.py] => Learning on 160-180
+  0%|          | 0/20 [00:00<?, ?it/s]Task 4, Epoch 1/20 => Loss 4.332, Train_accy 8.58:   0%|          | 0/20 [00:04<?, ?it/s]Task 4, Epoch 1/20 => Loss 4.332, Train_accy 8.58:   5%|▌         | 1/20 [00:04<01:32,  4.86s/it]Task 4, Epoch 2/20 => Loss 2.139, Train_accy 39.05:   5%|▌         | 1/20 [00:09<01:32,  4.86s/it]Task 4, Epoch 2/20 => Loss 2.139, Train_accy 39.05:  10%|█         | 2/20 [00:09<01:27,  4.85s/it]Task 4, Epoch 3/20 => Loss 1.401, Train_accy 57.79:  10%|█         | 2/20 [00:14<01:27,  4.85s/it]Task 4, Epoch 3/20 => Loss 1.401, Train_accy 57.79:  15%|█▌        | 3/20 [00:14<01:23,  4.89s/it]Task 4, Epoch 4/20 => Loss 0.945, Train_accy 70.23:  15%|█▌        | 3/20 [00:19<01:23,  4.89s/it]Task 4, Epoch 4/20 => Loss 0.945, Train_accy 70.23:  20%|██        | 4/20 [00:19<01:18,  4.90s/it]Task 4, Epoch 5/20 => Loss 0.776, Train_accy 76.88:  20%|██        | 4/20 [00:23<01:18,  4.90s/it]Task 4, Epoch 5/20 => Loss 0.776, Train_accy 76.88:  25%|██▌       | 5/20 [00:23<01:07,  4.47s/it]Task 4, Epoch 6/20 => Loss 0.671, Train_accy 79.68:  25%|██▌       | 5/20 [00:27<01:07,  4.47s/it]Task 4, Epoch 6/20 => Loss 0.671, Train_accy 79.68:  30%|███       | 6/20 [00:27<01:00,  4.29s/it]Task 4, Epoch 7/20 => Loss 0.562, Train_accy 83.89:  30%|███       | 6/20 [00:31<01:00,  4.29s/it]Task 4, Epoch 7/20 => Loss 0.562, Train_accy 83.89:  35%|███▌      | 7/20 [00:31<00:54,  4.17s/it]Task 4, Epoch 8/20 => Loss 0.497, Train_accy 85.29:  35%|███▌      | 7/20 [00:35<00:54,  4.17s/it]Task 4, Epoch 8/20 => Loss 0.497, Train_accy 85.29:  40%|████      | 8/20 [00:35<00:49,  4.10s/it]Task 4, Epoch 9/20 => Loss 0.401, Train_accy 89.84:  40%|████      | 8/20 [00:39<00:49,  4.10s/it]Task 4, Epoch 9/20 => Loss 0.401, Train_accy 89.84:  45%|████▌     | 9/20 [00:39<00:44,  4.05s/it]Task 4, Epoch 10/20 => Loss 0.431, Train_accy 87.22:  45%|████▌     | 9/20 [00:42<00:44,  4.05s/it]Task 4, Epoch 10/20 => Loss 0.431, Train_accy 87.22:  50%|█████     | 10/20 [00:42<00:39,  3.93s/it]Task 4, Epoch 11/20 => Loss 0.358, Train_accy 89.67:  50%|█████     | 10/20 [00:45<00:39,  3.93s/it]Task 4, Epoch 11/20 => Loss 0.358, Train_accy 89.67:  55%|█████▌    | 11/20 [00:45<00:32,  3.62s/it]Task 4, Epoch 12/20 => Loss 0.304, Train_accy 92.12:  55%|█████▌    | 11/20 [00:48<00:32,  3.62s/it]Task 4, Epoch 12/20 => Loss 0.304, Train_accy 92.12:  60%|██████    | 12/20 [00:48<00:27,  3.39s/it]Task 4, Epoch 13/20 => Loss 0.304, Train_accy 91.59:  60%|██████    | 12/20 [00:51<00:27,  3.39s/it]Task 4, Epoch 13/20 => Loss 0.304, Train_accy 91.59:  65%|██████▌   | 13/20 [00:51<00:22,  3.23s/it]Task 4, Epoch 14/20 => Loss 0.338, Train_accy 90.19:  65%|██████▌   | 13/20 [00:54<00:22,  3.23s/it]Task 4, Epoch 14/20 => Loss 0.338, Train_accy 90.19:  70%|███████   | 14/20 [00:54<00:18,  3.13s/it]Task 4, Epoch 15/20 => Loss 0.309, Train_accy 91.59:  70%|███████   | 14/20 [00:57<00:18,  3.13s/it]Task 4, Epoch 15/20 => Loss 0.309, Train_accy 91.59:  75%|███████▌  | 15/20 [00:57<00:15,  3.05s/it]Task 4, Epoch 16/20 => Loss 0.289, Train_accy 92.99:  75%|███████▌  | 15/20 [00:59<00:15,  3.05s/it]Task 4, Epoch 16/20 => Loss 0.289, Train_accy 92.99:  80%|████████  | 16/20 [00:59<00:11,  3.00s/it]Task 4, Epoch 17/20 => Loss 0.246, Train_accy 93.87:  80%|████████  | 16/20 [01:02<00:11,  3.00s/it]Task 4, Epoch 17/20 => Loss 0.246, Train_accy 93.87:  85%|████████▌ | 17/20 [01:02<00:08,  2.96s/it]Task 4, Epoch 18/20 => Loss 0.293, Train_accy 90.89:  85%|████████▌ | 17/20 [01:05<00:08,  2.96s/it]Task 4, Epoch 18/20 => Loss 0.293, Train_accy 90.89:  90%|█████████ | 18/20 [01:05<00:05,  2.93s/it]Task 4, Epoch 19/20 => Loss 0.260, Train_accy 93.52:  90%|█████████ | 18/20 [01:08<00:05,  2.93s/it]Task 4, Epoch 19/20 => Loss 0.260, Train_accy 93.52:  95%|█████████▌| 19/20 [01:08<00:02,  2.90s/it]Task 4, Epoch 20/20 => Loss 0.248, Train_accy 92.99:  95%|█████████▌| 19/20 [01:11<00:02,  2.90s/it]Task 4, Epoch 20/20 => Loss 0.248, Train_accy 92.99: 100%|██████████| 20/20 [01:11<00:00,  2.89s/it]Task 4, Epoch 20/20 => Loss 0.248, Train_accy 92.99: 100%|██████████| 20/20 [01:11<00:00,  3.57s/it]
+2024-08-13 02:33:58,961 [inflora.py] => Task 4, Epoch 20/20 => Loss 0.248, Train_accy 92.99
+Threshold:  0.9833333333333333
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 8/768 type remove
+Layer 2 : 15/768 type remove
+Layer 3 : 34/768 type remove
+Layer 4 : 37/768 type remove
+Layer 5 : 53/768 type remove
+Layer 6 : 58/768 type remove
+Layer 7 : 60/768 type remove
+Layer 8 : 87/768 type remove
+Layer 9 : 163/768 type remove
+Layer 10 : 232/768 type remove
+Layer 11 : 127/768 type remove
+Layer 12 : 157/768 type remove
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([768, 768])
+Layer 2 - Projection Matrix shape: torch.Size([768, 768])
+Layer 3 - Projection Matrix shape: torch.Size([768, 768])
+Layer 4 - Projection Matrix shape: torch.Size([768, 768])
+Layer 5 - Projection Matrix shape: torch.Size([768, 768])
+Layer 6 - Projection Matrix shape: torch.Size([768, 768])
+Layer 7 - Projection Matrix shape: torch.Size([768, 768])
+Layer 8 - Projection Matrix shape: torch.Size([768, 768])
+Layer 9 - Projection Matrix shape: torch.Size([768, 768])
+Layer 10 - Projection Matrix shape: torch.Size([768, 768])
+Layer 11 - Projection Matrix shape: torch.Size([768, 768])
+Layer 12 - Projection Matrix shape: torch.Size([768, 768])
+2024-08-13 02:34:08,863 [trainer.py] => Time:169.78953766822815
+1395 1395
+1395 1395
+2024-08-13 02:34:12,188 [trainer.py] => Time:3.324324369430542
+2024-08-13 02:34:12,188 [inflora.py] => Exemplar size: 0
+2024-08-13 02:34:12,189 [trainer.py] => CNN: {'total': 43.23, '00-99': 62.43, '100-199': 14.08, 'old': 48.32, 'new': 0.0}
+2024-08-13 02:34:12,189 [trainer.py] => CNN top1 curve: [69.8, 66.67, 56.47, 50.0, 43.23]
+2024-08-13 02:34:12,189 [trainer.py] => CNN top1 with task curve: [69.8, 70.97, 61.73, 55.45, 49.82]
+2024-08-13 02:34:12,189 [trainer.py] => CNN top1 task curve: [1.0, 0.9046153846153846, 0.7662801070472792, 0.6794871794871795, 0.5734767025089605]
+Average Accuracy (CNN): 57.23
+2024-08-13 02:34:12,191 [trainer.py] => All params: 109161987
+2024-08-13 02:34:12,192 [trainer.py] => Trainable params: 150628
+2024-08-13 02:34:12,192 [inflora.py] => Learning on 180-200
+  0%|          | 0/20 [00:00<?, ?it/s]Task 5, Epoch 1/20 => Loss 4.302, Train_accy 14.04:   0%|          | 0/20 [00:02<?, ?it/s]Task 5, Epoch 1/20 => Loss 4.302, Train_accy 14.04:   5%|▌         | 1/20 [00:02<00:52,  2.76s/it]Task 5, Epoch 2/20 => Loss 1.797, Train_accy 52.37:   5%|▌         | 1/20 [00:05<00:52,  2.76s/it]Task 5, Epoch 2/20 => Loss 1.797, Train_accy 52.37:  10%|█         | 2/20 [00:05<00:50,  2.78s/it]Task 5, Epoch 3/20 => Loss 1.130, Train_accy 69.26:  10%|█         | 2/20 [00:08<00:50,  2.78s/it]Task 5, Epoch 3/20 => Loss 1.130, Train_accy 69.26:  15%|█▌        | 3/20 [00:08<00:46,  2.76s/it]Task 5, Epoch 4/20 => Loss 0.836, Train_accy 75.71:  15%|█▌        | 3/20 [00:11<00:46,  2.76s/it]Task 5, Epoch 4/20 => Loss 0.836, Train_accy 75.71:  20%|██        | 4/20 [00:11<00:44,  2.75s/it]Task 5, Epoch 5/20 => Loss 0.672, Train_accy 80.27:  20%|██        | 4/20 [00:13<00:44,  2.75s/it]Task 5, Epoch 5/20 => Loss 0.672, Train_accy 80.27:  25%|██▌       | 5/20 [00:13<00:41,  2.75s/it]Task 5, Epoch 6/20 => Loss 0.474, Train_accy 86.34:  25%|██▌       | 5/20 [00:16<00:41,  2.75s/it]Task 5, Epoch 6/20 => Loss 0.474, Train_accy 86.34:  30%|███       | 6/20 [00:16<00:38,  2.76s/it]Task 5, Epoch 7/20 => Loss 0.455, Train_accy 88.80:  30%|███       | 6/20 [00:19<00:38,  2.76s/it]Task 5, Epoch 7/20 => Loss 0.455, Train_accy 88.80:  35%|███▌      | 7/20 [00:19<00:35,  2.76s/it]Task 5, Epoch 8/20 => Loss 0.396, Train_accy 88.99:  35%|███▌      | 7/20 [00:22<00:35,  2.76s/it]Task 5, Epoch 8/20 => Loss 0.396, Train_accy 88.99:  40%|████      | 8/20 [00:22<00:33,  2.76s/it]Task 5, Epoch 9/20 => Loss 0.365, Train_accy 89.75:  40%|████      | 8/20 [00:24<00:33,  2.76s/it]Task 5, Epoch 9/20 => Loss 0.365, Train_accy 89.75:  45%|████▌     | 9/20 [00:24<00:30,  2.77s/it]Task 5, Epoch 10/20 => Loss 0.327, Train_accy 90.70:  45%|████▌     | 9/20 [00:27<00:30,  2.77s/it]Task 5, Epoch 10/20 => Loss 0.327, Train_accy 90.70:  50%|█████     | 10/20 [00:27<00:27,  2.78s/it]Task 5, Epoch 11/20 => Loss 0.323, Train_accy 90.51:  50%|█████     | 10/20 [00:30<00:27,  2.78s/it]Task 5, Epoch 11/20 => Loss 0.323, Train_accy 90.51:  55%|█████▌    | 11/20 [00:30<00:25,  2.79s/it]Task 5, Epoch 12/20 => Loss 0.224, Train_accy 92.98:  55%|█████▌    | 11/20 [00:33<00:25,  2.79s/it]Task 5, Epoch 12/20 => Loss 0.224, Train_accy 92.98:  60%|██████    | 12/20 [00:33<00:22,  2.80s/it]Task 5, Epoch 13/20 => Loss 0.231, Train_accy 93.55:  60%|██████    | 12/20 [00:36<00:22,  2.80s/it]Task 5, Epoch 13/20 => Loss 0.231, Train_accy 93.55:  65%|██████▌   | 13/20 [00:36<00:19,  2.78s/it]Task 5, Epoch 14/20 => Loss 0.251, Train_accy 93.17:  65%|██████▌   | 13/20 [00:38<00:19,  2.78s/it]Task 5, Epoch 14/20 => Loss 0.251, Train_accy 93.17:  70%|███████   | 14/20 [00:38<00:16,  2.77s/it]Task 5, Epoch 15/20 => Loss 0.231, Train_accy 94.50:  70%|███████   | 14/20 [00:41<00:16,  2.77s/it]Task 5, Epoch 15/20 => Loss 0.231, Train_accy 94.50:  75%|███████▌  | 15/20 [00:41<00:13,  2.77s/it]Task 5, Epoch 16/20 => Loss 0.227, Train_accy 92.98:  75%|███████▌  | 15/20 [00:44<00:13,  2.77s/it]Task 5, Epoch 16/20 => Loss 0.227, Train_accy 92.98:  80%|████████  | 16/20 [00:44<00:11,  2.76s/it]Task 5, Epoch 17/20 => Loss 0.206, Train_accy 95.26:  80%|████████  | 16/20 [00:47<00:11,  2.76s/it]Task 5, Epoch 17/20 => Loss 0.206, Train_accy 95.26:  85%|████████▌ | 17/20 [00:47<00:08,  2.75s/it]Task 5, Epoch 18/20 => Loss 0.275, Train_accy 92.22:  85%|████████▌ | 17/20 [00:49<00:08,  2.75s/it]Task 5, Epoch 18/20 => Loss 0.275, Train_accy 92.22:  90%|█████████ | 18/20 [00:49<00:05,  2.77s/it]Task 5, Epoch 19/20 => Loss 0.213, Train_accy 93.74:  90%|█████████ | 18/20 [00:52<00:05,  2.77s/it]Task 5, Epoch 19/20 => Loss 0.213, Train_accy 93.74:  95%|█████████▌| 19/20 [00:52<00:02,  2.80s/it]Task 5, Epoch 20/20 => Loss 0.214, Train_accy 93.55:  95%|█████████▌| 19/20 [00:55<00:02,  2.80s/it]Task 5, Epoch 20/20 => Loss 0.214, Train_accy 93.55: 100%|██████████| 20/20 [00:55<00:00,  2.81s/it]Task 5, Epoch 20/20 => Loss 0.214, Train_accy 93.55: 100%|██████████| 20/20 [00:55<00:00,  2.78s/it]
+2024-08-13 02:35:12,213 [inflora.py] => Task 5, Epoch 20/20 => Loss 0.214, Train_accy 93.55
+Threshold:  0.9916666666666667
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 9/768 type remove
+Layer 2 : 23/768 type remove
+Layer 3 : 60/768 type remove
+Layer 4 : 71/768 type remove
+Layer 5 : 94/768 type remove
+Layer 6 : 105/768 type remove
+Layer 7 : 119/768 type remove
+Layer 8 : 178/768 type remove
+Layer 9 : 289/768 type remove
+Layer 10 : 370/768 type remove
+Layer 11 : 267/768 type remove
+Layer 12 : 288/768 type remove
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([768, 768])
+Layer 2 - Projection Matrix shape: torch.Size([768, 768])
+Layer 3 - Projection Matrix shape: torch.Size([768, 768])
+Layer 4 - Projection Matrix shape: torch.Size([768, 768])
+Layer 5 - Projection Matrix shape: torch.Size([768, 768])
+Layer 6 - Projection Matrix shape: torch.Size([768, 768])
+Layer 7 - Projection Matrix shape: torch.Size([768, 768])
+Layer 8 - Projection Matrix shape: torch.Size([768, 768])
+Layer 9 - Projection Matrix shape: torch.Size([768, 768])
+Layer 10 - Projection Matrix shape: torch.Size([768, 768])
+Layer 11 - Projection Matrix shape: torch.Size([768, 768])
+Layer 12 - Projection Matrix shape: torch.Size([768, 768])
+2024-08-13 02:35:22,422 [trainer.py] => Time:70.2300317287445
+1519 1519
+1519 1519
+2024-08-13 02:35:26,014 [trainer.py] => Time:3.591190814971924
+2024-08-13 02:35:26,014 [inflora.py] => Exemplar size: 0
+2024-08-13 02:35:26,014 [trainer.py] => CNN: {'total': 39.17, '00-99': 62.07, '100-199': 10.77, 'old': 42.65, 'new': 0.0}
+2024-08-13 02:35:26,015 [trainer.py] => CNN top1 curve: [69.8, 66.67, 56.47, 50.0, 43.23, 39.17]
+2024-08-13 02:35:26,015 [trainer.py] => CNN top1 with task curve: [69.8, 70.97, 61.73, 55.45, 49.82, 45.56]
+2024-08-13 02:35:26,015 [trainer.py] => CNN top1 task curve: [1.0, 0.9046153846153846, 0.7662801070472792, 0.6794871794871795, 0.5734767025089605, 0.5200789993416721]
+Average Accuracy (CNN): 54.22
+logs/omnibenchmark/150_30_sip/InfLoRA/adam/4/0.95_1.0-0.0005/1993
+2024-08-13 02:35:29,290 [trainer.py] => config: ./configs/omn_inflora.json
+2024-08-13 02:35:29,290 [trainer.py] => device: [device(type='cuda', index=0)]
+2024-08-13 02:35:29,290 [trainer.py] => prefix: reproduce
+2024-08-13 02:35:29,290 [trainer.py] => dataset: omnibenchmark
+2024-08-13 02:35:29,290 [trainer.py] => data_path: /mnt/mydisk/ruoheng.li/lrh/Dataset
+2024-08-13 02:35:29,290 [trainer.py] => memory_size: 0
+2024-08-13 02:35:29,290 [trainer.py] => memory_per_class: 0
+2024-08-13 02:35:29,290 [trainer.py] => fixed_memory: True
+2024-08-13 02:35:29,290 [trainer.py] => shuffle: True
+2024-08-13 02:35:29,290 [trainer.py] => init_cls: 150
+2024-08-13 02:35:29,290 [trainer.py] => increment: 30
+2024-08-13 02:35:29,290 [trainer.py] => model_name: InfLoRA
+2024-08-13 02:35:29,290 [trainer.py] => net_type: sip
+2024-08-13 02:35:29,290 [trainer.py] => embd_dim: 768
+2024-08-13 02:35:29,290 [trainer.py] => num_heads: 12
+2024-08-13 02:35:29,290 [trainer.py] => total_sessions: 6
+2024-08-13 02:35:29,290 [trainer.py] => seed: 1993
+2024-08-13 02:35:29,290 [trainer.py] => EPSILON: 1e-08
+2024-08-13 02:35:29,290 [trainer.py] => init_epoch: 20
+2024-08-13 02:35:29,290 [trainer.py] => optim: adam
+2024-08-13 02:35:29,290 [trainer.py] => init_lr: 0.0005
+2024-08-13 02:35:29,290 [trainer.py] => init_lr_decay: 0.1
+2024-08-13 02:35:29,290 [trainer.py] => init_weight_decay: 0.0
+2024-08-13 02:35:29,290 [trainer.py] => epochs: 20
+2024-08-13 02:35:29,290 [trainer.py] => lrate: 0.0005
+2024-08-13 02:35:29,291 [trainer.py] => lrate_decay: 0.1
+2024-08-13 02:35:29,291 [trainer.py] => batch_size: 48
+2024-08-13 02:35:29,291 [trainer.py] => weight_decay: 0.0
+2024-08-13 02:35:29,291 [trainer.py] => rank: 4
+2024-08-13 02:35:29,291 [trainer.py] => lamb: 0.95
+2024-08-13 02:35:29,291 [trainer.py] => lame: 1.0
+2024-08-13 02:35:29,291 [trainer.py] => num_workers: 16
+2024-08-13 02:35:29,526 [data_manager.py] => [169, 221, 146, 296, 92, 229, 49, 70, 126, 77, 243, 57, 120, 223, 27, 217, 154, 8, 101, 182, 54, 50, 97, 162, 28, 193, 79, 6, 151, 0, 173, 187, 44, 277, 157, 16, 257, 122, 35, 9, 171, 176, 134, 4, 87, 255, 112, 153, 246, 286, 147, 186, 107, 98, 10, 7, 266, 214, 36, 165, 139, 254, 103, 269, 59, 23, 298, 39, 73, 208, 135, 299, 102, 20, 12, 268, 11, 209, 161, 210, 74, 42, 56, 99, 235, 133, 159, 189, 145, 238, 215, 241, 138, 195, 233, 279, 88, 199, 64, 280, 26, 203, 17, 245, 174, 236, 137, 252, 80, 68, 181, 150, 118, 94, 75, 2, 109, 119, 232, 15, 69, 184, 201, 261, 55, 287, 273, 66, 175, 32, 142, 136, 116, 76, 179, 1, 91, 248, 275, 240, 290, 170, 132, 106, 265, 270, 85, 19, 284, 43, 259, 293, 228, 200, 104, 227, 51, 224, 163, 297, 216, 260, 93, 46, 100, 272, 105, 72, 131, 3, 156, 256, 249, 48, 113, 82, 172, 213, 62, 53, 271, 168, 253, 226, 183, 180, 276, 283, 78, 61, 143, 278, 30, 141, 196, 264, 231, 52, 222, 40, 125, 219, 65, 166, 192, 289, 45, 205, 89, 267, 90, 71, 167, 262, 281, 212, 96, 84, 127, 67, 294, 178, 288, 197, 21, 18, 111, 108, 58, 230, 188, 31, 110, 291, 129, 24, 204, 83, 81, 251, 60, 13, 128, 14, 86, 63, 117, 198, 274, 5, 22, 144, 258, 121, 38, 207, 148, 292, 41, 234, 237, 114, 202, 37, 149, 206, 155, 29, 130, 177, 194, 152, 34, 33, 239, 160, 140, 47, 244, 25, 282, 158, 211, 123, 190, 218, 164, 247, 263, 191, 220, 115, 242, 250, 124, 295, 95, 285, 225, 185]
+2024-08-13 02:35:31,860 [trainer.py] => All params: 109623387
+2024-08-13 02:35:31,861 [trainer.py] => Trainable params: 109623387
+2024-08-13 02:35:31,861 [inflora.py] => Learning on 0-150
+  0%|          | 0/20 [00:00<?, ?it/s]Task 0, Epoch 1/20 => Loss 1.040, Train_accy 71.50:   0%|          | 0/20 [02:32<?, ?it/s]Task 0, Epoch 1/20 => Loss 1.040, Train_accy 71.50:   5%|▌         | 1/20 [02:32<48:16, 152.47s/it]Task 0, Epoch 2/20 => Loss 0.672, Train_accy 79.89:   5%|▌         | 1/20 [05:05<48:16, 152.47s/it]Task 0, Epoch 2/20 => Loss 0.672, Train_accy 79.89:  10%|█         | 2/20 [05:05<45:45, 152.53s/it]Task 0, Epoch 3/20 => Loss 0.598, Train_accy 82.04:  10%|█         | 2/20 [07:36<45:45, 152.53s/it]Task 0, Epoch 3/20 => Loss 0.598, Train_accy 82.04:  15%|█▌        | 3/20 [07:36<43:04, 152.03s/it]Task 0, Epoch 4/20 => Loss 0.555, Train_accy 83.44:  15%|█▌        | 3/20 [10:05<43:04, 152.03s/it]Task 0, Epoch 4/20 => Loss 0.555, Train_accy 83.44:  20%|██        | 4/20 [10:05<40:15, 150.97s/it]Task 0, Epoch 5/20 => Loss 0.525, Train_accy 84.14:  20%|██        | 4/20 [12:35<40:15, 150.97s/it]Task 0, Epoch 5/20 => Loss 0.525, Train_accy 84.14:  25%|██▌       | 5/20 [12:35<37:35, 150.39s/it]Task 0, Epoch 6/20 => Loss 0.499, Train_accy 84.90:  25%|██▌       | 5/20 [15:04<37:35, 150.39s/it]Task 0, Epoch 6/20 => Loss 0.499, Train_accy 84.90:  30%|███       | 6/20 [15:04<35:02, 150.16s/it]Task 0, Epoch 7/20 => Loss 0.481, Train_accy 85.26:  30%|███       | 6/20 [17:35<35:02, 150.16s/it]Task 0, Epoch 7/20 => Loss 0.481, Train_accy 85.26:  35%|███▌      | 7/20 [17:35<32:33, 150.26s/it]Task 0, Epoch 8/20 => Loss 0.451, Train_accy 86.12:  35%|███▌      | 7/20 [20:08<32:33, 150.26s/it]Task 0, Epoch 8/20 => Loss 0.451, Train_accy 86.12:  40%|████      | 8/20 [20:08<30:15, 151.33s/it]Task 0, Epoch 9/20 => Loss 0.443, Train_accy 86.48:  40%|████      | 8/20 [22:41<30:15, 151.33s/it]Task 0, Epoch 9/20 => Loss 0.443, Train_accy 86.48:  45%|████▌     | 9/20 [22:41<27:48, 151.70s/it]Task 0, Epoch 10/20 => Loss 0.425, Train_accy 86.80:  45%|████▌     | 9/20 [25:14<27:48, 151.70s/it]Task 0, Epoch 10/20 => Loss 0.425, Train_accy 86.80:  50%|█████     | 10/20 [25:14<25:20, 152.07s/it]Task 0, Epoch 11/20 => Loss 0.408, Train_accy 87.50:  50%|█████     | 10/20 [27:44<25:20, 152.07s/it]Task 0, Epoch 11/20 => Loss 0.408, Train_accy 87.50:  55%|█████▌    | 11/20 [27:44<22:44, 151.57s/it]Task 0, Epoch 12/20 => Loss 0.401, Train_accy 87.71:  55%|█████▌    | 11/20 [30:14<22:44, 151.57s/it]Task 0, Epoch 12/20 => Loss 0.401, Train_accy 87.71:  60%|██████    | 12/20 [30:14<20:07, 150.97s/it]Task 0, Epoch 13/20 => Loss 0.391, Train_accy 88.00:  60%|██████    | 12/20 [32:43<20:07, 150.97s/it]Task 0, Epoch 13/20 => Loss 0.391, Train_accy 88.00:  65%|██████▌   | 13/20 [32:43<17:33, 150.51s/it]Task 0, Epoch 14/20 => Loss 0.377, Train_accy 88.44:  65%|██████▌   | 13/20 [35:15<17:33, 150.51s/it]Task 0, Epoch 14/20 => Loss 0.377, Train_accy 88.44:  70%|███████   | 14/20 [35:15<15:05, 150.87s/it]Task 0, Epoch 15/20 => Loss 0.361, Train_accy 88.84:  70%|███████   | 14/20 [37:48<15:05, 150.87s/it]Task 0, Epoch 15/20 => Loss 0.361, Train_accy 88.84:  75%|███████▌  | 15/20 [37:48<12:36, 151.38s/it]Task 0, Epoch 16/20 => Loss 0.345, Train_accy 89.30:  75%|███████▌  | 15/20 [40:18<12:36, 151.38s/it]Task 0, Epoch 16/20 => Loss 0.345, Train_accy 89.30:  80%|████████  | 16/20 [40:18<10:04, 151.00s/it]Task 0, Epoch 17/20 => Loss 0.333, Train_accy 89.74:  80%|████████  | 16/20 [42:47<10:04, 151.00s/it]Task 0, Epoch 17/20 => Loss 0.333, Train_accy 89.74:  85%|████████▌ | 17/20 [42:47<07:31, 150.59s/it]Task 0, Epoch 18/20 => Loss 0.322, Train_accy 90.12:  85%|████████▌ | 17/20 [45:17<07:31, 150.59s/it]Task 0, Epoch 18/20 => Loss 0.322, Train_accy 90.12:  90%|█████████ | 18/20 [45:17<05:00, 150.25s/it]Task 0, Epoch 19/20 => Loss 0.313, Train_accy 90.49:  90%|█████████ | 18/20 [47:46<05:00, 150.25s/it]Task 0, Epoch 19/20 => Loss 0.313, Train_accy 90.49:  95%|█████████▌| 19/20 [47:46<02:29, 149.97s/it]Task 0, Epoch 20/20 => Loss 0.303, Train_accy 90.74:  95%|█████████▌| 19/20 [50:19<02:29, 149.97s/it]Task 0, Epoch 20/20 => Loss 0.303, Train_accy 90.74: 100%|██████████| 20/20 [50:19<00:00, 150.86s/it]Task 0, Epoch 20/20 => Loss 0.303, Train_accy 90.74: 100%|██████████| 20/20 [50:19<00:00, 150.98s/it]
+2024-08-13 03:28:03,278 [inflora.py] => Task 0, Epoch 20/20 => Loss 0.303, Train_accy 90.74
+Threshold:  0.95
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 6/768 type remove
+Layer 2 : 9/768 type remove
+Layer 3 : 12/768 type remove
+Layer 4 : 13/768 type remove
+Layer 5 : 21/768 type remove
+Layer 6 : 25/768 type remove
+Layer 7 : 26/768 type remove
+Layer 8 : 31/768 type remove
+Layer 9 : 34/768 type remove
+Layer 10 : 34/768 type remove
+Layer 11 : 6/768 type remove
+Layer 12 : 23/768 type remove
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([768, 768])
+Layer 2 - Projection Matrix shape: torch.Size([768, 768])
+Layer 3 - Projection Matrix shape: torch.Size([768, 768])
+Layer 4 - Projection Matrix shape: torch.Size([768, 768])
+Layer 5 - Projection Matrix shape: torch.Size([768, 768])
+Layer 6 - Projection Matrix shape: torch.Size([768, 768])
+Layer 7 - Projection Matrix shape: torch.Size([768, 768])
+Layer 8 - Projection Matrix shape: torch.Size([768, 768])
+Layer 9 - Projection Matrix shape: torch.Size([768, 768])
+Layer 10 - Projection Matrix shape: torch.Size([768, 768])
+Layer 11 - Projection Matrix shape: torch.Size([768, 768])
+Layer 12 - Projection Matrix shape: torch.Size([768, 768])
+2024-08-13 03:31:23,279 [trainer.py] => Time:3351.418044567108
+2994 2994
+2994 2994
+2024-08-13 03:31:29,300 [trainer.py] => Time:6.020226240158081
+2024-08-13 03:31:29,300 [inflora.py] => Exemplar size: 0
+2024-08-13 03:31:29,300 [trainer.py] => CNN: {'total': 86.54, '00-149': 86.54, 'old': 0, 'new': 86.54}
+2024-08-13 03:31:29,300 [trainer.py] => CNN top1 curve: [86.54]
+2024-08-13 03:31:29,300 [trainer.py] => CNN top1 with task curve: [86.54]
+2024-08-13 03:31:29,300 [trainer.py] => CNN top1 task curve: [1.0]
+Average Accuracy (CNN): 86.54
+2024-08-13 03:31:29,302 [trainer.py] => All params: 109623387
+2024-08-13 03:31:29,303 [trainer.py] => Trainable params: 189078
+2024-08-13 03:31:29,303 [inflora.py] => Learning on 150-180
+  0%|          | 0/20 [00:00<?, ?it/s]Task 1, Epoch 1/20 => Loss 0.826, Train_accy 78.96:   0%|          | 0/20 [00:30<?, ?it/s]Task 1, Epoch 1/20 => Loss 0.826, Train_accy 78.96:   5%|▌         | 1/20 [00:30<09:46, 30.89s/it]Task 1, Epoch 2/20 => Loss 0.290, Train_accy 90.73:   5%|▌         | 1/20 [01:01<09:46, 30.89s/it]Task 1, Epoch 2/20 => Loss 0.290, Train_accy 90.73:  10%|█         | 2/20 [01:01<09:16, 30.92s/it]Task 1, Epoch 3/20 => Loss 0.233, Train_accy 92.41:  10%|█         | 2/20 [01:32<09:16, 30.92s/it]Task 1, Epoch 3/20 => Loss 0.233, Train_accy 92.41:  15%|█▌        | 3/20 [01:32<08:47, 31.03s/it]Task 1, Epoch 4/20 => Loss 0.210, Train_accy 93.19:  15%|█▌        | 3/20 [02:04<08:47, 31.03s/it]Task 1, Epoch 4/20 => Loss 0.210, Train_accy 93.19:  20%|██        | 4/20 [02:04<08:16, 31.04s/it]Task 1, Epoch 5/20 => Loss 0.195, Train_accy 93.55:  20%|██        | 4/20 [02:34<08:16, 31.04s/it]Task 1, Epoch 5/20 => Loss 0.195, Train_accy 93.55:  25%|██▌       | 5/20 [02:34<07:44, 31.00s/it]Task 1, Epoch 6/20 => Loss 0.166, Train_accy 94.30:  25%|██▌       | 5/20 [03:05<07:44, 31.00s/it]Task 1, Epoch 6/20 => Loss 0.166, Train_accy 94.30:  30%|███       | 6/20 [03:05<07:13, 30.98s/it]Task 1, Epoch 7/20 => Loss 0.153, Train_accy 94.97:  30%|███       | 6/20 [03:36<07:13, 30.98s/it]Task 1, Epoch 7/20 => Loss 0.153, Train_accy 94.97:  35%|███▌      | 7/20 [03:36<06:42, 30.99s/it]Task 1, Epoch 8/20 => Loss 0.149, Train_accy 95.16:  35%|███▌      | 7/20 [04:07<06:42, 30.99s/it]Task 1, Epoch 8/20 => Loss 0.149, Train_accy 95.16:  40%|████      | 8/20 [04:07<06:11, 30.99s/it]Task 1, Epoch 9/20 => Loss 0.145, Train_accy 95.42:  40%|████      | 8/20 [04:38<06:11, 30.99s/it]Task 1, Epoch 9/20 => Loss 0.145, Train_accy 95.42:  45%|████▌     | 9/20 [04:38<05:40, 30.99s/it]Task 1, Epoch 10/20 => Loss 0.134, Train_accy 95.49:  45%|████▌     | 9/20 [05:09<05:40, 30.99s/it]Task 1, Epoch 10/20 => Loss 0.134, Train_accy 95.49:  50%|█████     | 10/20 [05:09<05:09, 30.98s/it]Task 1, Epoch 11/20 => Loss 0.138, Train_accy 95.37:  50%|█████     | 10/20 [05:40<05:09, 30.98s/it]Task 1, Epoch 11/20 => Loss 0.138, Train_accy 95.37:  55%|█████▌    | 11/20 [05:40<04:38, 30.97s/it]Task 1, Epoch 12/20 => Loss 0.120, Train_accy 96.13:  55%|█████▌    | 11/20 [06:11<04:38, 30.97s/it]Task 1, Epoch 12/20 => Loss 0.120, Train_accy 96.13:  60%|██████    | 12/20 [06:11<04:07, 31.00s/it]Task 1, Epoch 13/20 => Loss 0.130, Train_accy 95.98:  60%|██████    | 12/20 [06:42<04:07, 31.00s/it]Task 1, Epoch 13/20 => Loss 0.130, Train_accy 95.98:  65%|██████▌   | 13/20 [06:42<03:36, 30.99s/it]Task 1, Epoch 14/20 => Loss 0.109, Train_accy 96.53:  65%|██████▌   | 13/20 [07:13<03:36, 30.99s/it]Task 1, Epoch 14/20 => Loss 0.109, Train_accy 96.53:  70%|███████   | 14/20 [07:13<03:05, 30.95s/it]Task 1, Epoch 15/20 => Loss 0.114, Train_accy 96.51:  70%|███████   | 14/20 [07:44<03:05, 30.95s/it]Task 1, Epoch 15/20 => Loss 0.114, Train_accy 96.51:  75%|███████▌  | 15/20 [07:44<02:34, 30.91s/it]Task 1, Epoch 16/20 => Loss 0.115, Train_accy 96.27:  75%|███████▌  | 15/20 [08:15<02:34, 30.91s/it]Task 1, Epoch 16/20 => Loss 0.115, Train_accy 96.27:  80%|████████  | 16/20 [08:15<02:03, 30.92s/it]Task 1, Epoch 17/20 => Loss 0.113, Train_accy 96.08:  80%|████████  | 16/20 [08:46<02:03, 30.92s/it]Task 1, Epoch 17/20 => Loss 0.113, Train_accy 96.08:  85%|████████▌ | 17/20 [08:46<01:32, 30.94s/it]Task 1, Epoch 18/20 => Loss 0.107, Train_accy 96.54:  85%|████████▌ | 17/20 [09:17<01:32, 30.94s/it]Task 1, Epoch 18/20 => Loss 0.107, Train_accy 96.54:  90%|█████████ | 18/20 [09:17<01:01, 30.95s/it]Task 1, Epoch 19/20 => Loss 0.100, Train_accy 96.81:  90%|█████████ | 18/20 [09:48<01:01, 30.95s/it]Task 1, Epoch 19/20 => Loss 0.100, Train_accy 96.81:  95%|█████████▌| 19/20 [09:48<00:30, 30.98s/it]Task 1, Epoch 20/20 => Loss 0.098, Train_accy 96.82:  95%|█████████▌| 19/20 [10:19<00:30, 30.98s/it]Task 1, Epoch 20/20 => Loss 0.098, Train_accy 96.82: 100%|██████████| 20/20 [10:19<00:00, 30.99s/it]Task 1, Epoch 20/20 => Loss 0.098, Train_accy 96.82: 100%|██████████| 20/20 [10:19<00:00, 30.97s/it]
+2024-08-13 03:42:15,980 [inflora.py] => Task 1, Epoch 20/20 => Loss 0.098, Train_accy 96.82
+Threshold:  0.9583333333333333
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 7/768 type remove
+Layer 2 : 10/768 type remove
+Layer 3 : 17/768 type remove
+Layer 4 : 18/768 type remove
+Layer 5 : 30/768 type remove
+Layer 6 : 35/768 type remove
+Layer 7 : 37/768 type remove
+Layer 8 : 48/768 type remove
+Layer 9 : 58/768 type remove
+Layer 10 : 53/768 type remove
+Layer 11 : 14/768 type remove
+Layer 12 : 34/768 type remove
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([768, 768])
+Layer 2 - Projection Matrix shape: torch.Size([768, 768])
+Layer 3 - Projection Matrix shape: torch.Size([768, 768])
+Layer 4 - Projection Matrix shape: torch.Size([768, 768])
+Layer 5 - Projection Matrix shape: torch.Size([768, 768])
+Layer 6 - Projection Matrix shape: torch.Size([768, 768])
+Layer 7 - Projection Matrix shape: torch.Size([768, 768])
+Layer 8 - Projection Matrix shape: torch.Size([768, 768])
+Layer 9 - Projection Matrix shape: torch.Size([768, 768])
+Layer 10 - Projection Matrix shape: torch.Size([768, 768])
+Layer 11 - Projection Matrix shape: torch.Size([768, 768])
+Layer 12 - Projection Matrix shape: torch.Size([768, 768])
+2024-08-13 03:43:01,124 [trainer.py] => Time:691.8208260536194
+3592 3592
+3592 3592
+2024-08-13 03:43:08,194 [trainer.py] => Time:7.069623947143555
+2024-08-13 03:43:08,194 [inflora.py] => Exemplar size: 0
+2024-08-13 03:43:08,194 [trainer.py] => CNN: {'total': 78.93, '00-149': 85.44, '150-299': 46.32, 'old': 85.44, 'new': 46.32}
+2024-08-13 03:43:08,194 [trainer.py] => CNN top1 curve: [86.54, 78.93]
+2024-08-13 03:43:08,195 [trainer.py] => CNN top1 with task curve: [86.54, 87.17]
+2024-08-13 03:43:08,195 [trainer.py] => CNN top1 task curve: [1.0, 0.9067371937639198]
+Average Accuracy (CNN): 82.74
+2024-08-13 03:43:08,196 [trainer.py] => All params: 109623387
+2024-08-13 03:43:08,198 [trainer.py] => Trainable params: 189078
+2024-08-13 03:43:08,198 [inflora.py] => Learning on 180-210
+  0%|          | 0/20 [00:00<?, ?it/s]Task 2, Epoch 1/20 => Loss 0.807, Train_accy 77.50:   0%|          | 0/20 [00:30<?, ?it/s]Task 2, Epoch 1/20 => Loss 0.807, Train_accy 77.50:   5%|▌         | 1/20 [00:30<09:37, 30.38s/it]Task 2, Epoch 2/20 => Loss 0.289, Train_accy 89.61:   5%|▌         | 1/20 [01:01<09:37, 30.38s/it]Task 2, Epoch 2/20 => Loss 0.289, Train_accy 89.61:  10%|█         | 2/20 [01:01<09:10, 30.56s/it]Task 2, Epoch 3/20 => Loss 0.247, Train_accy 90.81:  10%|█         | 2/20 [01:31<09:10, 30.56s/it]Task 2, Epoch 3/20 => Loss 0.247, Train_accy 90.81:  15%|█▌        | 3/20 [01:31<08:38, 30.52s/it]Task 2, Epoch 4/20 => Loss 0.211, Train_accy 92.34:  15%|█▌        | 3/20 [02:02<08:38, 30.52s/it]Task 2, Epoch 4/20 => Loss 0.211, Train_accy 92.34:  20%|██        | 4/20 [02:02<08:08, 30.51s/it]Task 2, Epoch 5/20 => Loss 0.195, Train_accy 93.57:  20%|██        | 4/20 [02:32<08:08, 30.51s/it]Task 2, Epoch 5/20 => Loss 0.195, Train_accy 93.57:  25%|██▌       | 5/20 [02:32<07:38, 30.59s/it]Task 2, Epoch 6/20 => Loss 0.183, Train_accy 93.54:  25%|██▌       | 5/20 [03:03<07:38, 30.59s/it]Task 2, Epoch 6/20 => Loss 0.183, Train_accy 93.54:  30%|███       | 6/20 [03:03<07:08, 30.58s/it]Task 2, Epoch 7/20 => Loss 0.176, Train_accy 93.88:  30%|███       | 6/20 [03:33<07:08, 30.58s/it]Task 2, Epoch 7/20 => Loss 0.176, Train_accy 93.88:  35%|███▌      | 7/20 [03:33<06:37, 30.60s/it]Task 2, Epoch 8/20 => Loss 0.175, Train_accy 93.87:  35%|███▌      | 7/20 [04:04<06:37, 30.60s/it]Task 2, Epoch 8/20 => Loss 0.175, Train_accy 93.87:  40%|████      | 8/20 [04:04<06:07, 30.60s/it]Task 2, Epoch 9/20 => Loss 0.147, Train_accy 95.17:  40%|████      | 8/20 [04:35<06:07, 30.60s/it]Task 2, Epoch 9/20 => Loss 0.147, Train_accy 95.17:  45%|████▌     | 9/20 [04:35<05:36, 30.60s/it]Task 2, Epoch 10/20 => Loss 0.141, Train_accy 94.94:  45%|████▌     | 9/20 [05:05<05:36, 30.60s/it]Task 2, Epoch 10/20 => Loss 0.141, Train_accy 94.94:  50%|█████     | 10/20 [05:05<05:05, 30.57s/it]Task 2, Epoch 11/20 => Loss 0.135, Train_accy 95.36:  50%|█████     | 10/20 [05:36<05:05, 30.57s/it]Task 2, Epoch 11/20 => Loss 0.135, Train_accy 95.36:  55%|█████▌    | 11/20 [05:36<04:34, 30.53s/it]Task 2, Epoch 12/20 => Loss 0.137, Train_accy 95.27:  55%|█████▌    | 11/20 [06:06<04:34, 30.53s/it]Task 2, Epoch 12/20 => Loss 0.137, Train_accy 95.27:  60%|██████    | 12/20 [06:06<04:04, 30.57s/it]Task 2, Epoch 13/20 => Loss 0.125, Train_accy 95.77:  60%|██████    | 12/20 [06:37<04:04, 30.57s/it]Task 2, Epoch 13/20 => Loss 0.125, Train_accy 95.77:  65%|██████▌   | 13/20 [06:37<03:34, 30.61s/it]Task 2, Epoch 14/20 => Loss 0.126, Train_accy 95.63:  65%|██████▌   | 13/20 [07:07<03:34, 30.61s/it]Task 2, Epoch 14/20 => Loss 0.126, Train_accy 95.63:  70%|███████   | 14/20 [07:07<03:03, 30.58s/it]Task 2, Epoch 15/20 => Loss 0.120, Train_accy 95.90:  70%|███████   | 14/20 [07:38<03:03, 30.58s/it]Task 2, Epoch 15/20 => Loss 0.120, Train_accy 95.90:  75%|███████▌  | 15/20 [07:38<02:32, 30.54s/it]Task 2, Epoch 16/20 => Loss 0.117, Train_accy 96.16:  75%|███████▌  | 15/20 [08:08<02:32, 30.54s/it]Task 2, Epoch 16/20 => Loss 0.117, Train_accy 96.16:  80%|████████  | 16/20 [08:08<02:02, 30.53s/it]Task 2, Epoch 17/20 => Loss 0.117, Train_accy 95.90:  80%|████████  | 16/20 [08:39<02:02, 30.53s/it]Task 2, Epoch 17/20 => Loss 0.117, Train_accy 95.90:  85%|████████▌ | 17/20 [08:39<01:31, 30.52s/it]Task 2, Epoch 18/20 => Loss 0.106, Train_accy 96.42:  85%|████████▌ | 17/20 [09:09<01:31, 30.52s/it]Task 2, Epoch 18/20 => Loss 0.106, Train_accy 96.42:  90%|█████████ | 18/20 [09:09<01:01, 30.53s/it]Task 2, Epoch 19/20 => Loss 0.107, Train_accy 96.32:  90%|█████████ | 18/20 [09:40<01:01, 30.53s/it]Task 2, Epoch 19/20 => Loss 0.107, Train_accy 96.32:  95%|█████████▌| 19/20 [09:40<00:30, 30.53s/it]Task 2, Epoch 20/20 => Loss 0.110, Train_accy 96.26:  95%|█████████▌| 19/20 [10:10<00:30, 30.53s/it]Task 2, Epoch 20/20 => Loss 0.110, Train_accy 96.26: 100%|██████████| 20/20 [10:10<00:00, 30.50s/it]Task 2, Epoch 20/20 => Loss 0.110, Train_accy 96.26: 100%|██████████| 20/20 [10:10<00:00, 30.55s/it]
+2024-08-13 03:53:46,817 [inflora.py] => Task 2, Epoch 20/20 => Loss 0.110, Train_accy 96.26
+Threshold:  0.9666666666666667
+Skip Updating DualGPM for layer: 1
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 7/768 type remove
+Layer 2 : 11/768 type remove
+Layer 3 : 23/768 type remove
+Layer 4 : 23/768 type remove
+Layer 5 : 39/768 type remove
+Layer 6 : 48/768 type remove
+Layer 7 : 50/768 type remove
+Layer 8 : 65/768 type remove
+Layer 9 : 81/768 type remove
+Layer 10 : 82/768 type remove
+Layer 11 : 25/768 type remove
+Layer 12 : 54/768 type remove
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([768, 768])
+Layer 2 - Projection Matrix shape: torch.Size([768, 768])
+Layer 3 - Projection Matrix shape: torch.Size([768, 768])
+Layer 4 - Projection Matrix shape: torch.Size([768, 768])
+Layer 5 - Projection Matrix shape: torch.Size([768, 768])
+Layer 6 - Projection Matrix shape: torch.Size([768, 768])
+Layer 7 - Projection Matrix shape: torch.Size([768, 768])
+Layer 8 - Projection Matrix shape: torch.Size([768, 768])
+Layer 9 - Projection Matrix shape: torch.Size([768, 768])
+Layer 10 - Projection Matrix shape: torch.Size([768, 768])
+Layer 11 - Projection Matrix shape: torch.Size([768, 768])
+Layer 12 - Projection Matrix shape: torch.Size([768, 768])
+2024-08-13 03:54:32,070 [trainer.py] => Time:683.8727836608887
+4189 4189
+4189 4189
+2024-08-13 03:54:40,352 [trainer.py] => Time:8.280871391296387
+2024-08-13 03:54:40,352 [inflora.py] => Exemplar size: 0
+2024-08-13 03:54:40,352 [trainer.py] => CNN: {'total': 66.75, '00-149': 84.7, '150-299': 21.76, 'old': 77.84, 'new': 0.0}
+2024-08-13 03:54:40,352 [trainer.py] => CNN top1 curve: [86.54, 78.93, 66.75]
+2024-08-13 03:54:40,352 [trainer.py] => CNN top1 with task curve: [86.54, 87.17, 74.29]
+2024-08-13 03:54:40,352 [trainer.py] => CNN top1 task curve: [1.0, 0.9067371937639198, 0.7756027691573167]
+Average Accuracy (CNN): 77.41
+2024-08-13 03:54:40,355 [trainer.py] => All params: 109623387
+2024-08-13 03:54:40,356 [trainer.py] => Trainable params: 189078
+2024-08-13 03:54:40,356 [inflora.py] => Learning on 210-240
+  0%|          | 0/20 [00:00<?, ?it/s]Task 3, Epoch 1/20 => Loss 0.823, Train_accy 77.48:   0%|          | 0/20 [00:32<?, ?it/s]Task 3, Epoch 1/20 => Loss 0.823, Train_accy 77.48:   5%|▌         | 1/20 [00:32<10:16, 32.44s/it]Task 3, Epoch 2/20 => Loss 0.339, Train_accy 88.60:   5%|▌         | 1/20 [01:05<10:16, 32.44s/it]Task 3, Epoch 2/20 => Loss 0.339, Train_accy 88.60:  10%|█         | 2/20 [01:05<09:45, 32.55s/it]Task 3, Epoch 3/20 => Loss 0.288, Train_accy 89.91:  10%|█         | 2/20 [01:37<09:45, 32.55s/it]Task 3, Epoch 3/20 => Loss 0.288, Train_accy 89.91:  15%|█▌        | 3/20 [01:37<09:13, 32.58s/it]Task 3, Epoch 4/20 => Loss 0.250, Train_accy 91.50:  15%|█▌        | 3/20 [02:10<09:13, 32.58s/it]Task 3, Epoch 4/20 => Loss 0.250, Train_accy 91.50:  20%|██        | 4/20 [02:10<08:40, 32.55s/it]Task 3, Epoch 5/20 => Loss 0.229, Train_accy 92.25:  20%|██        | 4/20 [02:42<08:40, 32.55s/it]Task 3, Epoch 5/20 => Loss 0.229, Train_accy 92.25:  25%|██▌       | 5/20 [02:42<08:08, 32.58s/it]Task 3, Epoch 6/20 => Loss 0.218, Train_accy 92.66:  25%|██▌       | 5/20 [03:15<08:08, 32.58s/it]Task 3, Epoch 6/20 => Loss 0.218, Train_accy 92.66:  30%|███       | 6/20 [03:15<07:36, 32.60s/it]Task 3, Epoch 7/20 => Loss 0.206, Train_accy 93.03:  30%|███       | 6/20 [03:48<07:36, 32.60s/it]Task 3, Epoch 7/20 => Loss 0.206, Train_accy 93.03:  35%|███▌      | 7/20 [03:48<07:03, 32.61s/it]Task 3, Epoch 8/20 => Loss 0.205, Train_accy 92.88:  35%|███▌      | 7/20 [04:20<07:03, 32.61s/it]Task 3, Epoch 8/20 => Loss 0.205, Train_accy 92.88:  40%|████      | 8/20 [04:20<06:31, 32.61s/it]Task 3, Epoch 9/20 => Loss 0.186, Train_accy 93.61:  40%|████      | 8/20 [04:53<06:31, 32.61s/it]Task 3, Epoch 9/20 => Loss 0.186, Train_accy 93.61:  45%|████▌     | 9/20 [04:53<05:58, 32.59s/it]Task 3, Epoch 10/20 => Loss 0.173, Train_accy 93.91:  45%|████▌     | 9/20 [05:25<05:58, 32.59s/it]Task 3, Epoch 10/20 => Loss 0.173, Train_accy 93.91:  50%|█████     | 10/20 [05:25<05:26, 32.62s/it]Task 3, Epoch 11/20 => Loss 0.174, Train_accy 93.92:  50%|█████     | 10/20 [05:58<05:26, 32.62s/it]Task 3, Epoch 11/20 => Loss 0.174, Train_accy 93.92:  55%|█████▌    | 11/20 [05:58<04:53, 32.63s/it]Task 3, Epoch 12/20 => Loss 0.165, Train_accy 94.35:  55%|█████▌    | 11/20 [06:31<04:53, 32.63s/it]Task 3, Epoch 12/20 => Loss 0.165, Train_accy 94.35:  60%|██████    | 12/20 [06:31<04:20, 32.57s/it]Task 3, Epoch 13/20 => Loss 0.162, Train_accy 94.26:  60%|██████    | 12/20 [07:03<04:20, 32.57s/it]Task 3, Epoch 13/20 => Loss 0.162, Train_accy 94.26:  65%|██████▌   | 13/20 [07:03<03:47, 32.56s/it]Task 3, Epoch 14/20 => Loss 0.155, Train_accy 94.71:  65%|██████▌   | 13/20 [07:36<03:47, 32.56s/it]Task 3, Epoch 14/20 => Loss 0.155, Train_accy 94.71:  70%|███████   | 14/20 [07:36<03:15, 32.58s/it]Task 3, Epoch 15/20 => Loss 0.151, Train_accy 94.90:  70%|███████   | 14/20 [08:08<03:15, 32.58s/it]Task 3, Epoch 15/20 => Loss 0.151, Train_accy 94.90:  75%|███████▌  | 15/20 [08:08<02:43, 32.61s/it]Task 3, Epoch 16/20 => Loss 0.148, Train_accy 94.94:  75%|███████▌  | 15/20 [08:41<02:43, 32.61s/it]Task 3, Epoch 16/20 => Loss 0.148, Train_accy 94.94:  80%|████████  | 16/20 [08:41<02:10, 32.60s/it]Task 3, Epoch 17/20 => Loss 0.144, Train_accy 95.08:  80%|████████  | 16/20 [09:14<02:10, 32.60s/it]Task 3, Epoch 17/20 => Loss 0.144, Train_accy 95.08:  85%|████████▌ | 17/20 [09:14<01:37, 32.63s/it]Task 3, Epoch 18/20 => Loss 0.140, Train_accy 95.28:  85%|████████▌ | 17/20 [09:46<01:37, 32.63s/it]Task 3, Epoch 18/20 => Loss 0.140, Train_accy 95.28:  90%|█████████ | 18/20 [09:46<01:05, 32.58s/it]Task 3, Epoch 19/20 => Loss 0.140, Train_accy 95.08:  90%|█████████ | 18/20 [10:19<01:05, 32.58s/it]Task 3, Epoch 19/20 => Loss 0.140, Train_accy 95.08:  95%|█████████▌| 19/20 [10:19<00:32, 32.55s/it]Task 3, Epoch 20/20 => Loss 0.133, Train_accy 95.49:  95%|█████████▌| 19/20 [10:51<00:32, 32.55s/it]Task 3, Epoch 20/20 => Loss 0.133, Train_accy 95.49: 100%|██████████| 20/20 [10:51<00:00, 32.58s/it]Task 3, Epoch 20/20 => Loss 0.133, Train_accy 95.49: 100%|██████████| 20/20 [10:51<00:00, 32.59s/it]
+2024-08-13 04:06:01,681 [inflora.py] => Task 3, Epoch 20/20 => Loss 0.133, Train_accy 95.49
+Threshold:  0.975
+Skip Updating DualGPM for layer: 1
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 7/768 type remove
+Layer 2 : 13/768 type remove
+Layer 3 : 30/768 type remove
+Layer 4 : 31/768 type remove
+Layer 5 : 52/768 type remove
+Layer 6 : 63/768 type remove
+Layer 7 : 67/768 type remove
+Layer 8 : 88/768 type remove
+Layer 9 : 107/768 type remove
+Layer 10 : 115/768 type remove
+Layer 11 : 41/768 type remove
+Layer 12 : 76/768 type remove
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([768, 768])
+Layer 2 - Projection Matrix shape: torch.Size([768, 768])
+Layer 3 - Projection Matrix shape: torch.Size([768, 768])
+Layer 4 - Projection Matrix shape: torch.Size([768, 768])
+Layer 5 - Projection Matrix shape: torch.Size([768, 768])
+Layer 6 - Projection Matrix shape: torch.Size([768, 768])
+Layer 7 - Projection Matrix shape: torch.Size([768, 768])
+Layer 8 - Projection Matrix shape: torch.Size([768, 768])
+Layer 9 - Projection Matrix shape: torch.Size([768, 768])
+Layer 10 - Projection Matrix shape: torch.Size([768, 768])
+Layer 11 - Projection Matrix shape: torch.Size([768, 768])
+Layer 12 - Projection Matrix shape: torch.Size([768, 768])
+2024-08-13 04:06:48,332 [trainer.py] => Time:727.9747512340546
+4788 4788
+4788 4788
+2024-08-13 04:06:57,788 [trainer.py] => Time:9.455801486968994
+2024-08-13 04:06:57,788 [inflora.py] => Exemplar size: 0
+2024-08-13 04:06:57,788 [trainer.py] => CNN: {'total': 58.56, '00-149': 85.34, '150-299': 13.88, 'old': 66.94, 'new': 0.0}
+2024-08-13 04:06:57,788 [trainer.py] => CNN top1 curve: [86.54, 78.93, 66.75, 58.56]
+2024-08-13 04:06:57,788 [trainer.py] => CNN top1 with task curve: [86.54, 87.17, 74.29, 65.41]
+2024-08-13 04:06:57,788 [trainer.py] => CNN top1 task curve: [1.0, 0.9067371937639198, 0.7756027691573167, 0.6773182957393483]
+Average Accuracy (CNN): 72.7
+2024-08-13 04:06:57,790 [trainer.py] => All params: 109623387
+2024-08-13 04:06:57,791 [trainer.py] => Trainable params: 189078
+2024-08-13 04:06:57,791 [inflora.py] => Learning on 240-270
+  0%|          | 0/20 [00:00<?, ?it/s]Task 4, Epoch 1/20 => Loss 0.667, Train_accy 83.16:   0%|          | 0/20 [00:32<?, ?it/s]Task 4, Epoch 1/20 => Loss 0.667, Train_accy 83.16:   5%|▌         | 1/20 [00:32<10:09, 32.07s/it]Task 4, Epoch 2/20 => Loss 0.210, Train_accy 93.25:   5%|▌         | 1/20 [01:04<10:09, 32.07s/it]Task 4, Epoch 2/20 => Loss 0.210, Train_accy 93.25:  10%|█         | 2/20 [01:04<09:39, 32.17s/it]Task 4, Epoch 3/20 => Loss 0.180, Train_accy 94.13:  10%|█         | 2/20 [01:36<09:39, 32.17s/it]Task 4, Epoch 3/20 => Loss 0.180, Train_accy 94.13:  15%|█▌        | 3/20 [01:36<09:06, 32.17s/it]Task 4, Epoch 4/20 => Loss 0.152, Train_accy 95.07:  15%|█▌        | 3/20 [02:08<09:06, 32.17s/it]Task 4, Epoch 4/20 => Loss 0.152, Train_accy 95.07:  20%|██        | 4/20 [02:08<08:34, 32.17s/it]Task 4, Epoch 5/20 => Loss 0.143, Train_accy 95.28:  20%|██        | 4/20 [02:40<08:34, 32.17s/it]Task 4, Epoch 5/20 => Loss 0.143, Train_accy 95.28:  25%|██▌       | 5/20 [02:40<08:01, 32.10s/it]Task 4, Epoch 6/20 => Loss 0.134, Train_accy 95.52:  25%|██▌       | 5/20 [03:12<08:01, 32.10s/it]Task 4, Epoch 6/20 => Loss 0.134, Train_accy 95.52:  30%|███       | 6/20 [03:12<07:29, 32.11s/it]Task 4, Epoch 7/20 => Loss 0.125, Train_accy 95.87:  30%|███       | 6/20 [03:44<07:29, 32.11s/it]Task 4, Epoch 7/20 => Loss 0.125, Train_accy 95.87:  35%|███▌      | 7/20 [03:44<06:57, 32.10s/it]Task 4, Epoch 8/20 => Loss 0.122, Train_accy 96.01:  35%|███▌      | 7/20 [04:17<06:57, 32.10s/it]Task 4, Epoch 8/20 => Loss 0.122, Train_accy 96.01:  40%|████      | 8/20 [04:17<06:25, 32.13s/it]Task 4, Epoch 9/20 => Loss 0.120, Train_accy 96.16:  40%|████      | 8/20 [04:49<06:25, 32.13s/it]Task 4, Epoch 9/20 => Loss 0.120, Train_accy 96.16:  45%|████▌     | 9/20 [04:49<05:53, 32.13s/it]Task 4, Epoch 10/20 => Loss 0.115, Train_accy 96.32:  45%|████▌     | 9/20 [05:21<05:53, 32.13s/it]Task 4, Epoch 10/20 => Loss 0.115, Train_accy 96.32:  50%|█████     | 10/20 [05:21<05:21, 32.12s/it]Task 4, Epoch 11/20 => Loss 0.096, Train_accy 96.91:  50%|█████     | 10/20 [05:53<05:21, 32.12s/it]Task 4, Epoch 11/20 => Loss 0.096, Train_accy 96.91:  55%|█████▌    | 11/20 [05:53<04:49, 32.14s/it]Task 4, Epoch 12/20 => Loss 0.104, Train_accy 96.61:  55%|█████▌    | 11/20 [06:25<04:49, 32.14s/it]Task 4, Epoch 12/20 => Loss 0.104, Train_accy 96.61:  60%|██████    | 12/20 [06:25<04:16, 32.11s/it]Task 4, Epoch 13/20 => Loss 0.097, Train_accy 96.80:  60%|██████    | 12/20 [06:57<04:16, 32.11s/it]Task 4, Epoch 13/20 => Loss 0.097, Train_accy 96.80:  65%|██████▌   | 13/20 [06:57<03:44, 32.09s/it]Task 4, Epoch 14/20 => Loss 0.088, Train_accy 97.21:  65%|██████▌   | 13/20 [07:29<03:44, 32.09s/it]Task 4, Epoch 14/20 => Loss 0.088, Train_accy 97.21:  70%|███████   | 14/20 [07:29<03:12, 32.12s/it]Task 4, Epoch 15/20 => Loss 0.092, Train_accy 97.06:  70%|███████   | 14/20 [08:01<03:12, 32.12s/it]Task 4, Epoch 15/20 => Loss 0.092, Train_accy 97.06:  75%|███████▌  | 15/20 [08:01<02:40, 32.10s/it]Task 4, Epoch 16/20 => Loss 0.098, Train_accy 96.93:  75%|███████▌  | 15/20 [08:33<02:40, 32.10s/it]Task 4, Epoch 16/20 => Loss 0.098, Train_accy 96.93:  80%|████████  | 16/20 [08:33<02:08, 32.08s/it]Task 4, Epoch 17/20 => Loss 0.093, Train_accy 96.97:  80%|████████  | 16/20 [09:05<02:08, 32.08s/it]Task 4, Epoch 17/20 => Loss 0.093, Train_accy 96.97:  85%|████████▌ | 17/20 [09:05<01:36, 32.07s/it]Task 4, Epoch 18/20 => Loss 0.083, Train_accy 97.21:  85%|████████▌ | 17/20 [09:38<01:36, 32.07s/it]Task 4, Epoch 18/20 => Loss 0.083, Train_accy 97.21:  90%|█████████ | 18/20 [09:38<01:04, 32.11s/it]Task 4, Epoch 19/20 => Loss 0.092, Train_accy 97.11:  90%|█████████ | 18/20 [10:10<01:04, 32.11s/it]Task 4, Epoch 19/20 => Loss 0.092, Train_accy 97.11:  95%|█████████▌| 19/20 [10:10<00:32, 32.10s/it]Task 4, Epoch 20/20 => Loss 0.082, Train_accy 97.45:  95%|█████████▌| 19/20 [10:42<00:32, 32.10s/it]Task 4, Epoch 20/20 => Loss 0.082, Train_accy 97.45: 100%|██████████| 20/20 [10:42<00:00, 32.09s/it]Task 4, Epoch 20/20 => Loss 0.082, Train_accy 97.45: 100%|██████████| 20/20 [10:42<00:00, 32.11s/it]
+2024-08-13 04:18:09,151 [inflora.py] => Task 4, Epoch 20/20 => Loss 0.082, Train_accy 97.45
+Threshold:  0.9833333333333333
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 8/768 type remove
+Layer 2 : 15/768 type remove
+Layer 3 : 43/768 type remove
+Layer 4 : 47/768 type remove
+Layer 5 : 76/768 type remove
+Layer 6 : 93/768 type remove
+Layer 7 : 105/768 type remove
+Layer 8 : 140/768 type remove
+Layer 9 : 174/768 type remove
+Layer 10 : 192/768 type remove
+Layer 11 : 84/768 type remove
+Layer 12 : 127/768 type remove
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([768, 768])
+Layer 2 - Projection Matrix shape: torch.Size([768, 768])
+Layer 3 - Projection Matrix shape: torch.Size([768, 768])
+Layer 4 - Projection Matrix shape: torch.Size([768, 768])
+Layer 5 - Projection Matrix shape: torch.Size([768, 768])
+Layer 6 - Projection Matrix shape: torch.Size([768, 768])
+Layer 7 - Projection Matrix shape: torch.Size([768, 768])
+Layer 8 - Projection Matrix shape: torch.Size([768, 768])
+Layer 9 - Projection Matrix shape: torch.Size([768, 768])
+Layer 10 - Projection Matrix shape: torch.Size([768, 768])
+Layer 11 - Projection Matrix shape: torch.Size([768, 768])
+Layer 12 - Projection Matrix shape: torch.Size([768, 768])
+2024-08-13 04:18:55,933 [trainer.py] => Time:718.1418824195862
+5387 5387
+5387 5387
+2024-08-13 04:19:06,441 [trainer.py] => Time:10.507082223892212
+2024-08-13 04:19:06,441 [inflora.py] => Exemplar size: 0
+2024-08-13 04:19:06,441 [trainer.py] => CNN: {'total': 51.79, '00-149': 85.27, '150-299': 9.9, 'old': 58.27, 'new': 0.0}
+2024-08-13 04:19:06,442 [trainer.py] => CNN top1 curve: [86.54, 78.93, 66.75, 58.56, 51.79]
+2024-08-13 04:19:06,442 [trainer.py] => CNN top1 with task curve: [86.54, 87.17, 74.29, 65.41, 58.07]
+2024-08-13 04:19:06,442 [trainer.py] => CNN top1 task curve: [1.0, 0.9067371937639198, 0.7756027691573167, 0.6773182957393483, 0.6021904585112308]
+Average Accuracy (CNN): 68.51
+2024-08-13 04:19:06,446 [trainer.py] => All params: 109623387
+2024-08-13 04:19:06,448 [trainer.py] => Trainable params: 189078
+2024-08-13 04:19:06,448 [inflora.py] => Learning on 270-300
+  0%|          | 0/20 [00:00<?, ?it/s]Task 5, Epoch 1/20 => Loss 0.716, Train_accy 81.57:   0%|          | 0/20 [00:30<?, ?it/s]Task 5, Epoch 1/20 => Loss 0.716, Train_accy 81.57:   5%|▌         | 1/20 [00:30<09:34, 30.26s/it]Task 5, Epoch 2/20 => Loss 0.213, Train_accy 92.86:   5%|▌         | 1/20 [01:00<09:34, 30.26s/it]Task 5, Epoch 2/20 => Loss 0.213, Train_accy 92.86:  10%|█         | 2/20 [01:00<09:06, 30.38s/it]Task 5, Epoch 3/20 => Loss 0.182, Train_accy 93.84:  10%|█         | 2/20 [01:30<09:06, 30.38s/it]Task 5, Epoch 3/20 => Loss 0.182, Train_accy 93.84:  15%|█▌        | 3/20 [01:30<08:34, 30.27s/it]Task 5, Epoch 4/20 => Loss 0.153, Train_accy 94.65:  15%|█▌        | 3/20 [02:01<08:34, 30.27s/it]Task 5, Epoch 4/20 => Loss 0.153, Train_accy 94.65:  20%|██        | 4/20 [02:01<08:04, 30.30s/it]Task 5, Epoch 5/20 => Loss 0.145, Train_accy 94.89:  20%|██        | 4/20 [02:31<08:04, 30.30s/it]Task 5, Epoch 5/20 => Loss 0.145, Train_accy 94.89:  25%|██▌       | 5/20 [02:31<07:35, 30.34s/it]Task 5, Epoch 6/20 => Loss 0.132, Train_accy 95.76:  25%|██▌       | 5/20 [03:02<07:35, 30.34s/it]Task 5, Epoch 6/20 => Loss 0.132, Train_accy 95.76:  30%|███       | 6/20 [03:02<07:04, 30.35s/it]Task 5, Epoch 7/20 => Loss 0.133, Train_accy 95.66:  30%|███       | 6/20 [03:32<07:04, 30.35s/it]Task 5, Epoch 7/20 => Loss 0.133, Train_accy 95.66:  35%|███▌      | 7/20 [03:32<06:34, 30.37s/it]Task 5, Epoch 8/20 => Loss 0.125, Train_accy 95.93:  35%|███▌      | 7/20 [04:02<06:34, 30.37s/it]Task 5, Epoch 8/20 => Loss 0.125, Train_accy 95.93:  40%|████      | 8/20 [04:02<06:03, 30.33s/it]Task 5, Epoch 9/20 => Loss 0.110, Train_accy 96.52:  40%|████      | 8/20 [04:33<06:03, 30.33s/it]Task 5, Epoch 9/20 => Loss 0.110, Train_accy 96.52:  45%|████▌     | 9/20 [04:33<05:34, 30.42s/it]Task 5, Epoch 10/20 => Loss 0.111, Train_accy 96.11:  45%|████▌     | 9/20 [05:03<05:34, 30.42s/it]Task 5, Epoch 10/20 => Loss 0.111, Train_accy 96.11:  50%|█████     | 10/20 [05:03<05:03, 30.39s/it]Task 5, Epoch 11/20 => Loss 0.102, Train_accy 96.56:  50%|█████     | 10/20 [05:34<05:03, 30.39s/it]Task 5, Epoch 11/20 => Loss 0.102, Train_accy 96.56:  55%|█████▌    | 11/20 [05:34<04:33, 30.41s/it]Task 5, Epoch 12/20 => Loss 0.104, Train_accy 96.66:  55%|█████▌    | 11/20 [06:04<04:33, 30.41s/it]Task 5, Epoch 12/20 => Loss 0.104, Train_accy 96.66:  60%|██████    | 12/20 [06:04<04:03, 30.42s/it]Task 5, Epoch 13/20 => Loss 0.096, Train_accy 96.90:  60%|██████    | 12/20 [06:34<04:03, 30.42s/it]Task 5, Epoch 13/20 => Loss 0.096, Train_accy 96.90:  65%|██████▌   | 13/20 [06:34<03:32, 30.42s/it]Task 5, Epoch 14/20 => Loss 0.098, Train_accy 96.81:  65%|██████▌   | 13/20 [07:05<03:32, 30.42s/it]Task 5, Epoch 14/20 => Loss 0.098, Train_accy 96.81:  70%|███████   | 14/20 [07:05<03:02, 30.42s/it]Task 5, Epoch 15/20 => Loss 0.093, Train_accy 96.87:  70%|███████   | 14/20 [07:35<03:02, 30.42s/it]Task 5, Epoch 15/20 => Loss 0.093, Train_accy 96.87:  75%|███████▌  | 15/20 [07:35<02:31, 30.34s/it]Task 5, Epoch 16/20 => Loss 0.095, Train_accy 97.10:  75%|███████▌  | 15/20 [08:05<02:31, 30.34s/it]Task 5, Epoch 16/20 => Loss 0.095, Train_accy 97.10:  80%|████████  | 16/20 [08:05<02:01, 30.33s/it]Task 5, Epoch 17/20 => Loss 0.094, Train_accy 97.15:  80%|████████  | 16/20 [08:35<02:01, 30.33s/it]Task 5, Epoch 17/20 => Loss 0.094, Train_accy 97.15:  85%|████████▌ | 17/20 [08:35<01:30, 30.27s/it]Task 5, Epoch 18/20 => Loss 0.087, Train_accy 97.17:  85%|████████▌ | 17/20 [09:06<01:30, 30.27s/it]Task 5, Epoch 18/20 => Loss 0.087, Train_accy 97.17:  90%|█████████ | 18/20 [09:06<01:00, 30.35s/it]Task 5, Epoch 19/20 => Loss 0.081, Train_accy 97.24:  90%|█████████ | 18/20 [09:36<01:00, 30.35s/it]Task 5, Epoch 19/20 => Loss 0.081, Train_accy 97.24:  95%|█████████▌| 19/20 [09:36<00:30, 30.38s/it]Task 5, Epoch 20/20 => Loss 0.092, Train_accy 97.11:  95%|█████████▌| 19/20 [10:07<00:30, 30.38s/it]Task 5, Epoch 20/20 => Loss 0.092, Train_accy 97.11: 100%|██████████| 20/20 [10:07<00:00, 30.40s/it]Task 5, Epoch 20/20 => Loss 0.092, Train_accy 97.11: 100%|██████████| 20/20 [10:07<00:00, 30.37s/it]
+2024-08-13 04:29:40,741 [inflora.py] => Task 5, Epoch 20/20 => Loss 0.092, Train_accy 97.11
+Threshold:  0.9916666666666667
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 9/768 type remove
+Layer 2 : 24/768 type remove
+Layer 3 : 71/768 type remove
+Layer 4 : 82/768 type remove
+Layer 5 : 122/768 type remove
+Layer 6 : 152/768 type remove
+Layer 7 : 179/768 type remove
+Layer 8 : 236/768 type remove
+Layer 9 : 291/768 type remove
+Layer 10 : 334/768 type remove
+Layer 11 : 201/768 type remove
+Layer 12 : 233/768 type remove
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([768, 768])
+Layer 2 - Projection Matrix shape: torch.Size([768, 768])
+Layer 3 - Projection Matrix shape: torch.Size([768, 768])
+Layer 4 - Projection Matrix shape: torch.Size([768, 768])
+Layer 5 - Projection Matrix shape: torch.Size([768, 768])
+Layer 6 - Projection Matrix shape: torch.Size([768, 768])
+Layer 7 - Projection Matrix shape: torch.Size([768, 768])
+Layer 8 - Projection Matrix shape: torch.Size([768, 768])
+Layer 9 - Projection Matrix shape: torch.Size([768, 768])
+Layer 10 - Projection Matrix shape: torch.Size([768, 768])
+Layer 11 - Projection Matrix shape: torch.Size([768, 768])
+Layer 12 - Projection Matrix shape: torch.Size([768, 768])
+2024-08-13 04:30:24,764 [trainer.py] => Time:678.315863609314
+5985 5985
+5985 5985
+2024-08-13 04:30:36,399 [trainer.py] => Time:11.63487195968628
+2024-08-13 04:30:36,399 [inflora.py] => Exemplar size: 0
+2024-08-13 04:30:36,399 [trainer.py] => CNN: {'total': 46.5, '00-149': 85.2, '150-299': 7.76, 'old': 51.66, 'new': 0.0}
+2024-08-13 04:30:36,399 [trainer.py] => CNN top1 curve: [86.54, 78.93, 66.75, 58.56, 51.79, 46.5]
+2024-08-13 04:30:36,400 [trainer.py] => CNN top1 with task curve: [86.54, 87.17, 74.29, 65.41, 58.07, 52.18]
+2024-08-13 04:30:36,400 [trainer.py] => CNN top1 task curve: [1.0, 0.9067371937639198, 0.7756027691573167, 0.6773182957393483, 0.6021904585112308, 0.5423558897243108]
+Average Accuracy (CNN): 64.85
