@@ -11,6 +11,12 @@ nohup ./train_cifar_B0_Inc5.sh > ./res/4090-baseline-cifar-B0-Inc5.out 2>&1 &
 
 nohup ./train_inr_B0_Inc5.sh > ./res/4090-baseline-inr-B0-Inc5.out 2>&1 &
 
+nohup ./train_cub_B0_Inc10.sh > ./res/4090-baseline-cub-B0-Inc10.out 2>&1 &
+
+nohup ./train_ina_B0_Inc20.sh > ./res/4090-baseline-ina-B0-Inc20.out 2>&1 &
+
+nohup ./train_omn_B0_Inc30.sh > ./res/4090-baseline-omn-B0-Inc30.out 2>&1 &
+
 # memory对比
 
 nohup ./train_vtab_B0_Inc5.sh >./res/memory-baseline-vtab-B0-Inc5.out 2>&1 &
