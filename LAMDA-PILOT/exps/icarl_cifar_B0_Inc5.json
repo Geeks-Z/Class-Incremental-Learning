@@ -3,7 +3,7 @@
     "dataset": "cifar224",
     "memory_size": 2000,
     "memory_per_class": 20,
-    "fixed_memory": true,
+    "fixed_memory": false,
     "shuffle": true,
     "init_cls": 20,
     "increment": 20,
@@ -11,7 +11,6 @@
     "backbone_type": "vit_base_patch16_224_in21k",
     "device": ["0"],
     "seed": [1993],
-
     "init_epoch": 20,
     "init_lr": 1e-3,
     "init_milestones": [60, 120, 170],
