@@ -6,7 +6,7 @@
     "fixed_memory": false,
     "shuffle": true,
     "init_cls": 50,
-    "increment": 10,
+    "increment": 5,
     "model_name": "l2p",
     "backbone_type": "vit_base_patch16_224_in21k_l2p",
     "get_original_backbone": true,

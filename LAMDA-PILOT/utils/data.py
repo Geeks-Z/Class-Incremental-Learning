@@ -28,8 +28,8 @@ class iCIFAR10(iData):
     class_order = np.arange(10).tolist()
 
     def download_data(self):
-        train_dataset = datasets.cifar.CIFAR10("/mnt/mydisk/ruoheng.li/lrh/Dataset", train=True, download=False)
-        test_dataset = datasets.cifar.CIFAR10("/mnt/mydisk/ruoheng.li/lrh/Dataset", train=False, download=False)
+        train_dataset = datasets.cifar.CIFAR10("/gs/home/izhw1024/Dataset", train=True, download=False)
+        test_dataset = datasets.cifar.CIFAR10("/gs/home/izhw1024/Dataset", train=False, download=False)
         self.train_data, self.train_targets = train_dataset.data, np.array(
             train_dataset.targets
         )
@@ -56,8 +56,8 @@ class iCIFAR100(iData):
     class_order = np.arange(100).tolist()
 
     def download_data(self):
-        train_dataset = datasets.cifar.CIFAR100("/mnt/mydisk/ruoheng.li/lrh/Dataset", train=True, download=False)
-        test_dataset = datasets.cifar.CIFAR100("/mnt/mydisk/ruoheng.li/lrh/Dataset", train=False, download=False)
+        train_dataset = datasets.cifar.CIFAR100("/gs/home/izhw1024/Dataset", train=True, download=False)
+        test_dataset = datasets.cifar.CIFAR100("/gs/home/izhw1024/Dataset", train=False, download=False)
         self.train_data, self.train_targets = train_dataset.data, np.array(
             train_dataset.targets
         )
@@ -137,8 +137,8 @@ class iCIFAR224(iData):
         self.class_order = np.arange(100).tolist()
 
     def download_data(self):
-        train_dataset = datasets.cifar.CIFAR100("/mnt/mydisk/ruoheng.li/lrh/Dataset", train=True, download=False)
-        test_dataset = datasets.cifar.CIFAR100("/mnt/mydisk/ruoheng.li/lrh/Dataset", train=False, download=False)
+        train_dataset = datasets.cifar.CIFAR100("/gs/home/izhw1024/Dataset", train=True, download=False)
+        test_dataset = datasets.cifar.CIFAR100("/gs/home/izhw1024/Dataset", train=False, download=False)
         self.train_data, self.train_targets = train_dataset.data, np.array(
             train_dataset.targets
         )
@@ -225,8 +225,8 @@ class iImageNetR(iData):
 
     def download_data(self):
         # assert 0, "You should specify the folder of your dataset"
-        train_dir = "/mnt/mydisk/ruoheng.li/lrh/Dataset/imagenet-r/train/"
-        test_dir = "/mnt/mydisk/ruoheng.li/lrh/Dataset/imagenet-r/test/"
+        train_dir = "/gs/home/izhw1024/Dataset/imagenet-r/train/"
+        test_dir = "/gs/home/izhw1024/Dataset/imagenet-r/test/"
 
         train_dset = datasets.ImageFolder(train_dir)
         test_dset = datasets.ImageFolder(test_dir)
@@ -246,8 +246,8 @@ class iImageNetA(iData):
 
     def download_data(self):
         # assert 0, "You should specify the folder of your dataset"
-        train_dir = "/mnt/mydisk/ruoheng.li/lrh/Dataset/imagenet-a/train/"
-        test_dir = "/mnt/mydisk/ruoheng.li/lrh/Dataset/imagenet-a/test/"
+        train_dir = "/gs/home/izhw1024/Dataset/imagenet-a/train/"
+        test_dir = "/gs/home/izhw1024/Dataset/imagenet-a/test/"
 
         train_dset = datasets.ImageFolder(train_dir)
         test_dset = datasets.ImageFolder(test_dir)
@@ -268,8 +268,8 @@ class CUB(iData):
 
     def download_data(self):
         # assert 0, "You should specify the folder of your dataset"
-        train_dir = "/mnt/mydisk/ruoheng.li/lrh/Dataset/cub/train/"
-        test_dir = "/mnt/mydisk/ruoheng.li/lrh/Dataset/cub/test/"
+        train_dir = "/gs/home/izhw1024/Dataset/cub/train/"
+        test_dir = "/gs/home/izhw1024/Dataset/cub/test/"
 
         train_dset = datasets.ImageFolder(train_dir)
         test_dset = datasets.ImageFolder(test_dir)
@@ -289,8 +289,8 @@ class objectnet(iData):
 
     def download_data(self):
         # assert 0, "You should specify the folder of your dataset"
-        train_dir = "/mnt/mydisk/ruoheng.li/lrh/Dataset/objectnet/train/"
-        test_dir = "/mnt/mydisk/ruoheng.li/lrh/Dataset/objectnet/test/"
+        train_dir = "/gs/home/izhw1024/Dataset/objectnet/train/"
+        test_dir = "/gs/home/izhw1024/Dataset/objectnet/test/"
 
         train_dset = datasets.ImageFolder(train_dir)
         test_dset = datasets.ImageFolder(test_dir)
@@ -310,8 +310,8 @@ class omnibenchmark(iData):
 
     def download_data(self):
         # assert 0, "You should specify the folder of your dataset"
-        train_dir = "/mnt/mydisk/ruoheng.li/lrh/Dataset/omnibenchmark/train/"
-        test_dir = "/mnt/mydisk/ruoheng.li/lrh/Dataset/omnibenchmark/test/"
+        train_dir = "/gs/home/izhw1024/Dataset/omnibenchmark/train/"
+        test_dir = "/gs/home/izhw1024/Dataset/omnibenchmark/test/"
 
         train_dset = datasets.ImageFolder(train_dir)
         test_dset = datasets.ImageFolder(test_dir)
@@ -332,8 +332,8 @@ class vtab(iData):
 
     def download_data(self):
         # assert 0, "You should specify the folder of your dataset"
-        train_dir = "/mnt/mydisk/ruoheng.li/lrh/Dataset/vtab/train/"
-        test_dir = "/mnt/mydisk/ruoheng.li/lrh/Dataset/vtab/test/"
+        train_dir = "/gs/home/izhw1024/Dataset/vtab/train/"
+        test_dir = "/gs/home/izhw1024/Dataset/vtab/test/"
 
         train_dset = datasets.ImageFolder(train_dir)
         test_dset = datasets.ImageFolder(test_dir)
