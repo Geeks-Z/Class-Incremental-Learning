@@ -3,7 +3,7 @@
     "dataset": "cifar224",
     "memory_size": 2000,
     "memory_per_class": 20,
-    "fixed_memory": true,
+    "fixed_memory": false,
     "shuffle": true,
     "init_cls": 50,
     "increment": 10,
@@ -11,7 +11,6 @@
     "backbone_type": "vit_base_patch16_224_in21k",
     "device": ["0"],
     "seed": [1993],
-    
     "beta1": 0.96,
     "beta2": 0.97,
     "oofc":"ft",

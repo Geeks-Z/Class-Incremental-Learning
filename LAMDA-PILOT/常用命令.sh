@@ -11,6 +11,9 @@ nohup ./train_icarl_cifar.sh > ./res/4090-icarl-cifar.out 2>&1 &
 # der cifar
 nohup ./train_der_cifar.sh > ./res/4090-der-cifar.out 2>&1 &
 
+# foster cifar
+nohup ./train_foster_cifar.sh > ./res/4090-foster-cifar.out 2>&1 &
+
 
 nohup ./train_cifar_B0_Inc5.sh > ./res/4090-baseline-cifar-B0-Inc5.out 2>&1 &
 
