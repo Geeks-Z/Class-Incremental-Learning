@@ -1,4 +1,4 @@
-## Class-Incremental Learning
+## Awesome-CIL
 
 <div align=center><img src="https://markdownimg-hw.oss-cn-beijing.aliyuncs.com/logo.png" style="zoom: 60%;" /></div>
 <p></p>
@@ -6,7 +6,9 @@
 
 ## 🎉 介绍
 
-CIL（Class-Incremental Learning）类增量学习【Life-Long Learning/Continual Learning】
+CIL: Class-Incremental Learning/类增量学习【Life-Long Learning/Continual Learning】
+
+## 🌟 Papers
 
 | Title                                                        | Venue | Year | Type    | Code                                                    | Code_Position                                   |
 | ------------------------------------------------------------ | ----- | ---- | ------- | ------------------------------------------------------- | ----------------------------------------------- |
