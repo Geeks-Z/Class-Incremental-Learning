@@ -5,6 +5,11 @@ conda activate peft
 cd lrh/Code/Research/CIL/LAMDA-PILOT/ &&
 conda activate cil
 
+# 超算
+cd Code/Research/CIL/LAMDA-PILOT/
+sbatch train.slurm
+
+
 # icarl_cifar
 nohup ./train_icarl_cifar.sh > ./res/4090-icarl-cifar.out 2>&1 &
 
