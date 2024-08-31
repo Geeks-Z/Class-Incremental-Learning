@@ -35,19 +35,19 @@ CIL: Class-Incremental Learning/类增量学习
 - `B-$m$ Inc-$n$' stands for the class split. $m$ represents the number of categories in the initial incremental task, while $n$ denotes the number of subsequent incremental tasks, with categories in these tasks evenly distributed. If $m = 0$, all categories in the dataset are evenly distributed across $n$ incremental tasks.
 - ViT-B/16-IN21K as the pre-trained backbone
 - 实验日志位于每个方法文件夹下的`res`目录
-- results：CNN/NME
+- results：CNN
 
 ### CIFAR-100
 
 #### PEFT
 
-|             | B0 Inc5 | B0 Inc10 | B0 Inc20 | B50 Inc5 | B0 Inc10 | Code |
-| ----------- | ------- | -------- | -------- | -------- | -------- | ---- |
-| Ease        |         |          |          |          |          |      |
-| InfLoRA     |         |          |          |          |          |      |
-| CODA-Prompt |         |          |          |          |          |      |
-| DualPrompt  |         |          |          |          |          |      |
-| L2P         |         |          |          |          |          |      |
+|             | B0 Inc5 | B0 Inc10 | B0 Inc20 | B50 Inc5 | B0 Inc10 | Code                 |
+| ----------- | ------- | -------- | -------- | -------- | -------- | -------------------- |
+| Ease        |         |          |          |          |          |                      |
+| InfLoRA     |         |          |          |          |          |                      |
+| CODA-Prompt |         |          |          |          |          |                      |
+| DualPrompt  | 91.4    | 90.34    | 88.51    | 87.48    | 80.99    | `📁 LAMDA-PILOT-main` |
+| L2P         | 90.81   | 89.86    | 87.58    | 87.61    | 79.42    | `📁 LAMDA-PILOT-main` |
 
 #### Memory
 
