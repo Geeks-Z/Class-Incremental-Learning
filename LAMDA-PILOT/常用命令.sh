@@ -6,7 +6,7 @@ cd lrh/Code/Research/CIL/LAMDA-PILOT/ &&
 conda activate cil
 
 # 超算
-cd Code/Research/CIL/LAMDA-PILOT/
+cd Code/Research/CIL/LAMDA-PILOT/ &&
 sbatch train.slurm
 
 

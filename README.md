@@ -6,15 +6,16 @@
 
 ## 🎉 介绍
 
-CIL: Class-Incremental Learning/类增量学习【Life-Long Learning/Continual Learning】
+CIL: Class-Incremental Learning/类增量学习
+> Life-Long Learning/Continual Learning
 
 ## 🚀 Survey
 
-| Title                                                        | Venue           | Year | Code | Code_Position |
-| ------------------------------------------------------------ | --------------- | ---- | ---- | ------------- |
-| [A survey on few-shot class-incremental learning](https://arxiv.org/abs/2304.08130) | Neural Networks | 2024 |      |               |
-| [Few-shot Class-incremental Learning: A Survey](http://arxiv.org/abs/2308.06764) |                 |      |      |               |
-|                                                              |                 |      |      |               |
+| Title | Venue | Year | Code | Code_Position |
+| ----- | ----- | ---- | ---- | ------------- |
+| [Class-Incremental Learning: A Survey](http://arxiv.org/abs/2302.03648) | TPAMI | 2024 | [CIL_Surve](https://github.com/zhoudw-zdw/CIL_Surve) |`📁CIL_Survey-main`              |
+| [Continual Learning with Pre-Trained Models: A Survey](http://arxiv.org/abs/2401.16386) |       | 2024 | [LAMDA-PILOT](https://github.com/sun-hailong/LAMDA-PILOT) |               |
+|       |       |      |      |               |
 
 ## 🌟 Papers
 
