@@ -1,4 +1,4 @@
-## Class-Incremental Learning
+## Awesome-CIL
 
 <div align=center><img src="https://markdownimg-hw.oss-cn-beijing.aliyuncs.com/logo.png" style="zoom: 60%;" /></div>
 <p></p>
@@ -6,7 +6,17 @@
 
 ## 🎉 介绍
 
-CIL（Class-Incremental Learning）类增量学习【Life-Long Learning/Continual Learning】
+CIL: Class-Incremental Learning/类增量学习【Life-Long Learning/Continual Learning】
+
+## 🚀 Survey
+
+| Title                                                        | Venue           | Year | Code | Code_Position |
+| ------------------------------------------------------------ | --------------- | ---- | ---- | ------------- |
+| [A survey on few-shot class-incremental learning](https://arxiv.org/abs/2304.08130) | Neural Networks | 2024 |      |               |
+| [Few-shot Class-incremental Learning: A Survey](http://arxiv.org/abs/2308.06764) |                 |      |      |               |
+|                                                              |                 |      |      |               |
+
+## 🌟 Papers
 
 | Title                                                        | Venue | Year | Type    | Code                                                    | Code_Position                                   |
 | ------------------------------------------------------------ | ----- | ---- | ------- | ------------------------------------------------------- | ----------------------------------------------- |
