@@ -388,7 +388,7 @@ def vit_base_patch16_224_adapter(pretrained=False, **kwargs):
             state_dict[key.replace('mlp.', '')] = fc_weight
 
     msg = model.load_state_dict(state_dict, strict=False)
-    print(msg)
+    # print(msg)
 
     # s=model.state_dict()
     # # print the keys in s
@@ -445,7 +445,7 @@ def vit_base_patch16_224_in21k_adapter(pretrained=False, **kwargs):
             state_dict[key.replace('mlp.', '')] = fc_weight
 
     msg = model.load_state_dict(state_dict, strict=False)
-    print(msg)
+    # print(msg)
 
     # s=model.state_dict()
     # # print the keys in s

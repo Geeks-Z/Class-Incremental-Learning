@@ -441,7 +441,7 @@ def vit_base_patch16_224_ease(pretrained=False, **kwargs):
             state_dict[key.replace('mlp.', '')] = fc_weight
 
     msg = model.load_state_dict(state_dict, strict=False)
-    print(msg)
+    # print(msg)
 
     # freeze all but the adapter
     for name, p in model.named_parameters():
@@ -485,7 +485,7 @@ def vit_base_patch16_224_in21k_ease(pretrained=False, **kwargs):
             state_dict[key.replace('mlp.', '')] = fc_weight
 
     msg = model.load_state_dict(state_dict, strict=False)
-    print(msg)
+    # print(msg)
 
     # freeze all but the adapter
     for name, p in model.named_parameters():

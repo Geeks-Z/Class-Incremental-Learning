@@ -24,7 +24,7 @@
     "pretrained": true,
     "vpt_type": "Deep",
     "prompt_token_num": 5,
-    "ffn_num": 64,
+    "ffn_num": 16,
     "use_diagonal": false,
     "recalc_sim": true,
     "alpha": 0.2,
