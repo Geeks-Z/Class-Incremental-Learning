@@ -1,15 +1,15 @@
 {
     "prefix": "cil",
     "dataset": "imageneta",
-    "memory_size": 2000,
-    "memory_per_class": 10,
+    "memory_size": 4000,
+    "memory_per_class": 20,
     "fixed_memory": true,
     "shuffle": true,
     "init_cls": 10,
     "increment": 10,
     "model_name": "foster",
     "backbone_type": "vit_base_patch16_224_in21k",
-    "device": ["0"],
+    "device": ["5"],
     "seed": [1993],
     
     "beta1":0.96,
