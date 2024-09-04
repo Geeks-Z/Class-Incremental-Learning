@@ -9,10 +9,10 @@
     "increment": 20,
     "model_name": "simplecil",
     "backbone_type": "pretrained_vit_b16_224",
-    "device": ["0"],
+    "device": ["1"],
     "seed": [1993],
     
-    "tuned_epoch": 20,
+    "tuned_epoch": 0,
     "init_lr": 0.01,
     "batch_size": 256,
     "weight_decay": 0.05,

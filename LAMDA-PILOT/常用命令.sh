@@ -2,8 +2,12 @@ cd Code/Research/CIL/LAMDA-PILOT/&&
 conda activate peft
 
 # cifar
-nohup ./train_cifar.sh > ./res/codaprompt-cifar.out 2>&1 &
+nohup ./train_cifar.sh > ./res/der-cifar.out 2>&1 &
+nohup ./train_foster_cifar.sh > ./res/foster-cifar.out 2>&1 &
+nohup ./train_ease_cifar.sh > ./res/ease-cifar.out 2>&1 &
 
+# cub
+nohup ./train_cub.sh > ./res/cub.out 2>&1 &
 # ease
 nohup ./train.sh > ./res/ease-all-datasets.out 2>&1 &
 # 4090

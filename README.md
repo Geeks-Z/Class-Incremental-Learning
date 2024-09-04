@@ -39,26 +39,85 @@ CIL: Class-Incremental Learning
 
 ### CIFAR-100
 
-|             | B0 Inc5    | B0 Inc10    | B0 Inc20    | B50 Inc5    | B0 Inc10    | Code                 |
+|             | B0 Inc5    | B0 Inc10    | B0 Inc20    | B50 Inc5    | B50 Inc10   | Code                 |
 | ----------- | ---------- | ----------- | ----------- | ----------- | ----------- | -------------------- |
-| Ease        |            |             |             |             |             |                      |
-| InfLoRA     |            |             |             |             |             |                      |
-| CODA-Prompt |            |             |             |             |             |                      |
+| Ease        |            |             |             |             |             | `📁 LAMDA-PILOT-main` |
+| CODA-Prompt | 92.85      | 91.49       | 88.9        | 86.38       | 77.81       | `📁 LAMDA-PILOT-main` |
 | DualPrompt  | 91.4       | 90.34       | 88.51       | 87.48       | 80.99       | `📁 LAMDA-PILOT-main` |
 | L2P         | 90.81      | 89.86       | 87.58       | 87.61       | 79.42       | `📁 LAMDA-PILOT-main` |
-| FOSTER      |            |             |             |             |             |                      |
-| DER         |            |             |             |             |             |                      |
+| FOSTER      |            |             |             |             |             | `📁 LAMDA-PILOT-main` |
+| DER         |            |             |             |             |             | `📁 LAMDA-PILOT-main` |
 | iCaRL       | 87.34/90.9 | 85.74/90.22 | 84.07/89.43 | 83.46/88.83 | 80.67/87.06 | `📁 LAMDA-PILOT-main` |
-
-
 
 ### CUB-200
 
+|             | B0 Inc5 | B0 Inc10 | B0 Inc20 | B100 Inc5 | B100 Inc10 | Code                 |
+| ----------- | ------- | -------- | -------- | --------- | ---------- | -------------------- |
+| Ease        |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
+| CODA-Prompt |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
+| DualPrompt  |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
+| L2P         |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
+| FOSTER      |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
+| DER         |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
+| iCaRL       |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
+| Simplecil   |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
+| Finetune    |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
+
+### ImageNet-R
+
+|             | B0 Inc5 | B0 Inc10 | B0 Inc20 | B100 Inc5 | B100 Inc10 | Code                 |
+| ----------- | ------- | -------- | -------- | --------- | ---------- | -------------------- |
+| Ease        |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
+| CODA-Prompt |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
+| DualPrompt  |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
+| L2P         |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
+| FOSTER      |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
+| DER         |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
+| iCaRL       |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
+| Simplecil   |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
+| Finetune    |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
+
 ### ImageNet-A
+
+|             | B0 Inc5 | B0 Inc10 | B0 Inc20 | B100 Inc5 | B100 Inc10 | Code                 |
+| ----------- | ------- | -------- | -------- | --------- | ---------- | -------------------- |
+| Ease        |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
+| CODA-Prompt |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
+| DualPrompt  |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
+| L2P         |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
+| FOSTER      |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
+| DER         |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
+| iCaRL       |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
+| Simplecil   |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
+| Finetune    |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
 
 ### Omnibenchmark
 
+|             | B0 Inc5 | B0 Inc10 | B0 Inc20 | B150 Inc5 | B150 Inc10 | Code                 |
+| ----------- | ------- | -------- | -------- | --------- | ---------- | -------------------- |
+| Ease        |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
+| CODA-Prompt |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
+| DualPrompt  |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
+| L2P         |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
+| FOSTER      |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
+| DER         |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
+| iCaRL       |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
+| Simplecil   |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
+| Finetune    |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
+
 ### VTAB
+
+|             | B0 Inc5 | B0 Inc10 | B0 Inc20 | Code                 |
+| ----------- | ------- | -------- | -------- | -------------------- |
+| Ease        |         |          |          | `📁 LAMDA-PILOT-main` |
+| CODA-Prompt |         |          |          | `📁 LAMDA-PILOT-main` |
+| DualPrompt  |         |          |          | `📁 LAMDA-PILOT-main` |
+| L2P         |         |          |          | `📁 LAMDA-PILOT-main` |
+| FOSTER      |         |          |          | `📁 LAMDA-PILOT-main` |
+| DER         |         |          |          | `📁 LAMDA-PILOT-main` |
+| iCaRL       |         |          |          | `📁 LAMDA-PILOT-main` |
+| Simplecil   |         |          |          | `📁 LAMDA-PILOT-main` |
+| Finetune    |         |          |          | `📁 LAMDA-PILOT-main` |
 
 ## 👨‍🏫  TODO
 
