@@ -39,29 +39,31 @@ CIL: Class-Incremental Learning
 
 ### CIFAR-100
 
-|             | B0 Inc5    | B0 Inc10    | B0 Inc20    | B50 Inc5    | B50 Inc10   | Code                 |
-| ----------- | ---------- | ----------- | ----------- | ----------- | ----------- | -------------------- |
-| Ease        |            |             |             |             |             | `📁 LAMDA-PILOT-main` |
-| CODA-Prompt | 92.85      | 91.49       | 88.9        | 86.38       | 77.81       | `📁 LAMDA-PILOT-main` |
-| DualPrompt  | 91.4       | 90.34       | 88.51       | 87.48       | 80.99       | `📁 LAMDA-PILOT-main` |
-| L2P         | 90.81      | 89.86       | 87.58       | 87.61       | 79.42       | `📁 LAMDA-PILOT-main` |
-| FOSTER      |            |             |             |             |             | `📁 LAMDA-PILOT-main` |
-| DER         |            |             |             |             |             | `📁 LAMDA-PILOT-main` |
-| iCaRL       | 87.34/90.9 | 85.74/90.22 | 84.07/89.43 | 83.46/88.83 | 80.67/87.06 | `📁 LAMDA-PILOT-main` |
+|             | B0 Inc5     | B0 Inc10    | B0 Inc20    | B50 Inc5    | B50 Inc10   | Code                 |
+| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | -------------------- |
+| Ease        | 93.11       | 92.56       | 91.61       | 90.35       | 89.2        | `📁 LAMDA-PILOT-main` |
+| CODA-Prompt | 92.85       | 91.49       | 88.9        | 86.38       | 77.81       | `📁 LAMDA-PILOT-main` |
+| DualPrompt  | 91.4        | 90.34       | 88.51       | 87.48       | 80.99       | `📁 LAMDA-PILOT-main` |
+| L2P         | 90.81       | 89.86       | 87.58       | 87.61       | 79.42       | `📁 LAMDA-PILOT-main` |
+| FOSTER      | 91.25/93.05 | 91.56/92.9  | 92.02/92.75 | 90.56/91.91 | 90.82/91.65 | `📁 LAMDA-PILOT-main` |
+| DER         | 88.78/91.36 | 88.58/91.01 | 88.57/90.85 | 86.83/89.38 | 86.56/88.98 | `📁 LAMDA-PILOT-main` |
+| iCaRL       | 87.34/90.9  | 85.74/90.22 | 84.07/89.43 | 83.46/88.83 | 80.67/87.06 | `📁 LAMDA-PILOT-main` |
 
 ### CUB-200
 
-|             | B0 Inc5 | B0 Inc10 | B0 Inc20 | B100 Inc5 | B100 Inc10 | Code                 |
-| ----------- | ------- | -------- | -------- | --------- | ---------- | -------------------- |
-| Ease        |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
-| CODA-Prompt |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
-| DualPrompt  |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
-| L2P         |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
-| FOSTER      |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
-| DER         |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
-| iCaRL       |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
-| Simplecil   |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
-| Finetune    |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
+> fixed_memory: True
+
+|             | B0 Inc5     | B0 Inc10   | B0 Inc20    | B100 Inc5   | B100 Inc10 | Code                 |
+| ----------- | ----------- | ---------- | ----------- | ----------- | ---------- | -------------------- |
+| Ease        |             |            |             |             |            | `📁 LAMDA-PILOT-main` |
+| CODA-Prompt |             |            |             |             |            | `📁 LAMDA-PILOT-main` |
+| DualPrompt  |             |            |             |             |            | `📁 LAMDA-PILOT-main` |
+| L2P         |             |            |             |             |            | `📁 LAMDA-PILOT-main` |
+| FOSTER      | 78.55/90.58 | 80.7/91.05 | 86.03/91.89 | 82.98/89.17 |            | `📁 LAMDA-PILOT-main` |
+| DER         |             |            |             |             |            | `📁 LAMDA-PILOT-main` |
+| iCaRL       |             |            |             |             |            | `📁 LAMDA-PILOT-main` |
+| Simplecil   | 89.93       | 90.58      | 90.97       | 87.56       | 87.48      | `📁 LAMDA-PILOT-main` |
+| Finetune    | 78.05       | 71.38      | 61.57       | 73.38       | 63.81      | `📁 LAMDA-PILOT-main` |
 
 ### ImageNet-R
 
