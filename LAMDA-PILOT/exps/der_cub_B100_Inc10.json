@@ -3,7 +3,7 @@
     "dataset": "cub",
     "memory_size": 2000,
     "memory_per_class": 20,
-    "fixed_memory": false,
+    "fixed_memory": true,
     "shuffle": true,
     "init_cls": 100,
     "increment": 10,

@@ -55,10 +55,10 @@ CIL: Class-Incremental Learning
 
 |             | B0 Inc5     | B0 Inc10   | B0 Inc20    | B100 Inc5   | B100 Inc10 | Code                 |
 | ----------- | ----------- | ---------- | ----------- | ----------- | ---------- | -------------------- |
-| Ease        |             |            |             |             |            | `📁 LAMDA-PILOT-main` |
-| CODA-Prompt |             |            |             |             |            | `📁 LAMDA-PILOT-main` |
+| Ease        | 90.2        | 90.19      | 91.34       | 85.29       | 87.54      | `📁 LAMDA-PILOT-main` |
+| CODA-Prompt | 85.65       | 85.01      | 82.92       | 79.6        | 76.63      | `📁 LAMDA-PILOT-main` |
 | DualPrompt  |             |            |             |             |            | `📁 LAMDA-PILOT-main` |
-| L2P         |             |            |             |             |            | `📁 LAMDA-PILOT-main` |
+| L2P         | 83.79       | 81.76      | 79.32       | 79.4        | 74.62      | `📁 LAMDA-PILOT-main` |
 | FOSTER      | 78.55/90.58 | 80.7/91.05 | 86.03/91.89 | 82.98/89.17 |            | `📁 LAMDA-PILOT-main` |
 | DER         |             |            |             |             |            | `📁 LAMDA-PILOT-main` |
 | iCaRL       |             |            |             |             |            | `📁 LAMDA-PILOT-main` |
@@ -69,29 +69,23 @@ CIL: Class-Incremental Learning
 
 |             | B0 Inc5 | B0 Inc10 | B0 Inc20 | B100 Inc5 | B100 Inc10 | Code                 |
 | ----------- | ------- | -------- | -------- | --------- | ---------- | -------------------- |
-| Ease        |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
-| CODA-Prompt |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
+| Ease        | 81.6    | 80.92    | 78.9     | 77.95     | 76.59      | `📁 LAMDA-PILOT-main` |
+| CODA-Prompt | 79.99   | 78.63    | 74.27    | 73.15     | 67.83      | `📁 LAMDA-PILOT-main` |
 | DualPrompt  |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
-| L2P         |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
-| FOSTER      |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
-| DER         |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
-| iCaRL       |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
-| Simplecil   |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
-| Finetune    |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
+| L2P         | 76.85   | 76.26    | 73.7     | 69.7      | 64.89      | `📁 LAMDA-PILOT-main` |
+| Simplecil   | 65.89   | 67.09    | 67.6     | 63.55     | 63.43      | `📁 LAMDA-PILOT-main` |
+| Finetune    | 71.64   | 68.97    | 64.41    | 70.76     | 67.11      | `📁 LAMDA-PILOT-main` |
 
 ### ImageNet-A
 
 |             | B0 Inc5 | B0 Inc10 | B0 Inc20 | B100 Inc5 | B100 Inc10 | Code                 |
 | ----------- | ------- | -------- | -------- | --------- | ---------- | -------------------- |
-| Ease        |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
-| CODA-Prompt |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
+| Ease        | 67.96   | 62.58    | 57.68    | 63.06     | 62.19      | `📁 LAMDA-PILOT-main` |
+| CODA-Prompt | 61.0    | 56.06    | 47.77    | 56.61     | 52.92      | `📁 LAMDA-PILOT-main` |
 | DualPrompt  |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
-| L2P         |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
-| FOSTER      |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
-| DER         |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
-| iCaRL       |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
-| Simplecil   |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
-| Finetune    |         |          |          |           |            | `📁 LAMDA-PILOT-main` |
+| L2P         | 53.24   | 52.57    | 45.68    | 49.12     | 46.74      | `📁 LAMDA-PILOT-main` |
+| Simplecil   | 58.09   | 59.33    | 60.05    | 53.29     | 53.21      | `📁 LAMDA-PILOT-main` |
+| Finetune    | 38.53   | 32.03    | 7.28     | 31.16     | 24.54      | `📁 LAMDA-PILOT-main` |
 
 ### Omnibenchmark
 

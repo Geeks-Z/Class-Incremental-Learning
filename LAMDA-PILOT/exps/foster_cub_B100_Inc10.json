@@ -6,7 +6,7 @@
     "fixed_memory": true,
     "shuffle": true,
     "init_cls": 100,
-    "increment": 20,
+    "increment": 10,
     "model_name": "foster",
     "backbone_type": "vit_base_patch16_224_in21k",
     "device": ["1"],
