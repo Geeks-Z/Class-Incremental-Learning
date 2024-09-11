@@ -4,7 +4,7 @@ conda activate peft
 # cifar
 nohup ./train_cifar.sh > ./res/cifar.out 2>&1 &
 # cub
-nohup ./train_cub.sh > ./res/cub.out 2>&1 &
+nohup ./train_cub.sh > ./res/supp_cub.out 2>&1 &
 # ina
 nohup ./train_ina.sh > ./res/ina.out 2>&1 &
 # inr
