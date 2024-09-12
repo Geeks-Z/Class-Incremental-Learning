@@ -1,16 +1,16 @@
 cd Code/Research/CIL/LAMDA-PILOT/&&
-conda activate peft
+conda activate cil
 
 # cifar
-nohup ./train_cifar.sh > ./res/cifar.out 2>&1 &
+nohup ./train_cifar.sh > ./res/2nd_cifar.out 2>&1 &
 # cub
 nohup ./train_cub.sh > ./res/supp_cub.out 2>&1 &
 # ina
-nohup ./train_ina.sh > ./res/ina.out 2>&1 &
+nohup ./train_ina.sh > ./res/2nd_ina.out 2>&1 &
 # inr
-nohup ./train_inr.sh > ./res/inr.out 2>&1 &
+nohup ./train_inr.sh > ./res/2nd_inr.out 2>&1 &
 # omn
-nohup ./train_omn.sh > ./res/omn.out 2>&1 &
+nohup ./train_omn.sh > ./res/2nd-omn.out 2>&1 &
 
 
 
@@ -33,17 +33,6 @@ nohup ./train_der_cifar.sh > ./res/4090-der-cifar.out 2>&1 &
 # foster cifar
 nohup ./train_foster_cifar.sh > ./res/4090-foster-cifar.out 2>&1 &
 
-
-nohup ./train_cifar_B0_Inc5.sh > ./res/4090-baseline-cifar-B0-Inc5.out 2>&1 &
-
-nohup ./train_inr_B0_Inc5.sh > ./res/4090-baseline-inr-B0-Inc5.out 2>&1 &
-
-nohup ./train_cub_B0_Inc10.sh > ./res/4090-baseline-cub-B0-Inc10.out 2>&1 &
-
-nohup ./train_ina_B0_Inc20.sh > ./res/4090-baseline-ina-B0-Inc20.out 2>&1 &
-
-nohup ./train_omn_B0_Inc30.sh > ./res/4090-baseline-omn-B0-Inc30.out 2>&1 &
-
 # memory对比
 
 nohup ./train_vtab_B0_Inc5.sh >./res/memory-baseline-vtab-B0-Inc5.out 2>&1 &
@@ -55,7 +44,7 @@ nohup ./train_cub_B0_Inc5.sh >./res/memory-baseline-cub-B0-Inc5.out 2>&1 &
 nohup ./train_omn_B0_Inc10.sh >./res/memory-baseline-omn-B0-Inc10.out 2>&1 &
 
 -------
-nohup ./train_omn_B0_Inc30.sh > ./res/supp-baseline-omn-B0-Inc30-ease.out 2>&1 &
+nohup ./train_omn_B0_Inc30.sh > ./res/2nd-baseline-omn-B0-Inc30-ease.out 2>&1 &
 
 nohup ./train_omn_B150_Inc5.sh > ./res/2nd-baseline-omn-B150-Inc5.out 2>&1 &
 

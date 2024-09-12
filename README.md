@@ -2,7 +2,7 @@
 
 <div align=center><img src="https://markdownimg-hw.oss-cn-beijing.aliyuncs.com/logo.png" style="zoom: 60%;" /></div>
 <p></p>
-<div align=center><img src="https://visitor-badge.laobi.icu/badge?page_id=Geeks-Z.Class-Incremental-Learning&left_color=green&right_color=red" /> <img src="https://img.shields.io/github/last-commit/Geeks-Z/Class-Incremental-Learning" /> <img src="https://img.shields.io/github/license/Geeks-Z/Class-Incremental-Learning" /></div>
+<div align=center><img src="https://visitor-badge.laobi.icu/badge?page_id=Geeks-Z.Awesome-CIL&left_color=green&right_color=red" /> <img src="https://img.shields.io/github/last-commit/Geeks-Z/Awesome-CIL" /> <img src="https://img.shields.io/github/license/Geeks-Z/Awesome-CIL" /></div>
 
 ## 🎉 介绍
 
@@ -48,22 +48,24 @@ CIL: Class-Incremental Learning
 | FOSTER      | 91.25/93.05 | 91.56/92.9  | 92.02/92.75 | 90.56/91.91 | 90.82/91.65 | `📁 LAMDA-PILOT-main` |
 | DER         | 88.78/91.36 | 88.58/91.01 | 88.57/90.85 | 86.83/89.38 | 86.56/88.98 | `📁 LAMDA-PILOT-main` |
 | iCaRL       | 87.34/90.9  | 85.74/90.22 | 84.07/89.43 | 83.46/88.83 | 80.67/87.06 | `📁 LAMDA-PILOT-main` |
+| Simplecil   |             |             |             |             |             | `📁 LAMDA-PILOT-main` |
+| Finetune    |             |             |             |             |             | `📁 LAMDA-PILOT-main` |
 
 ### CUB-200
 
 > fixed_memory: True
 
-|             | B0 Inc5     | B0 Inc10   | B0 Inc20    | B100 Inc5   | B100 Inc10 | Code                 |
-| ----------- | ----------- | ---------- | ----------- | ----------- | ---------- | -------------------- |
-| Ease        | 90.2        | 90.19      | 91.34       | 85.29       | 87.54      | `📁 LAMDA-PILOT-main` |
-| CODA-Prompt | 85.65       | 85.01      | 82.92       | 79.6        | 76.63      | `📁 LAMDA-PILOT-main` |
-| DualPrompt  |             |            |             |             |            | `📁 LAMDA-PILOT-main` |
-| L2P         | 83.79       | 81.76      | 79.32       | 79.4        | 74.62      | `📁 LAMDA-PILOT-main` |
-| FOSTER      | 78.55/90.58 | 80.7/91.05 | 86.03/91.89 | 82.98/89.17 |            | `📁 LAMDA-PILOT-main` |
-| DER         |             |            |             |             |            | `📁 LAMDA-PILOT-main` |
-| iCaRL       |             |            |             |             |            | `📁 LAMDA-PILOT-main` |
-| Simplecil   | 89.93       | 90.58      | 90.97       | 87.56       | 87.48      | `📁 LAMDA-PILOT-main` |
-| Finetune    | 78.05       | 71.38      | 61.57       | 73.38       | 63.81      | `📁 LAMDA-PILOT-main` |
+|             | B0 Inc5     | B0 Inc10    | B0 Inc20    | B100 Inc5   | B100 Inc10  | Code                 |
+| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | -------------------- |
+| Ease        | 90.2        | 90.19       | 91.34       | 85.29       | 87.54       | `📁 LAMDA-PILOT-main` |
+| CODA-Prompt | 85.65       | 85.01       | 82.92       | 79.6        | 76.63       | `📁 LAMDA-PILOT-main` |
+| DualPrompt  |             |             |             |             |             | `📁 LAMDA-PILOT-main` |
+| L2P         | 83.79       | 81.76       | 79.32       | 79.4        | 74.62       | `📁 LAMDA-PILOT-main` |
+| FOSTER      | 78.55/90.58 | 80.7/91.05  | 86.03/91.89 | 82.98/89.17 |             | `📁 LAMDA-PILOT-main` |
+| DER         | 89.73/89.82 |             |             |             |             | `📁 LAMDA-PILOT-main` |
+| iCaRL       | 87.42/89.12 | 88.27/90.13 | 88.07/89.9  | 85.9/88.11  | 85.47/87.53 | `📁 LAMDA-PILOT-main` |
+| Simplecil   | 89.93       | 90.58       | 90.97       | 87.56       | 87.48       | `📁 LAMDA-PILOT-main` |
+| Finetune    | 78.05       | 71.38       | 61.57       | 73.38       | 63.81       | `📁 LAMDA-PILOT-main` |
 
 ### ImageNet-R
 
@@ -103,17 +105,17 @@ CIL: Class-Incremental Learning
 
 ### VTAB
 
-|             | B0 Inc5 | B0 Inc10 | B0 Inc20 | Code                 |
-| ----------- | ------- | -------- | -------- | -------------------- |
-| Ease        |         |          |          | `📁 LAMDA-PILOT-main` |
-| CODA-Prompt |         |          |          | `📁 LAMDA-PILOT-main` |
-| DualPrompt  |         |          |          | `📁 LAMDA-PILOT-main` |
-| L2P         |         |          |          | `📁 LAMDA-PILOT-main` |
-| FOSTER      |         |          |          | `📁 LAMDA-PILOT-main` |
-| DER         |         |          |          | `📁 LAMDA-PILOT-main` |
-| iCaRL       |         |          |          | `📁 LAMDA-PILOT-main` |
-| Simplecil   |         |          |          | `📁 LAMDA-PILOT-main` |
-| Finetune    |         |          |          | `📁 LAMDA-PILOT-main` |
+|             | B0 Inc5 | B0 Inc10 | Code                 |
+| ----------- | ------- | -------- | -------------------- |
+| Ease        |         |          | `📁 LAMDA-PILOT-main` |
+| CODA-Prompt |         |          | `📁 LAMDA-PILOT-main` |
+| DualPrompt  |         |          | `📁 LAMDA-PILOT-main` |
+| L2P         |         |          | `📁 LAMDA-PILOT-main` |
+| FOSTER      |         |          | `📁 LAMDA-PILOT-main` |
+| DER         |         |          | `📁 LAMDA-PILOT-main` |
+| iCaRL       |         |          | `📁 LAMDA-PILOT-main` |
+| Simplecil   |         |          | `📁 LAMDA-PILOT-main` |
+| Finetune    |         |          | `📁 LAMDA-PILOT-main` |
 
 ## 👨‍🏫  TODO
 

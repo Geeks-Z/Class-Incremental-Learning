@@ -35,7 +35,3 @@ python main.py --config=./exps/dualprompt_ina_B100_Inc10.json
 #python main.py --config=./exps/ease_ina_B0_Inc20.json
 #python main.py --config=./exps/ease_ina_B100_Inc5.json
 #python main.py --config=./exps/ease_ina_B100_Inc10.json
-
-
-
-
