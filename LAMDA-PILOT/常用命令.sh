@@ -10,7 +10,7 @@ nohup ./train_ina.sh > ./res/2nd_ina.out 2>&1 &
 # inr
 nohup ./train_inr.sh > ./res/2nd_inr.out 2>&1 &
 # omn
-nohup ./train_omn.sh > ./res/supp-omn.out 2>&1 &
+nohup ./train_omn.sh > ./res/2nd-omn.out 2>&1 &
 # vtab
 nohup ./train_vtab.sh > ./res/vtab.out 2>&1 &
 
