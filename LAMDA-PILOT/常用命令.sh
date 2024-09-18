@@ -6,7 +6,7 @@ nohup ./train_cifar.sh > ./res/2nd_cifar.out 2>&1 &
 # cub
 nohup ./train_cub.sh > ./res/2nd_cub.out 2>&1 &
 # ina
-nohup ./train_ina.sh > ./res/2nd_ina.out 2>&1 &
+nohup ./train_ina.sh > ./res/3nd_ina.out 2>&1 &
 # inr
 nohup ./train_inr.sh > ./res/2nd_inr.out 2>&1 &
 # omn
