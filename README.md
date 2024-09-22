@@ -81,6 +81,8 @@ CIL: Class-Incremental Learning
 
 ### ImageNet-A
 
+<div align=center><img src="https://markdownimg-hw.oss-cn-beijing.aliyuncs.com/20240922193547.png" style="zoom: 60%;" /></div>
+
 |             | B0 Inc5 | B0 Inc10 | B0 Inc20 | B100 Inc5 | B100 Inc10 |
 | ----------- | ------- | -------- | -------- | --------- | ---------- |
 | Ease        | 67.96   | 62.58    | 57.68    | 63.06     | 62.19      |
@@ -105,6 +107,8 @@ CIL: Class-Incremental Learning
 | Finetune    | 70.21       | 65.12       | 60.77       | 57.2        | 68.37       | 64.1        |
 
 ### VTAB
+
+<div align=center><img src="https://markdownimg-hw.oss-cn-beijing.aliyuncs.com/20240922193144.png" style="zoom: 60%;" /></div>
 
 |             | B0 Inc5 | B0 Inc10 |
 | ----------- | ------- | -------- |
