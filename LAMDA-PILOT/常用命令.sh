@@ -1,8 +1,17 @@
 cd Code/Research/CIL/LAMDA-PILOT/&&
 conda activate cil
 
-# cifar
-nohup ./train_cifar.sh > ./res/supp-2nd_cifar.out 2>&1 &
+#cifar
+nohup ./train.sh > ./log/3rd-cifar-stdout.log 2> ./log/3rd-cifar-stderr.log &
+#ina
+nohup ./train_ina.sh > ./log/3rd-ina-stdout.log 2> ./log/3rd-ina-stderr.log &
+#inr
+nohup ./train_inr.sh > ./log/inr-stdout.log 2> ./log/inr-stderr.log &
+
+
+----------------------------------------------------------------------------------------------------------
+nohup ./train_cifar.sh > ./res/3rd-cifar.out 2>&1 &
+
 # cub
 nohup ./train_cub.sh > ./res/supp-cub.out 2>&1 &
 # ina

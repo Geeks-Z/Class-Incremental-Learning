@@ -30,6 +30,40 @@ CIL: Class-Incremental Learning
 | [DER: Dynamically Expandable Representation for Class Incremental Learning](2021) | CVPR  | 2021 | Mixed  | [Official](https://github.com/G-U-N/ECCV22-FOSTER)     |
 | [iCaRL: Incremental Classifier and Representation Learning](https://arxiv.org/abs/1611.07725) | CVPR  | 2017 | Memory | [Official](https://github.com/srebuffi/iCaRL)          |
 
+## 📚 Datasets
+
+| Dataset       | training instances | testing instances | Classes |
+| ------------- | ------------------ | ----------------- | ------- |
+| CIFAR100      | 50,000             | 10,000            | 100     |
+| CUB200        | 9,430              | 2,358             | 200     |
+| ImageNet-R    | 24,000             | 6,000             | 200     |
+| ImageNet-A    | 5,981              | 1,519             | 200     |
+| ObjectNet     | 26,509             | 6,628             | 200     |
+| Omnibenchmark | 89,697             | 5,983             | 300     |
+| VTAB          | 1,796              | 8,619             | 50      |
+
+
+
+## ☄️参数量的比较
+
+> （20Epoch/Inc、batch_size=48、memory_size: 2000）
+
+| Method      | Conference | Tunable Parameters（Backbone） | All Parameters | Average Accuracy (%)<br />(CIFAR B0 Inc5) |
+| ----------- | ---------- | ------------------------------ | -------------- | ----------------------------------------- |
+| Finetune    |            | 85860176                       | 85860176       | 81.68                                     |
+| iCaRL       | CVPR 2017  | 85798656                       | 85860176       | 90.27                                     |
+| DER         | CVPR 2021  | 85830185                       | 86198905       | 91.43                                     |
+| FOSTER      | ECCV 2022  | 858294168                      | 6029256        | 93.24                                     |
+| L2P         | CVPR 2022  | 122980                         | 122980         | 85.94                                     |
+| DualPrompt  | ECCV 2022  | 330340                         | 330340         | 87.87                                     |
+| CODA-Prompt | CVPR 2023  | 89715556                       | 89715556       | 89.11                                     |
+| SimpleCIL   |            | 0                              | 61441          | 87.57                                     |
+| Ease        | CVPR2024   | 1189632                        | 1189632        | 91.51                                     |
+
+### 
+
+
+
 ## 📝 Reproduced Results
 
 - class split: `B-$m$ Inc-$n$' . $m$ represents the number of categories in the initial incremental task, while $n$ denotes the number of subsequent incremental tasks, with categories in these tasks evenly distributed. If $m = 0$, all categories in the dataset are evenly distributed across $n$ incremental tasks.
