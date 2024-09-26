@@ -4,70 +4,48 @@
 <p></p>
 <div align=center><img src="https://visitor-badge.laobi.icu/badge?page_id=Geeks-Z.Awesome-CIL&left_color=green&right_color=red" /> <img src="https://img.shields.io/github/last-commit/Geeks-Z/Awesome-CIL" /> <img src="https://img.shields.io/github/license/Geeks-Z/Awesome-CIL" /></div>
 
-## 🎉 介绍
+## 🎉 Introduction
 
 CIL: Class-Incremental Learning
 > Incremental Learning: Life-Long Learning/Continual Learning
 
 ## 🚀 Survey
 
-| Title | Venue | Year | Code |
-| ----- | ----- | ---- | ---- |
-| [Class-Incremental Learning: A Survey](http://arxiv.org/abs/2302.03648) | TPAMI | 2024 | [Official](https://github.com/zhoudw-zdw/CIL_Surve) |
+| Title                                                        | Venue | Year | Code                                                   |
+| ------------------------------------------------------------ | ----- | ---- | ------------------------------------------------------ |
+| [Class-Incremental Learning: A Survey](http://arxiv.org/abs/2302.03648) | TPAMI | 2024 | [Official](https://github.com/zhoudw-zdw/CIL_Surve)    |
 | [Continual Learning with Pre-Trained Models: A Survey](http://arxiv.org/abs/2401.16386) | IJCAI | 2024 | [Official](https://github.com/sun-hailong/LAMDA-PILOT) |
-| [PyCIL: A Python Toolbox for Class-Incremental Learning](https://arxiv.org/abs/2112.12533) |       |      | [Official](https://github.com/G-U-N/PyCIL)             |
+| [PyCIL: A Python Toolbox for Class-Incremental Learning](https://arxiv.org/abs/2112.12533) |       |      | [Official](https://github.com/G-U-N/PyCIL              |
 
 ## 🌟 Papers
 
-| Title                                                        | Venue | Year | Type   | Code                                                   |
-| ------------------------------------------------------------ | ----- | ---- | ------ | ------------------------------------------------------ |
-| [Expandable Subspace Ensemble for Pre-Trained Model-Based Class-Incremental Learning](http://arxiv.org/abs/2403.12030) | CVPR  | 2024 | PTM    | [Official](https://github.com/sun-hailong/CVPR24-Ease) |
-| [InfLoRA: Interference-Free Low-Rank Adaptation for Continual Learning](http://arxiv.org/abs/2404.00228) | CVPR  | 2024 | PTM    | [Official](https://github.com/liangyanshuo/InfLoRA)    |
-| [CODA-Prompt: COntinual Decomposed Attention-based Prompting for Rehearsal-Free Continual Learning](http://arxiv.org/abs/2211.13218) | CVPR  | 2023 | PTM    | [Official](https://github.com/GT-RIPL/CODA-Prompt)     |
-| [DualPrompt: Complementary Prompting for Rehearsal-free Continual Learning](https://arxiv.org/abs/2204.04799) | ECCV  | 2022 | PTM    | [Official](https://github.com/google-research/l2p)     |
-| [Learning to Prompt for Continual Learning](https://arxiv.org/abs/2112.08654) | CVPR  | 2022 | PTM    | [Official](https://github.com/google-research/l2p)     |
-| [FOSTER: Feature Boosting and Compression for Class-Incremental Learning](https://arxiv.org/abs/2204.04662) | ECCV  | 2022 | Mixed  | [Official](https://github.com/G-U-N/ECCV22-FOSTER)     |
-| [DER: Dynamically Expandable Representation for Class Incremental Learning](2021) | CVPR  | 2021 | Mixed  | [Official](https://github.com/G-U-N/ECCV22-FOSTER)     |
-| [iCaRL: Incremental Classifier and Representation Learning](https://arxiv.org/abs/1611.07725) | CVPR  | 2017 | Memory | [Official](https://github.com/srebuffi/iCaRL)          |
+| Title                                                        | Venue | Year | Type   | Code                                                    |
+| ------------------------------------------------------------ | ----- | ---- | ------ | ------------------------------------------------------- |
+| [Expandable Subspace Ensemble for Pre-Trained Model-Based Class-Incremental Learning](http://arxiv.org/abs/2403.12030) | CVPR  | 2024 | PTM    | [Official](https://github.com/sun-hailong/CVPR24-Ease)  |
+| [Revisiting Class-Incremental Learning with Pre-Trained Models: Generalizability and Adaptivity are All You Need](https://arxiv.org/pdf/2303.07338) | IJCV  | 2024 | PTM    | [Official](https://github.com/zhoudw-zdw/RevisitingCIL) |
+| [CODA-Prompt: COntinual Decomposed Attention-based Prompting for Rehearsal-Free Continual Learning](http://arxiv.org/abs/2211.13218) | CVPR  | 2023 | PTM    | [Official](https://github.com/GT-RIPL/CODA-Prompt)      |
+| [DualPrompt: Complementary Prompting for Rehearsal-free Continual Learning](https://arxiv.org/abs/2204.04799) | ECCV  | 2022 | PTM    | [Official](https://github.com/google-research/l2p)      |
+| [Learning to Prompt for Continual Learning](https://arxiv.org/abs/2112.08654) | CVPR  | 2022 | PTM    | [Official](https://github.com/google-research/l2p)      |
+| [FOSTER: Feature Boosting and Compression for Class-Incremental Learning](https://arxiv.org/abs/2204.04662) | ECCV  | 2022 | Mixed  | [Official](https://github.com/G-U-N/ECCV22-FOSTER)      |
+| [DER: Dynamically Expandable Representation for Class Incremental Learning](2021) | CVPR  | 2021 | Mixed  | [Official](https://github.com/G-U-N/ECCV22-FOSTER)      |
+| [iCaRL: Incremental Classifier and Representation Learning](https://arxiv.org/abs/1611.07725) | CVPR  | 2017 | Memory | [Official](https://github.com/srebuffi/iCaRL)           |
 
 ## 📚 Datasets
 
-| Dataset       | training instances | testing instances | Classes |
-| ------------- | ------------------ | ----------------- | ------- |
-| CIFAR100      | 50,000             | 10,000            | 100     |
-| CUB200        | 9,430              | 2,358             | 200     |
-| ImageNet-R    | 24,000             | 6,000             | 200     |
-| ImageNet-A    | 5,981              | 1,519             | 200     |
-| ObjectNet     | 26,509             | 6,628             | 200     |
-| Omnibenchmark | 89,697             | 5,983             | 300     |
-| VTAB          | 1,796              | 8,619             | 50      |
-
-
-
-## ☄️参数量的比较
-
-> （20Epoch/Inc、batch_size=48、memory_size: 2000）
-
-| Method      | Conference | Tunable Parameters（Backbone） | All Parameters | Average Accuracy (%)<br />(CIFAR B0 Inc5) |
-| ----------- | ---------- | ------------------------------ | -------------- | ----------------------------------------- |
-| Finetune    |            | 85860176                       | 85860176       | 81.68                                     |
-| iCaRL       | CVPR 2017  | 85798656                       | 85860176       | 90.27                                     |
-| DER         | CVPR 2021  | 85830185                       | 86198905       | 91.43                                     |
-| FOSTER      | ECCV 2022  | 858294168                      | 6029256        | 93.24                                     |
-| L2P         | CVPR 2022  | 122980                         | 122980         | 85.94                                     |
-| DualPrompt  | ECCV 2022  | 330340                         | 330340         | 87.87                                     |
-| CODA-Prompt | CVPR 2023  | 89715556                       | 89715556       | 89.11                                     |
-| SimpleCIL   |            | 0                              | 61441          | 87.57                                     |
-| Ease        | CVPR2024   | 1189632                        | 1189632        | 91.51                                     |
-
-### 
-
-
+| Dataset       | training instances | testing instances | Classes | Link |
+| ------------- | ------------------ | ----------------- | ------- | ---- |
+| CIFAR100      | 50,000             | 10,000            | 100     |      |
+| CUB200        | 9,430              | 2,358             | 200     |      |
+| ImageNet-R    | 24,000             | 6,000             | 200     |      |
+| ImageNet-A    | 5,981              | 1,519             | 200     |      |
+| ObjectNet     | 26,509             | 6,628             | 200     |      |
+| Omnibenchmark | 89,697             | 5,983             | 300     |      |
+| VTAB          | 1,796              | 8,619             | 50      |      |
 
 ## 📝 Reproduced Results
 
 - class split: `B-$m$ Inc-$n$' . $m$ represents the number of categories in the initial incremental task, while $n$ denotes the number of subsequent incremental tasks, with categories in these tasks evenly distributed. If $m = 0$, all categories in the dataset are evenly distributed across $n$ incremental tasks.
-- pre-trained backbone: ViT-B/16-IN21K as the 
+- pre-trained backbone: ViT-B/16-IN21K 
 - log: 'LAMDA-PILOT-main/res'
 - accuracy：CNN/NME
 - code: `📁 LAMDA-PILOT-main`
@@ -76,69 +54,60 @@ CIL: Class-Incremental Learning
 
 |             | B0 Inc5     | B0 Inc10    | B0 Inc20    | B50 Inc5    | B50 Inc10   |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
-| Ease        | 93.11       | 92.56       | 91.61       | 90.35       | 89.2        |
-| CODA-Prompt | 92.85       | 91.49       | 88.9        | 86.38       | 77.81       |
-| DualPrompt  | 91.4        | 90.34       | 88.51       | 87.48       | 80.99       |
-| L2P         | 90.81       | 89.86       | 87.58       | 87.61       | 79.42       |
-| FOSTER      | 91.25/93.05 | 91.56/92.9  | 92.02/92.75 | 90.56/91.91 | 90.82/91.65 |
-| DER         | 88.78/91.36 | 88.58/91.01 | 88.57/90.85 | 86.83/89.38 | 86.56/88.98 |
-| iCaRL       | 87.34/90.9  | 85.74/90.22 | 84.07/89.43 | 83.46/88.83 | 80.67/87.06 |
-| Simplecil   | 81.12       | 82.31       | 82.79       | 78.66       | 78.54       |
-| Finetune    | 81.48       | 76.93       | 72.14       | 82.2        | 79.99       |
+
 
 ### CUB-200
 
 > fixed_memory: True
 
+<div align=center><img src="https://markdownimg-hw.oss-cn-beijing.aliyuncs.com/20240926214357.png" style="zoom: 60%;" /></div>
+
 |             | B0 Inc5     | B0 Inc10    | B0 Inc20    | B100 Inc5   | B100 Inc10  |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
-| Ease        | 90.2        | 90.19       | 91.34       | 85.29       | 87.54       |
-| CODA-Prompt | 85.65       | 85.01       | 82.92       | 79.6        | 76.63       |
-| DualPrompt  | 85.48       | 84.87       | 82.96       | 77.06       | 73.87       |
-| L2P         | 83.79       | 81.76       | 79.32       | 79.4        | 74.62       |
-| FOSTER      | 78.55/90.58 | 80.7/91.05  | 86.03/91.89 | 82.98/89.17 | 85.55/88.7  |
-| DER         | 89.73/89.82 | 88.1/88.93  | 90.09/91.02 | 87.28/88.7  | 86.76/88.49 |
-| iCaRL       | 87.42/89.12 | 88.27/90.13 | 88.07/89.9  | 85.9/88.11  | 85.47/87.53 |
-| Simplecil   | 89.93       | 90.58       | 90.97       | 87.56       | 87.48       |
-| Finetune    | 78.05       | 71.38       | 61.57       | 73.38       | 63.81       |
+|Ease |90.14 ± 0.05| 90.21 ± 0.01| 91.32 ± 0.01| 85.26 ± 0.02| 87.44 ± 0.07|
+|CODA-Prompt |85.78 ± 0.09|84.93 ± 0.05|83.03 ± 0.08|79.59 ± 0.03|76.44 ± 0.14|
+|DualPrompt |85.5 ± 0.03|84.84 ± 0.04|82.9 ± 0.08|77.01 ± 0.07|73.8 ± 0.1|
+|L2P |83.74 ± 0.04|81.8 ± 0.05|79.33 ± 0.01|79.15 ± 0.18|74.65 ± 0.02|
+|FOSTER-CNN |78.81 ± 0.53|81.18 ± 0.36|85.17 ± 0.64|82.65 ± 0.25|85.56 ± 0.01|
+|FOSTER-NME |90.65 ± 0.05|91.02 ± 0.16|91.4 ± 0.34|88.92 ± 0.18|88.72 ± 0.02|
+|DER-CNN |89.08 ± 0.48|88.71 ± 0.86|90.13 ± 0.05|87.14 ± 0.2|86.72 ± 0.06|
+|DER-NME |89.89 ± 0.19|89.43 ± 0.71|90.99 ± 0.05|88.62 ± 0.11|88.34 ± 0.21|
+|iCaRL-CNN |87.77 ± 0.25|88.2 ± 0.13|88.2 ± 0.36|85.93 ± 0.32|85.4 ± 0.42|
+|iCaRL-NME |89.06 ± 0.04|89.94 ± 0.13|90.2 ± 0.21|87.91 ± 0.14|87.25 ± 0.28|
+|SimpleCIL |89.92 ± 0.0|90.57 ± 0.01|90.96 ± 0.0|87.51 ± 0.04|87.43 ± 0.04|
+|Finetune |77.36 ± 0.49|70.94 ± 0.74|60.21 ± 2.64|72.88 ± 0.42|62.32 ± 2.26|
 
 ### ImageNet-R
 
+<div align=center><img src="https://markdownimg-hw.oss-cn-beijing.aliyuncs.com/20240926214533.png" style="zoom: 60%;" /></div>
+
 |             | B0 Inc5 | B0 Inc10 | B0 Inc20 | B100 Inc5 | B100 Inc10 |
 | ----------- | ------- | -------- | -------- | --------- | ---------- |
-| Ease        | 81.6    | 80.92    | 78.9     | 77.95     | 76.59      |
-| CODA-Prompt | 79.99   | 78.63    | 74.27    | 73.15     | 67.83      |
-| DualPrompt  | 73.51   | 70.97    | 69.92    | 64.82     | 59.55      |
-| L2P         | 76.85   | 76.26    | 73.7     | 69.7      | 64.89      |
-| Simplecil   | 65.89   | 67.09    | 67.6     | 63.55     | 63.43      |
-| Finetune    | 71.64   | 68.97    | 64.41    | 70.76     | 67.11      |
+|Ease |81.55 ± 0.04| 81.01 ± 0.07| 78.88 ± 0.01| 77.96 ± 0.01| 76.58 ± 0.01|
+|CODA-Prompt |79.9 ± 0.06|78.72 ± 0.06|74.45 ± 0.13|73.1 ± 0.03|67.86 ± 0.02|
+|DualPrompt |73.54 ± 0.02|71.16 ± 0.13|69.84 ± 0.06|65.04 ± 0.16|59.73 ± 0.13|
+|L2P |76.88 ± 0.02|76.31 ± 0.04|73.69 ± 0.01|69.77 ± 0.05|64.88 ± 0.0|
+|SimpleCIL |65.86 ± 0.02|67.07 ± 0.01|67.59 ± 0.01|63.53 ± 0.01|63.41 ± 0.01|
+|Finetune |72.24 ± 0.42|68.32 ± 0.46|61.95 ± 1.74|70.73 ± 0.02|66.72 ± 0.28|
 
 ### ImageNet-A
 
-<div align=center><img src="https://markdownimg-hw.oss-cn-beijing.aliyuncs.com/20240922193547.png" style="zoom: 60%;" /></div>
+<div align=center><img src="https://markdownimg-hw.oss-cn-beijing.aliyuncs.com/20240926214602.png" style="zoom: 60%;" /></div>
 
 |             | B0 Inc5 | B0 Inc10 | B0 Inc20 | B100 Inc5 | B100 Inc10 |
 | ----------- | ------- | -------- | -------- | --------- | ---------- |
-| Ease        | 67.96   | 62.58    | 57.68    | 63.06     | 62.19      |
-| CODA-Prompt | 61.0    | 56.06    | 47.77    | 56.61     | 52.92      |
-| DualPrompt  | 54.01   | 52.47    | 48.44    | 46.87     | 44.59      |
-| L2P         | 53.24   | 52.57    | 45.68    | 49.12     | 46.74      |
-| Simplecil   | 58.09   | 59.33    | 60.05    | 53.29     | 53.21      |
-| Finetune    | 38.53   | 32.03    | 7.28     | 31.16     | 24.54      |
+|Ease |67.84 ± 0.08| 62.67 ± 0.06| 58.13 ± 0.32| 63.55 ± 0.35| 62.18 ± 0.0|
+|CODA-Prompt |60.99 ± 0.01|56.31 ± 0.17|47.62 ± 0.11|56.24 ± 0.26|53.2 ± 0.2|
+|DualPrompt |54.16 ± 0.1|52.43 ± 0.03|48.59 ± 0.1|47.02 ± 0.11|45.05 ± 0.33|
+|L2P |53.41 ± 0.12|52.68 ± 0.08|45.93 ± 0.18|49.32 ± 0.14|46.85 ± 0.08|
+|SimpleCIL |58.38 ± 0.21|59.56 ± 0.16|60.35 ± 0.21|53.51 ± 0.16|53.43 ± 0.16|
+|Finetune |38.03 ± 0.35|33.73 ± 1.2|15.26 ± 5.64|30.32 ± 0.59|24.65 ± 0.08|
 
 ### Omnibenchmark
 
 |             | B0 Inc5     | B0 Inc10    | B0 Inc20    | B0 Inc30    | B150 Inc5   | B150 Inc10  |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
-| Ease        |             |             |             |             |             |             |
-| CODA-Prompt |             |             |             |             |             |             |
-| DualPrompt  |             |             |             |             |             |             |
-| L2P         |             |             |             |             |             |             |
-| FOSTER      |             |             |             |             |             |             |
-| DER         | 77.49/81.15 | 77.53/80.74 | 77.21/80.26 | 77.16/79.24 |             |             |
-| iCaRL       | 76.8/82.5   | 75.26/80.94 | 73.38/79.78 | 73.94/79.77 | 74.39/79.13 | 72.23/78.41 |
-| Simplecil   | 77.73       | 78.51       | 79.18       | 79.46       | 74.47       | 74.32       |
-| Finetune    | 70.21       | 65.12       | 60.77       | 57.2        | 68.37       | 64.1        |
+
 
 ### VTAB
 
@@ -146,22 +115,37 @@ CIL: Class-Incremental Learning
 
 |             | B0 Inc5 | B0 Inc10 |
 | ----------- | ------- | -------- |
-| Ease        | 90.47   | 91.07    |
-| CODA-Prompt | 87.82   | 83.36    |
-| DualPrompt  | 89.96   | 87.61    |
-| L2P         | 82.11   | 78.04    |
-| Simplecil   | 90.94   | 91.66    |
-| Finetune    | 78.69   | 59.2     |
+|Ease |90.47 ± 0.0| 91.07 ± 0.0|
+|CODA-Prompt |87.82 ± 0.0|83.36 ± 0.0|
+|DualPrompt |89.96 ± 0.0|87.61 ± 0.0|
+|L2P |82.11 ± 0.0|78.04 ± 0.0|
+|SimpleCIL |90.94 ± 0.0|91.66 ± 0.0|
+|Finetune |78.69 ± 0.0|59.2 ± 0.0|
 
 ## 👨‍🏫  TODO
 
-| Title                                                        | Venue | Year | Type | Code                                                    |
-| ------------------------------------------------------------ | ----- | ---- | ---- | ------------------------------------------------------- |
-| [Revisiting Class-Incremental Learning with Pre-Trained Models: Generalizability and Adaptivity are All You Need](https://arxiv.org/pdf/2303.07338) |       |      |      | [Official](https://github.com/zhoudw-zdw/RevisitingCIL) |
-|                                                              |       |      |      |                                                         |
-|                                                              |       |      |      |                                                         |
+| Title                                                        | Venue | Year | Type | Code                                                |
+| ------------------------------------------------------------ | ----- | ---- | ---- | --------------------------------------------------- |
+| [InfLoRA: Interference-Free Low-Rank Adaptation for Continual Learning](http://arxiv.org/abs/2404.00228) | CVPR  | 2024 | PTM  | [Official](https://github.com/liangyanshuo/InfLoRA) |
+|                                                              |       |      |      |                                                     |
 
+### ☄️Parameters
 
+> 20Epoch batch_size=48 memory_size: 2000
+
+| Method      | Tunable Parameters（Backbone） | All Parameters | Average Accuracy (%)<br />(CIFAR B0 Inc5) |
+| ----------- | ------------------------------ | -------------- | ----------------------------------------- |
+| Ease        |                                |                |                                           |
+| SimpleCIL   |                                |                |                                           |
+| CODA-Prompt |                                |                |                                           |
+| DualPrompt  |                                |                |                                           |
+| L2P         |                                |                |                                           |
+| FOSTER      |                                |                |                                           |
+| DER         |                                |                |                                           |
+| iCaRL       |                                |                |                                           |
+| Finetune    |                                |                |                                           |
+
+## 
 
 ## 🤗Acknowledgments
 
