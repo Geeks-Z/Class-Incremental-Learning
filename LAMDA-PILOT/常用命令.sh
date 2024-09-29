@@ -1,76 +1,39 @@
 cd Code/Research/CIL/LAMDA-PILOT/&&
 conda activate cil
-
-#cifar
-nohup ./train.sh > ./log/3rd-cifar-stdout.log 2> ./log/3rd-cifar-stderr.log &
-#ina
-nohup ./train_ina.sh > ./log/3rd-ina-stdout.log 2> ./log/3rd-ina-stderr.log &
-#inr
-nohup ./train_inr.sh > ./log/inr-stdout.log 2> ./log/inr-stderr.log &
-#cub
-nohup ./train_cub.sh > ./log/err-cub-stdout.log 2> ./log/err-cub-stderr.log &
-
-
-----------------------------------------------------------------------------------------------------------
-nohup ./train.sh > ./res/supp-cifar.out 2>&1 &
-
-# cub
-nohup ./train_cub.sh > ./res/supp-cub.out 2>&1 &
-# ina
-nohup ./train_ina.sh > ./res/4th-ina.out 2>&1 &
-# inr
-nohup ./train_inr.sh > ./res/3nd_inr.out 2>&1 &
-# omn
-nohup ./train_omn.sh > ./res/2nd-omn.out 2>&1 &
-# vtab
-nohup ./train_vtab.sh > ./res/3nd-vtab.out 2>&1 &
-
-
-
-# ease
-nohup ./train.sh > ./res/ease-all-datasets.out 2>&1 &
 # 4090
 cd lrh/Code/Research/CIL/LAMDA-PILOT/ &&
 conda activate cil
-
 # 超算
 cd Code/Research/CIL/LAMDA-PILOT/ &&
 sbatch train.slurm
 
+TODO
+nohup ./train_cifar.sh > ./log/2nd-cifar-stdout.log 2> ./log/2nd-cifar-stderr.log &
+nohup ./train_cifar.sh > ./log/3rd-cifar-stdout.log 2> ./log/3rd-cifar-stderr.log &
+nohup ./train_cub.sh > ./log/2nd-cub-stdout.log 2> ./log/2nd-cub-stderr.log &
+nohup ./train_cub.sh > ./log/3rd-cub-stdout.log 2> ./log/3rd-cub-stderr.log &
+nohup ./train_inr.sh > ./log/3rd-inr-stdout.log 2> ./log/3rd-inr-stderr.log &
+nohup ./train_omn.sh > ./res/3rd-omn.out 2>&1 &
+nohup ./train_omn.sh > ./log/2nd-omn-stdout.log 2> ./log/2nd-omn-stderr.log &
+nohup ./train_omn.sh > ./log/3rd-omn-stdout.log 2> ./log/3rd-omn-stderr.log &
 
-
-
-# der cifar
-nohup ./train_der_cifar.sh > ./res/4090-der-cifar.out 2>&1 &
-
-# foster cifar
-nohup ./train_foster_cifar.sh > ./res/4090-foster-cifar.out 2>&1 &
-
-# memory对比
-
-nohup ./train_vtab_B0_Inc5.sh >./res/memory-baseline-vtab-B0-Inc5.out 2>&1 &
-
-nohup ./train_cifar_B0_Inc10.sh >./res/memory-baseline-cifar-B0-Inc10.out 2>&1 &
-
-nohup ./train_cub_B0_Inc5.sh >./res/memory-baseline-cub-B0-Inc5.out 2>&1 &
-
-nohup ./train_omn_B0_Inc10.sh >./res/memory-baseline-omn-B0-Inc10.out 2>&1 &
-
--------
-nohup ./train_omn_B0_Inc30.sh > ./res/2nd-baseline-omn-B0-Inc30-ease.out 2>&1 &
-
-nohup ./train_omn_B150_Inc5.sh > ./res/2nd-baseline-omn-B150-Inc5.out 2>&1 &
-
-nohup ./train_cub_B100_Inc5.sh > ./res/2nd-baseline-cub-B100-Inc5.out 2>&1 &
-
-nohup ./train_omn_B0_Inc30.sh > ./res/3nd-baseline-omn-B0-Inc30.out 2>&1 &
-
-nohup ./train_cifar_B0_Inc5.sh > ./res/3nd-baseline-cifar-B0-Inc5.out 2>&1 &
-
-nohup ./train_cub_B0_Inc10.sh > ./res/3nd-baseline-cub-B0-Inc10.out 2>&1 &
-
-nohup ./train_inr_B0_Inc5.sh > ./res/3nd-baseline-inr-B0-Inc5.out 2>&1 &
-
-nohup ./train_ina_B0_Inc20.sh > ./res/3nd-baseline-ina-B0-Inc20.out 2>&1 &
-
-nohup ./train_vtab_B0_Inc10.sh > ./res/3nd-baseline-vtab-B0-Inc10.out 2>&1 &
+----------------------------------------------------------------------------------------------------------
+#cifar
+nohup ./train_cifar.sh > ./log/cifar-stdout.log 2> ./log/cifar-stderr.log &
+nohup ./train_cifar.sh > ./res/cifar.out 2>&1 &
+#cub
+nohup ./train_cub.sh > ./log/cub-stdout.log 2> ./log/cub-stderr.log &
+nohup ./train_cub.sh > ./res/cub.out 2>&1 &
+#inr
+nohup ./train_inr.sh > ./log/inr-stdout.log 2> ./log/inr-stderr.log &
+nohup ./train_inr.sh > ./res/inr.out 2>&1 &
+#ina
+nohup ./train_ina.sh > ./log/ina-stdout.log 2> ./log/ina-stderr.log &
+nohup ./train_ina.sh > ./res/ina.out 2>&1 &
+#omn
+nohup ./train_omn.sh > ./log/omn-stdout.log 2> ./log/omn-stderr.log &
+nohup ./train_omn.sh > ./res/omn.out 2>&1 &
+#vtab
+nohup ./train_vtab.sh > ./log/vtab-stdout.log 2> ./log/vtab-stderr.log &
+nohup ./train_vtab.sh > ./res/vtab.out 2>&1 &
+----------------------------------------------------------------------------------------------------------
