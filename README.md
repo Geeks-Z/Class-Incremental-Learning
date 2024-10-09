@@ -6,8 +6,8 @@
 
 ## 🎉 Introduction
 
-CIL: Class-Incremental Learning
-> Incremental Learning: Life-Long Learning/Continual Learning
+CIL: Class-Incremental Learning 类增量学习
+增量学习：Incremental Learning/Life-Long Learning/Continual Learning 
 
 ## 🚀 Survey
 
@@ -15,7 +15,7 @@ CIL: Class-Incremental Learning
 | ------------------------------------------------------------ | ----- | ---- | ------------------------------------------------------ |
 | [Class-Incremental Learning: A Survey](http://arxiv.org/abs/2302.03648) | TPAMI | 2024 | [Official](https://github.com/zhoudw-zdw/CIL_Surve)    |
 | [Continual Learning with Pre-Trained Models: A Survey](http://arxiv.org/abs/2401.16386) | IJCAI | 2024 | [Official](https://github.com/sun-hailong/LAMDA-PILOT) |
-| [PyCIL: A Python Toolbox for Class-Incremental Learning](https://arxiv.org/abs/2112.12533) |       |      | [Official](https://github.com/G-U-N/PyCIL              |
+| [PyCIL: A Python Toolbox for Class-Incremental Learning](https://arxiv.org/abs/2112.12533) |       |      | [Official](https://github.com/G-U-N/PyCIL)              |
 
 ## 🌟 Papers
 
@@ -44,17 +44,33 @@ CIL: Class-Incremental Learning
 
 ## 📝 Reproduced Results
 
-- class split: `B-$m$ Inc-$n$' . $m$ represents the number of categories in the initial incremental task, while $n$ denotes the number of subsequent incremental tasks, with categories in these tasks evenly distributed. If $m = 0$, all categories in the dataset are evenly distributed across $n$ incremental tasks.
-- pre-trained backbone: ViT-B/16-IN21K 
+- class split:
+  - `B-$m$ Inc-$n$' . $m$ represents the number of categories in the initial incremental task, while $n$ denotes the number of subsequent incremental tasks, with categories in these tasks evenly distributed. If $m = 0$, all categories in the dataset are evenly distributed across $n$ incremental tasks.
+  - LFH即learning from half，表示在模型训练的初始阶段先用一半的类别进行训练，然后剩下一半的类别均匀分为N个阶段进行训练；
+  - LFS即learning from scratch，表示所有的类别均匀地分为N个阶段进行训练
+- pre-trained backbone: ViT-B/16-IN21K
 - log: 'LAMDA-PILOT-main/res'
 - accuracy：CNN/NME
 - code: `📁 LAMDA-PILOT-main`
 
 ### CIFAR-100
 
+<div align=center><img src="https://markdownimg-hw.oss-cn-beijing.aliyuncs.com/20241009095517.png" style="zoom: 60%;" /></div>
+
 |             | B0 Inc5     | B0 Inc10    | B0 Inc20    | B50 Inc5    | B50 Inc10   |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
-
+|Ease |93.1 ± 0.01| 92.55 ± 0.01| 91.64 ± 0.02| 90.38 ± 0.03| 89.24 ± 0.04|
+|CODA-Prompt |92.85 ± 0.0|91.54 ± 0.05|88.88 ± 0.02|86.16 ± 0.21|77.76 ± 0.05|
+|DualPrompt |91.39 ± 0.01|90.3 ± 0.05|88.52 ± 0.01|87.48 ± 0.0|81.02 ± 0.03|
+|L2P |90.74 ± 0.06|89.85 ± 0.01|87.58 ± 0.0|87.55 ± 0.06|79.43 ± 0.01|
+|SimpleCIL |81.12 ± 0.0|82.31 ± 0.0|82.79 ± 0.0|78.66 ± 0.0|78.54 ± 0.0|
+|Finetune |81.48 ± 0.0|76.93 ± 0.0|72.14 ± 0.0|82.2 ± 0.0|79.99 ± 0.0|
+|FOSTER-CNN |91.25 ± 0.0|91.56 ± 0.0|92.02 ± 0.0|90.56 ± 0.0|90.82 ± 0.0|
+|FOSTER-NME |93.05 ± 0.0|92.9 ± 0.0|92.75 ± 0.0|91.91 ± 0.0|91.65 ± 0.0|
+|DER-CNN |88.78 ± 0.0|88.58 ± 0.0|88.57 ± 0.0|86.83 ± 0.0|86.56 ± 0.0|
+|DER-NME |91.36 ± 0.0|91.01 ± 0.0|90.85 ± 0.0|89.38 ± 0.0|88.98 ± 0.0|
+|iCaRL-CNN |87.19 ± 0.15|85.86 ± 0.12|84.34 ± 0.27|83.42 ± 0.04|81.16 ± 0.49|
+|iCaRL-NME |90.82 ± 0.08|90.28 ± 0.05|89.45 ± 0.02|88.9 ± 0.06|87.3 ± 0.24|
 
 ### CUB-200
 
