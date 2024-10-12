@@ -1,5 +1,5 @@
 #!/bin/bash
-export CUDA_VISIBLE_DEVICES=2 && python main.py --config=./exps/finetune_omn_B0_Inc5.json
+#export CUDA_VISIBLE_DEVICES=2 && python main.py --config=./exps/finetune_omn_B0_Inc5.json
 #python main.py --config=./exps/finetune_omn_B0_Inc10.json
 #python main.py --config=./exps/finetune_omn_B0_Inc20.json
 #python main.py --config=./exps/finetune_omn_B0_Inc30.json

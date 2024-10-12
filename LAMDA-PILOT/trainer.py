@@ -11,12 +11,12 @@ import numpy as np
 
 def train(args):
     seed_list = copy.deepcopy(args["seed"])
-    print(os.getenv('CUDA_VISIBLE_DEVICES'))
-    if os.environ.get("CUDA_VISIBLE_DEVICES") is not None:
-        device = os.environ.get("CUDA_VISIBLE_DEVICES")
-        device = [str(x) for x in device.split(",")]
-        args["device"] = device
-        print(args["device"])
+    # print(os.getenv('CUDA_VISIBLE_DEVICES'))
+    # if os.environ.get("CUDA_VISIBLE_DEVICES") is not None:
+    #     device = os.environ.get("CUDA_VISIBLE_DEVICES")
+    #     device = [str(x) for x in device.split(",")]
+    #     args["device"] = device
+        # print(args["device"])
     device = copy.deepcopy(args["device"] )
 
     for seed in seed_list:
