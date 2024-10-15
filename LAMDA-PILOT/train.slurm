@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH -J omn #作业名称
-#SBATCH -p gpu-normal # 提交到指定分区
+#SBATCH -p gpu-quota # 提交到指定分区
 #SBATCH -N 1 # 使用一个节点
 #SBATCH -n 8 # 使用进程（cpu 核）
 #SBATCH --gres=gpu:1

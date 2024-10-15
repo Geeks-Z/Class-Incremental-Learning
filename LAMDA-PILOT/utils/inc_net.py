@@ -9,8 +9,29 @@ import timm
 
 def get_backbone(args, pretrained=False):
     name = args["backbone_type"].lower()
+    # Resnet
+    if name == "pretrained_resnet18":
+        from backbone.resnet import resnet18, resnet34, resnet50, resnet101, resnet152
+        model = resnet18(pretrained=False, args=args)
+        model.load_state_dict(torch.load("./pretrained_models/resnet18-f37072fd.pth"), strict=False)
+        return model.eval()
+    elif name == "pretrained_resnet50":
+        from backbone.resnet import resnet18, resnet34, resnet50, resnet101, resnet152
+        model = resnet50(pretrained=False, args=args)
+        model.load_state_dict(torch.load("./pretrained_models/resnet50-11ad3fa6.pth"), strict=False)
+        return model.eval()
+    elif name == "pretrained_resnet101":
+        from backbone.resnet import resnet18, resnet34, resnet50, resnet101, resnet152
+        model = resnet101(pretrained=False, args=args)
+        model.load_state_dict(torch.load("./pretrained_models/resnet101-cd907fc2.pth"), strict=False)
+        return model.eval()
+    elif name == "pretrained_resnet152":
+        from backbone.resnet import resnet18, resnet34, resnet50, resnet101, resnet152
+        model = resnet152(pretrained=False, args=args)
+        model.load_state_dict(torch.load("./pretrained_models/resnet152-f82ba261.pth"), strict=False)
+        return model.eval()
     # SimpleCIL or SimpleCIL w/ Finetune
-    if name == "pretrained_vit_b16_224" or name == "vit_base_patch16_224":
+    elif name == "pretrained_vit_b16_224" or name == "vit_base_patch16_224":
         model = timm.create_model("vit_base_patch16_224",pretrained=True, num_classes=0)
         model.out_dim = 768
         return model.eval()

@@ -138,6 +138,20 @@
 |SimpleCIL |90.94 ± 0.0|91.66 ± 0.0|
 |Finetune |78.69 ± 0.0|59.2 ± 0.0|
 
+### Different  PTMs
+
+| PTM             | Pre-Trained Dataset | Finetuned Dataset |
+| --------------- | ------------------- | ----------------- |
+| ViT-B/16-IN1K   | ImageNet21K         | ImageNet1K        |
+| ViT-B/16-IN21K  | ImageNet21K         | -                 |
+| ViT-L/16-IN1K   |                     | ImageNet1K        |
+| ViT-B/16-DINO   |                     |                   |
+| ViT-B/16-SAM    |                     |                   |
+| ViT-B/16-MAE    |                     |                   |
+| ViT-B/16CLIP    |                     |                   |
+| ResNet18/50/152 |                     |                   |
+|                 |                     |                   |
+
 ## 👨‍🏫  TODO
 
 | Title                                                        | Venue | Year | Type | Code                                                |
@@ -160,8 +174,6 @@
 | DER         |                                |                |                                           |
 | iCaRL       |                                |                |                                           |
 | Finetune    |                                |                |                                           |
-
-## 
 
 ## 🤗Acknowledgments
 

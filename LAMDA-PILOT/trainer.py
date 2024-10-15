@@ -10,6 +10,7 @@ import numpy as np
 
 
 def train(args):
+    os.environ['TORCH_HOME'] ='/home/team/zhaohongwei/chkpt'
     seed_list = copy.deepcopy(args["seed"])
     # print(os.getenv('CUDA_VISIBLE_DEVICES'))
     # if os.environ.get("CUDA_VISIBLE_DEVICES") is not None:

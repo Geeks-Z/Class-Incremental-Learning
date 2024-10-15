@@ -66,7 +66,7 @@ class iCIFAR100(iData):
         )
 
 def build_transform_coda_prompt(is_train, args):
-    if is_train:        
+    if is_train:
         transform = [
             transforms.RandomResizedCrop(224),
             transforms.RandomHorizontalFlip(),
@@ -98,7 +98,7 @@ def build_transform(is_train, args):
     if is_train:
         scale = (0.05, 1.0)
         ratio = (3. / 4., 4. / 3.)
-        
+
         transform = [
             transforms.RandomResizedCrop(input_size, scale=scale, ratio=ratio),
             transforms.RandomHorizontalFlip(p=0.5),
@@ -114,7 +114,7 @@ def build_transform(is_train, args):
         )
         t.append(transforms.CenterCrop(input_size))
     t.append(transforms.ToTensor())
-    
+
     # return transforms.Compose(t)
     return t
 
@@ -237,7 +237,7 @@ class iImageNetR(iData):
 
 class iImageNetA(iData):
     use_path = True
-    
+
     train_trsf = build_transform(True, None)
     test_trsf = build_transform(False, None)
     common_trsf = [    ]
@@ -259,7 +259,7 @@ class iImageNetA(iData):
 
 class CUB(iData):
     use_path = True
-    
+
     train_trsf = build_transform(True, None)
     test_trsf = build_transform(False, None)
     common_trsf = [    ]
@@ -280,7 +280,7 @@ class CUB(iData):
 
 class objectnet(iData):
     use_path = True
-    
+
     train_trsf = build_transform(True, None)
     test_trsf = build_transform(False, None)
     common_trsf = [    ]
@@ -301,7 +301,7 @@ class objectnet(iData):
 
 class omnibenchmark(iData):
     use_path = True
-    
+
     train_trsf = build_transform(True, None)
     test_trsf = build_transform(False, None)
     common_trsf = [    ]
@@ -323,7 +323,7 @@ class omnibenchmark(iData):
 
 class vtab(iData):
     use_path = True
-    
+
     train_trsf = build_transform(True, None)
     test_trsf = build_transform(False, None)
     common_trsf = [    ]
