@@ -11,6 +11,8 @@ TODO
 nohup ./train_cifar.sh > ./log/2nd-cifar-stdout.log 2> ./log/2nd-cifar-stderr.log &
 nohup ./train_cifar.sh > ./log/3rd-cifar-stdout.log 2> ./log/3rd-cifar-stderr.log &
 nohup ./train_cub.sh > ./log/3rd-cub-stdout.log 2> ./log/3rd-cub-stderr.log &
+nohup ./train_ptm.sh > ./log/ptm-2nd-simplecil-stdout.log 2> ./log/ptm-2nd-simplecil-stderr.log &
+nohup ./train_ptm.sh > ./log/ptm-3rd-simplecil-stdout.log 2> ./log/ptm-3rd-simplecil-stderr.log &
 
 
 ----------------------------------------------------------------------------------------------------------

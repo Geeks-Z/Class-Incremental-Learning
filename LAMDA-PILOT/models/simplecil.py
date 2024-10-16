@@ -15,7 +15,6 @@ from utils.toolkit import target2onehot, tensor2numpy
 
 
 num_workers = 8
-batch_size = 128
 
 class Learner(BaseLearner):
     def __init__(self, args):
@@ -38,7 +37,10 @@ class Learner(BaseLearner):
                 data = data.to(self._device)
                 label = label.to(self._device)
                 embedding = model.backbone(data)
-                embedding_list.append(embedding.cpu())
+                if 'resnet' in self.args['backbone_type']:
+                    embedding_list.append(embedding['features'].cpu())
+                else:
+                    embedding_list.append(embedding.cpu())
                 label_list.append(label.cpu())
         embedding_list = torch.cat(embedding_list, dim=0)
         label_list = torch.cat(label_list, dim=0)
@@ -63,12 +65,12 @@ class Learner(BaseLearner):
         train_dataset = data_manager.get_dataset(np.arange(self._known_classes, self._total_classes),source="train", mode="train", )
         self.train_dataset = train_dataset
         self.data_manager = data_manager
-        self.train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True, num_workers=num_workers)
+        self.train_loader = DataLoader(train_dataset, batch_size=self.args["batch_size"], shuffle=True, num_workers=num_workers)
         test_dataset = data_manager.get_dataset(np.arange(0, self._total_classes), source="test", mode="test" )
-        self.test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False, num_workers=num_workers)
+        self.test_loader = DataLoader(test_dataset, batch_size=self.args["batch_size"], shuffle=False, num_workers=num_workers)
 
         train_dataset_for_protonet = data_manager.get_dataset(np.arange(self._known_classes, self._total_classes),source="train", mode="test", )
-        self.train_loader_for_protonet = DataLoader(train_dataset_for_protonet, batch_size=batch_size, shuffle=True, num_workers=num_workers)
+        self.train_loader_for_protonet = DataLoader(train_dataset_for_protonet, batch_size=self.args["batch_size"], shuffle=True, num_workers=num_workers)
 
         if len(self._multiple_gpus) > 1:
             print('Multiple GPUs')

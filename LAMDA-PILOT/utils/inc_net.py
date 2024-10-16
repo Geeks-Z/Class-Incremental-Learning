@@ -13,22 +13,22 @@ def get_backbone(args, pretrained=False):
     if name == "pretrained_resnet18":
         from backbone.resnet import resnet18, resnet34, resnet50, resnet101, resnet152
         model = resnet18(pretrained=False, args=args)
-        model.load_state_dict(torch.load("./pretrained_models/resnet18-f37072fd.pth"), strict=False)
+        model.load_state_dict(torch.load("/home/team/zhaohongwei/pretrained_models/resnet18-5c106cde.pth"), strict=False)
         return model.eval()
     elif name == "pretrained_resnet50":
         from backbone.resnet import resnet18, resnet34, resnet50, resnet101, resnet152
         model = resnet50(pretrained=False, args=args)
-        model.load_state_dict(torch.load("./pretrained_models/resnet50-11ad3fa6.pth"), strict=False)
+        model.load_state_dict(torch.load("/home/team/zhaohongwei/pretrained_models/resnet50-0676ba61.pth"), strict=False)
         return model.eval()
     elif name == "pretrained_resnet101":
         from backbone.resnet import resnet18, resnet34, resnet50, resnet101, resnet152
         model = resnet101(pretrained=False, args=args)
-        model.load_state_dict(torch.load("./pretrained_models/resnet101-cd907fc2.pth"), strict=False)
+        model.load_state_dict(torch.load("/home/team/zhaohongwei/pretrained_models/resnet101-cd907fc2.pth"), strict=False)
         return model.eval()
     elif name == "pretrained_resnet152":
         from backbone.resnet import resnet18, resnet34, resnet50, resnet101, resnet152
         model = resnet152(pretrained=False, args=args)
-        model.load_state_dict(torch.load("./pretrained_models/resnet152-f82ba261.pth"), strict=False)
+        model.load_state_dict(torch.load("/home/team/zhaohongwei/pretrained_models/resnet152-394f9c45.pth"), strict=False)
         return model.eval()
     # SimpleCIL or SimpleCIL w/ Finetune
     elif name == "pretrained_vit_b16_224" or name == "vit_base_patch16_224":
@@ -39,7 +39,18 @@ def get_backbone(args, pretrained=False):
         model = timm.create_model("vit_base_patch16_224_in21k",pretrained=True, num_classes=0)
         model.out_dim = 768
         return model.eval()
-
+    elif name == "pretrained_vit_large_patch16_224" or name == "vit_large_patch16_224":
+        model = timm.create_model("vit_large_patch16_224",pretrained=True, num_classes=0)
+        model.out_dim = 1024
+        return model.eval()
+    elif name =='pretrained_vit_base_patch16_224_dino' or name == "vit_base_patch16_224_dino":
+        model = timm.create_model("vit_base_patch16_224_dino", pretrained=True, num_classes=0)
+        model.out_dim = 768
+        return model.eval()
+    elif name == "pretrained_vit_base_patch16_224_sam" or name == "vit_base_patch16_224_sam":
+        model = timm.create_model("vit_base_patch16_224_sam", pretrained=True, num_classes=0)
+        model.out_dim = 768
+        return model.eval()
     elif '_memo' in name:
         if args["model_name"] == "memo":
             from backbone import vit_memo
@@ -567,8 +578,13 @@ class SimpleVitNet(BaseNet):
         x = self.backbone(x)
         if self.W_rand is not None:
             x = torch.nn.functional.relu(x @ self.W_rand)
-        out = self.fc(x)
-        out.update({"features": x})
+        # resnet输出为dict['logtis','features']
+        if isinstance(x,dict):
+            out = self.fc(x["features"])
+            out.update({"features": x["features"]})
+        else:
+            out = self.fc(x)
+            out.update({"features": x})
         return out
 
 # l2p and dualprompt

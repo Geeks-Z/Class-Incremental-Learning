@@ -17,7 +17,7 @@ def load_json(setting_path):
 
 def setup_parser():
     parser = argparse.ArgumentParser(description='Reproduce of multiple pre-trained incremental learning algorthms.')
-    parser.add_argument('--config', type=str, default='./exps/coda_prompt_omn_B0_Inc10.json',
+    parser.add_argument('--config', type=str, default='./scripts/ptm/simplecil_inr_B0_Inc20_resnet18.json',
                         help='Json file of settings.')
     return parser
 
