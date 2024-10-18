@@ -1,10 +1,10 @@
-cd Code/Research/CIL/LAMDA-PILOT/&&
+cd Code/Research/CIL/CIL_Survey-main/&&
 conda activate cil
 # 4090
-cd lrh/Code/Research/CIL/LAMDA-PILOT/ &&
+cd lrh/Code/Research/CIL/CIL_Survey-main/ &&
 conda activate cil
 # 超算
-cd Code/Research/CIL/LAMDA-PILOT/ &&
+cd Code/Research/CIL/CIL_Survey-main/ &&
 sbatch train.slurm
 
 TODO
