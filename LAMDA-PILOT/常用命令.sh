@@ -12,6 +12,8 @@ nohup ./train_cifar.sh > ./log/3rd-cifar-stdout.log 2> ./log/3rd-cifar-stderr.lo
 
 
 
+
+
 ----------------------------------------------------------------------------------------------------------
 #cifar
 nohup ./train_cifar.sh > ./log/cifar-stdout.log 2> ./log/cifar-stderr.log &
