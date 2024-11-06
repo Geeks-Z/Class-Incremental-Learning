@@ -1,7 +1,6 @@
 #!/bin/bash
-python main.py --config=./exps/coda_prompt_cifar_B0_Inc5.json
-
-
+python main.py --config=./exps/fcs/cifar100/5/first_stage.json # base stage
+python main.py --config=./exps/fcs/cifar100/5/second_stage.json # incremental learning
 
 
 
