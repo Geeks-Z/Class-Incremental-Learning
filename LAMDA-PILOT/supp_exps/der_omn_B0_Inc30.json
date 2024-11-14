@@ -7,11 +7,11 @@
     "shuffle": true,
     "init_cls": 10,
     "increment": 10,
-    "model_name": "icarl",
+    "model_name": "der",
     "backbone_type": "vit_base_patch16_224_in21k",
-    "device": ["7"],
+    "device": ["6"],
     "seed": [1993],
-
+    
     "init_epoch": 20,
     "init_lr": 1e-3,
     "init_milestones": [60, 120, 170],
@@ -19,7 +19,7 @@
     "init_weight_decay": 0.0005,
     "epochs": 20,
     "lrate": 1e-3,
-    "milestones": [80, 120],
+    "milestones": [80, 120, 150],
     "lrate_decay": 0.1,
     "batch_size": 48,
     "weight_decay": 2e-4,
