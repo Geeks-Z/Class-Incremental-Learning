@@ -8,9 +8,9 @@ cd Code/Research/CIL/LAMDA-PILOT/ &&
 sbatch train.slurm
 
 TODO
-nohup ./train_supp_omn.sh > ./log/3rd-supp-omn-stdout.log 2> ./log/3rd-supp-omn-stderr.log &
+nohup ./train_supp_omn.sh > ./res/2nd-supp-omn-stdout.log 2> ./log/3rd-supp-omn-stderr.log &
 nohup ./train_omn.sh > ./res/3rd-omn.out 2>&1 &
-
+nohup ./train_supp_omn.sh > ./res/2nd-supp-omn.out 2>&1 &
 ----------------------------------------------------------------------------------------------------------
 #cifar
 nohup ./train_cifar.sh > ./log/cifar-stdout.log 2> ./log/cifar-stderr.log &
