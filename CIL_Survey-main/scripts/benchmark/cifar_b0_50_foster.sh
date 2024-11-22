@@ -1,1 +1,0 @@
-python main.py -model foster -init 50 -incre 50  -p benchmark --skip -d 2

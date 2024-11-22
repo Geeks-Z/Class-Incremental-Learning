@@ -1,1 +1,0 @@
-python main.py -model finetune -init 20 -incre 20  -p benchmark -d 2

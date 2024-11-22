@@ -1,7 +1,0 @@
-{
-    "memory_per_class":20,
-    "fixed_memory": false,
-    "shuffle": true,
-    "model_name": "memo",
-    "seed":[1993]
-}

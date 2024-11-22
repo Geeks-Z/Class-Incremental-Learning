@@ -1,9 +1,0 @@
-python main_memo.py \
-    -model memo \
-    -init 50 \
-    -incre 25 \
-    -net memo_resnet32 \
-    -p benchmark \
-    -d 0 \
-    --scheduler cosine \
-    --t_max 170 \

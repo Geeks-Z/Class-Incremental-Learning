@@ -6,8 +6,9 @@
 
 ## 🎉 Introduction
 
-- CIL: Class-Incremental Learning 类增量学习
-- 增量学习：Continual Learning/Incremental Learning/Life-Long Learning 
+**汇总类增量学习（CIL，Class-Incremental Learning）的论文和代码，并对论文进行复现**
+
+增量学习：Continual Learning/Incremental Learning/Life-Long Learning 
 
 ## 🚀 Survey
 
@@ -49,13 +50,10 @@
   - LFH即learning from half，表示在模型训练的初始阶段先用一半的类别进行训练，然后剩下一半的类别均匀分为N个阶段进行训练；
   - LFS即learning from scratch，表示所有的类别均匀地分为N个阶段进行训练
 - pre-trained backbone: ViT-B/16-IN21K
-- log: 'LAMDA-PILOT-main/res'
-- accuracy：CNN/NME
-- code: `📁 LAMDA-PILOT-main`
 
 ### CIFAR-100
 
-<div align=center><img src="https://markdownimg-hw.oss-cn-beijing.aliyuncs.com/20241011200729.png" style="zoom: 60%;" /></div>
+<div align=center><img src="https://markdownimg-hw.oss-cn-beijing.aliyuncs.com/20241122164151.png" style="zoom: 80%;" /></div>
 
 |             | B0 Inc5     | B0 Inc10    | B0 Inc20    | B50 Inc5    | B50 Inc10   |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
@@ -76,7 +74,7 @@
 
 > fixed_memory: True
 
-<div align=center><img src="https://markdownimg-hw.oss-cn-beijing.aliyuncs.com/20240926214357.png" style="zoom: 60%;" /></div>
+<div align=center><img src="https://markdownimg-hw.oss-cn-beijing.aliyuncs.com/20241122194434.png" style="zoom: 80%;" /></div>
 
 |             | B0 Inc5     | B0 Inc10    | B0 Inc20    | B100 Inc5   | B100 Inc10  |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
@@ -95,7 +93,7 @@
 
 ### ImageNet-R
 
-<div align=center><img src="https://markdownimg-hw.oss-cn-beijing.aliyuncs.com/20240926214533.png" style="zoom: 60%;" /></div>
+<div align=center><img src="https://markdownimg-hw.oss-cn-beijing.aliyuncs.com/20241122194528.png" style="zoom: 80%;" /></div>
 
 |             | B0 Inc5 | B0 Inc10 | B0 Inc20 | B100 Inc5 | B100 Inc10 |
 | ----------- | ------- | -------- | -------- | --------- | ---------- |
@@ -108,7 +106,7 @@
 
 ### ImageNet-A
 
-<div align=center><img src="https://markdownimg-hw.oss-cn-beijing.aliyuncs.com/20240926214602.png" style="zoom: 60%;" /></div>
+<div align=center><img src="https://markdownimg-hw.oss-cn-beijing.aliyuncs.com/20241122194559.png" style="zoom: 80%;" /></div>
 
 |             | B0 Inc5 | B0 Inc10 | B0 Inc20 | B100 Inc5 | B100 Inc10 |
 | ----------- | ------- | -------- | -------- | --------- | ---------- |
@@ -121,7 +119,7 @@
 
 ### Omnibenchmark
 
-<div align=center><img src="https://markdownimg-hw.oss-cn-beijing.aliyuncs.com/20241121103010.png" style="zoom: 80%;" /></div>
+<div align=center><img src="https://markdownimg-hw.oss-cn-beijing.aliyuncs.com/20241122194708.png" style="zoom: 80%;" /></div>
 
 |             | B0 Inc5     | B0 Inc10    | B0 Inc20    | B0 Inc30    | B150 Inc5   | B150 Inc10  |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
@@ -138,10 +136,9 @@
 |iCaRL-CNN |76.61 ± 0.26|75.06 ± 0.44|73.45 ± 0.44|73.37 ± 0.48|76.03 ± 2.18|72.33 ± 0.07|
 |iCaRL-NME |82.31 ± 0.22|81.08 ± 0.22|79.74 ± 0.33|79.69 ± 0.17|79.13 ± 0.01|78.21 ± 0.31|
 
-
 ### VTAB
 
-<div align=center><img src="https://markdownimg-hw.oss-cn-beijing.aliyuncs.com/20240922193144.png" style="zoom: 60%;" /></div>
+<div align=center><img src="https://markdownimg-hw.oss-cn-beijing.aliyuncs.com/20241122194756.png" style="zoom: 80%;" /></div>
 
 |             | B0 Inc5 | B0 Inc10 |
 | ----------- | ------- | -------- |

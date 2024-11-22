@@ -1,1 +1,0 @@
-python compute_exemplar.py -p auc
