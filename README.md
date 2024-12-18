@@ -6,9 +6,11 @@
 
 ## 🎉 Introduction
 
-**汇总类增量学习（CIL，Class-Incremental Learning）的论文和代码，并对论文进行复现**
+- **增量学习**：Continual Learning/Incremental Learning/Life-Long Learning
 
-增量学习：Continual Learning/Incremental Learning/Life-Long Learning 
+- **汇总**类增量学习（CIL，Class-Incremental Learning）的论文和代码，并对论文进行复现
+
+- **论文阅读笔记**：[CIL](https://www.hwzhao.cn/note/cil/)
 
 ## 🚀 Survey
 

@@ -1,5 +1,5 @@
 #!/bin/bash
-python main.py --config=./exps/coda_prompt_cifar_B0_Inc5.json
+python main.py --config=./exps/icarl_omn_B150_Inc10.json
 
 
 
