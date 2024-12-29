@@ -1,7 +1,0 @@
-data/
-logs/
-.idea/
-__pycache__/
-*.py[cod]
-*.ipynb
-*.pdf
