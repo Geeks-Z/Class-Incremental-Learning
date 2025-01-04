@@ -78,19 +78,19 @@ For exemplar parameters, DER, iCaRL and FOSTER set the `fixed_memory` option to 
 
 ### CIFAR-100
 
-<div align=center><img src="https://markdownimg-hw.oss-cn-beijing.aliyuncs.com/20241229163054.png" style="zoom: 80%;" /></div>
+<div align=center><img src="https://markdownimg-hw.oss-cn-beijing.aliyuncs.com/20250104174921.png" style="zoom: 80%;" /></div>
 
 |             | B0 Inc5     | B0 Inc10    | B0 Inc20    | B50 Inc5    | B50 Inc10   |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
-|MOS |94.84 ± 0.0|94.78 ± 0.0|93.28 ± 0.0|94.08 ± 0.0|94.18 ± 0.0|
+|MOS |94.81 ± 0.02|94.71 ± 0.05|93.37 ± 0.07|94.09 ± 0.0|94.16 ± 0.01|
 |Ease |93.1 ± 0.01| 92.55 ± 0.01| 91.64 ± 0.02| 90.39 ± 0.03| 89.25 ± 0.04|
 |CODA-Prompt |92.85 ± 0.0|91.56 ± 0.05|88.87 ± 0.02|86.09 ± 0.2|77.74 ± 0.05|
 |DualPrompt |91.39 ± 0.01|90.28 ± 0.04|88.52 ± 0.01|87.49 ± 0.0|81.02 ± 0.02|
 |L2P |90.72 ± 0.06|89.85 ± 0.01|87.58 ± 0.0|87.53 ± 0.06|79.43 ± 0.01|
 |SimpleCIL |81.12 ± 0.0|82.31 ± 0.0|82.79 ± 0.0|78.66 ± 0.0|78.54 ± 0.0|
 |Finetune |81.48 ± 0.0|76.93 ± 0.0|72.14 ± 0.0|82.2 ± 0.0|79.99 ± 0.0|
-|FOSTER-CNN |91.33 ± 0.11|91.5 ± 0.08|92.02 ± 0.0|90.56 ± 0.0|90.82 ± 0.0|
-|FOSTER-NME |93.04 ± 0.02|92.88 ± 0.03|92.75 ± 0.0|91.91 ± 0.0|91.65 ± 0.0|
+|FOSTER-CNN |93.74 ± 0.0|93.68 ± 0.0|93.71 ± 0.0|92.2 ± 0.0|92.15 ± 0.0|
+|FOSTER-NME |93.7 ± 0.0|93.9 ± 0.0|93.69 ± 0.0|92.26 ± 0.0|92.22 ± 0.0|
 |DER-CNN |88.78 ± 0.0|88.58 ± 0.0|88.63 ± 0.08|86.92 ± 0.13|86.55 ± 0.01|
 |DER-NME |91.36 ± 0.0|91.01 ± 0.0|90.96 ± 0.15|89.41 ± 0.04|89.01 ± 0.05|
 |iCaRL-CNN |87.14 ± 0.14|85.91 ± 0.12|84.43 ± 0.25|83.4 ± 0.04|81.32 ± 0.46|
@@ -98,7 +98,7 @@ For exemplar parameters, DER, iCaRL and FOSTER set the `fixed_memory` option to 
 
 ### CUB-200
 
-<div align=center><img src="https://markdownimg-hw.oss-cn-beijing.aliyuncs.com/20241229163213.png" style="zoom: 80%;" /></div>
+<div align=center><img src="https://markdownimg-hw.oss-cn-beijing.aliyuncs.com/20250104175008.png" style="zoom: 80%;" /></div>
 
 |             | B0 Inc5     | B0 Inc10    | B0 Inc20    | B100 Inc5   | B100 Inc10  |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
@@ -118,7 +118,7 @@ For exemplar parameters, DER, iCaRL and FOSTER set the `fixed_memory` option to 
 
 ### ImageNet-R
 
-<div align=center><img src="https://markdownimg-hw.oss-cn-beijing.aliyuncs.com/20241229164544.png" style="zoom: 80%;" /></div>
+<div align=center><img src="https://markdownimg-hw.oss-cn-beijing.aliyuncs.com/20250104175051.png" style="zoom: 80%;" /></div>
 
 |             | B0 Inc5 | B0 Inc10 | B0 Inc20 | B100 Inc5 | B100 Inc10 |
 | ----------- | ------- | -------- | -------- | --------- | ---------- |
@@ -132,7 +132,7 @@ For exemplar parameters, DER, iCaRL and FOSTER set the `fixed_memory` option to 
 
 ### ImageNet-A
 
-<div align=center><img src="https://markdownimg-hw.oss-cn-beijing.aliyuncs.com/20241229164617.png" style="zoom: 80%;" /></div>
+<div align=center><img src="https://markdownimg-hw.oss-cn-beijing.aliyuncs.com/20250104175133.png" style="zoom: 80%;" /></div>
 
 |             | B0 Inc5 | B0 Inc10 | B0 Inc20 | B100 Inc5 | B100 Inc10 |
 | ----------- | ------- | -------- | -------- | --------- | ---------- |
@@ -146,7 +146,7 @@ For exemplar parameters, DER, iCaRL and FOSTER set the `fixed_memory` option to 
 
 ### Omnibenchmark
 
-<div align=center><img src="https://markdownimg-hw.oss-cn-beijing.aliyuncs.com/20241229164853.png" style="zoom: 80%;" /></div>
+<div align=center><img src="https://markdownimg-hw.oss-cn-beijing.aliyuncs.com/20250104175214.png" style="zoom: 80%;" /></div>
 
 |             | B0 Inc5     | B0 Inc10    | B0 Inc20    | B0 Inc30    | B150 Inc5   | B150 Inc10  |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
@@ -166,7 +166,7 @@ For exemplar parameters, DER, iCaRL and FOSTER set the `fixed_memory` option to 
 
 ### VTAB
 
-<div align=center><img src="https://markdownimg-hw.oss-cn-beijing.aliyuncs.com/20241229164925.png" style="zoom: 80%;" /></div>
+<div align=center><img src="https://markdownimg-hw.oss-cn-beijing.aliyuncs.com/20250104175243.png" style="zoom: 80%;" /></div>
 
 |             | B0 Inc5 | B0 Inc10 |
 | ----------- | ------- | -------- |
