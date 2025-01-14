@@ -76,6 +76,16 @@
 
 For exemplar parameters, DER, iCaRL and FOSTER set the `fixed_memory` option to false and retain the `memory_size` of 2000 for CIFAR100, while setting `fixed_memory` option to true and retaining the `memory_per_class` of 20 for ImageNet-R. On the contrary, other models are exemplar-free.
 
+### 🗂️ Dependencies
+
+- pytorch 2.0.1
+- torchvision 0.15.2
+- timm 0.6.12
+- tqdm  4.65.0
+- numpy 1.21.5
+- scipy 1.10.1
+- easydict 1.13
+
 ### CIFAR-100
 
 <div align=center><img src="https://markdownimg-hw.oss-cn-beijing.aliyuncs.com/20250104174921.png" style="zoom: 80%;" /></div>

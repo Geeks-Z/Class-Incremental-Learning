@@ -14,7 +14,7 @@
     
     "tuned_epoch": 20,
     "init_lr": 0.001,
-    "batch_size": 48,
+    "batch_size": 128,
     "weight_decay": 0,
     "min_lr": 1e-5,
     "optimizer": "adam",
