@@ -8,7 +8,7 @@ cd Code/Research/CIL/LAMDA-PILOT/ &&
 sbatch train.slurm
 
 TODO
-nohup ./scripts/train_memory.sh > ./res/2nd-memory-inr-mul.out 2>&1 &
+nohup ./scripts/train_memory.sh > ./res/memory-inr-supp.out 2>&1 &
 nohup ./scripts/train_cifar.sh > ./res/3rd-foster-cifar.out 2>&1 &
 ----------------------------------------------------------------------------------------------------------
 #cifar

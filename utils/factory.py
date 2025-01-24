@@ -34,6 +34,8 @@ def get_model(model_name, args):
         from models.ease import Learner
     elif name == 'mos':
         from models.mos import Learner
+    elif name == "lwf":
+        from models.lwf import Learner
     else:
         assert 0
     
