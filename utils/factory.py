@@ -36,6 +36,10 @@ def get_model(model_name, args):
         from models.mos import Learner
     elif name == "lwf":
         from models.lwf import Learner
+    elif name == 'cofima':
+        from models.cofima import Learner
+    elif name == 'lae':
+        from models.lae import Learner
     else:
         assert 0
     

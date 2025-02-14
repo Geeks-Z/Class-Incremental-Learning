@@ -2,7 +2,7 @@ import copy
 import logging
 import torch
 from torch import nn
-from backbone.linears import SimpleLinear, SplitCosineLinear, CosineLinear, EaseCosineLinear
+from backbone.linears import SimpleLinear, SplitCosineLinear, CosineLinear, EaseCosineLinear, SimpleContinualLinear
 from backbone.prompt import CodaPrompt
 from backbone import vit_adapter
 import timm
@@ -262,6 +262,10 @@ def get_backbone(args, pretrained=False):
             else:
                 raise NotImplementedError("Unknown type {}".format(name))
             return model
+    elif '_lae' in name:
+        from backbone import vit_lae
+        model = timm.create_model(args["backbone_type"], pretrained=True)
+        return model
     else:
         raise NotImplementedError("Unknown type {}".format(name))
 
@@ -1122,3 +1126,138 @@ class MOSNet(nn.Module):
         res = self.backbone(x, adapter_id, train, fc_only)
 
         return res
+
+
+class LAE(nn.Module):
+    def __init__(self, args, pretrained=True):
+        super().__init__()
+        self.backbone = get_backbone(args, pretrained=pretrained)
+        self.backbone.out_dim = 768
+        self.fc = None
+        self._device = args["device"][0]
+        self.args = args
+        self.pet_cls = args["pet_cls"]
+        self.pet_length = args["pet_length"]
+        self.pets_emas = nn.ModuleList([])
+        self.adapt_blocks = [0, 1, 2, 3, 4]
+        self.down_sample_dim = args["down_sample_dim"]
+
+        self.pets = self.create_pets()
+        self.pets_emas = self.create_pets()
+        for pq, pk in zip(self.pets.parameters(), self.pets_emas.parameters()):
+            pk.data.copy_(pq.data)
+            pk.requires_grad = False
+        self.attach_pets_vit(self.pets)
+
+    @property
+    def feature_dim(self):
+        return self.backbone.out_dim
+
+    def create_pets(self):
+        n = len(self.adapt_blocks)
+        embed_dim = self.backbone.embed_dim
+        if self.pet_cls == "Prefix":
+            from backbone.vit_lae import Prefix
+            return nn.ModuleList([Prefix(length=self.pet_length, dim=embed_dim) for _ in range(n)])
+        if self.pet_cls == "Adapter":
+            from backbone.vit_lae import Adapter
+            return nn.ModuleList([Adapter(embed_dim=embed_dim, down_sample=self.down_sample_dim) for _ in range(n)])
+        if self.pet_cls == "LoRA":
+            from backbone.vit_lae import KVLoRA
+            return nn.ModuleList([KVLoRA(in_features=embed_dim, out_features=embed_dim) for _ in range(n)])
+
+    def attach_pets_vit(self, pets: nn.ModuleList):
+        assert self.pet_cls in ["Adapter", "LoRA", "Prefix"]
+
+        if self.pet_cls == "Prefix":
+            for i, b in enumerate(self.adapt_blocks):
+                self.backbone.blocks[b].attn.attach_prefix(pets[i])
+            return
+        if self.pet_cls == "Adapter":
+            for i, b in enumerate(self.adapt_blocks):
+                self.backbone.blocks[b].attn.attach_adapter(attn=pets[i])
+            return
+        if self.cfg.pet_cls == "LoRA":
+            for i, b in enumerate(self.cfg.adapt_blocks):
+                self.model.backbone.blocks[b].attn.attach_adapter(qkv=pets[i])
+            return
+
+    def extract_vector(self, x):
+        return self.backbone(x)
+
+    def forward(self, x):
+        x = self.backbone(x)
+        x = x[:, 0, :]
+        out = self.fc(x)
+
+        return out
+
+    def update_fc(self, nb_classes):
+        fc = self.generate_fc(self.feature_dim, nb_classes)
+        if self.fc is not None:
+            nb_output = self.fc.out_features
+            weight = copy.deepcopy(self.fc.weight.data)
+            bias = copy.deepcopy(self.fc.bias.data)
+            fc.weight.data[:nb_output] = weight
+            fc.bias.data[:nb_output] = bias
+
+        del self.fc
+        self.fc = fc
+
+    def generate_fc(self, in_dim, out_dim):
+        fc = SimpleLinear(in_dim, out_dim)
+        return fc
+
+class SLCANet(BaseNet):
+
+    def __init__(self, args, pretrained=True, fc_with_ln=False):
+        super().__init__(args, pretrained)
+        self.old_fc = None
+        self.fc_with_ln = fc_with_ln
+
+
+    def extract_layerwise_vector(self, x, pool=True):
+        with torch.no_grad():
+            features = self.backbone(x, layer_feat=True)['features']
+        for f_i in range(len(features)):
+            if pool:
+                features[f_i] = features[f_i].mean(1).cpu().numpy()
+            else:
+                features[f_i] = features[f_i][:, 0].cpu().numpy()
+        return features
+
+
+    def update_fc(self, nb_classes, freeze_old=True):
+        if self.fc is None:
+            self.fc = self.generate_fc(self.feature_dim, nb_classes)
+        else:
+            self.fc.update(nb_classes, freeze_old=freeze_old)
+
+    def save_old_fc(self):
+        if self.old_fc is None:
+            self.old_fc = copy.deepcopy(self.fc)
+        else:
+            self.old_fc.heads.append(copy.deepcopy(self.fc.heads[-1]))
+
+    def generate_fc(self, in_dim, out_dim):
+        fc = SimpleContinualLinear(in_dim, out_dim)
+
+        return fc
+
+    def forward(self, x, bcb_no_grad=False, fc_only=False):
+        if fc_only:
+            fc_out = self.fc(x)
+            if self.old_fc is not None:
+                old_fc_logits = self.old_fc(x)['logits']
+                fc_out['old_logits'] = old_fc_logits
+            return fc_out
+        if bcb_no_grad:
+            with torch.no_grad():
+                x = self.backbone(x)
+        else:
+            x = self.backbone(x)
+        out = self.fc(x)
+        out.update({"features": x})
+
+        return out
+

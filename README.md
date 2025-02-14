@@ -194,12 +194,12 @@ For exemplar parameters, DER, iCaRL and FOSTER set the `fixed_memory` option to 
 
 ## 👨‍🏫 TODO
 
-| Title                                                        | Venue | Year | Type            | Code                                                        |
-| ------------------------------------------------------------ | ----- | ---- | --------------- | ----------------------------------------------------------- |
-| [InfLoRA: Interference-Free Low-Rank Adaptation for Continual Learning](http://arxiv.org/abs/2404.00228) | CVPR  | 2024 | PTM             | [Official](https://github.com/liangyanshuo/InfLoRA)         |
+| Title                                                                                                                                                   | Venue | Year | Type            | Code                                                        |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------| ----- | ---- | --------------- | ----------------------------------------------------------- |
+| [InfLoRA: Interference-Free Low-Rank Adaptation for Continual Learning](http://arxiv.org/abs/2404.00228)                                                | CVPR  | 2024 | PTM             | [Official](https://github.com/liangyanshuo/InfLoRA)         |
 | [FCS: Feature Calibration and Separation for Non-Exemplar Class Incremental Learning](https://ieeexplore.ieee.org/document/10657158/?arnumber=10657158) | CVPR  | 2024 | Feature Rectify | [Official](https://github.com/zhoujiahuan1991/CVPR2024-FCS) |
-|                                                              |       |      |                 |                                                             |
-|                                                              |       |      |                 |                                                             |
+|                                                                                                                                                     |       |      |                 |                                                             |
+|                                                                                                                                                         |       |      |                 |                                                             |
 
 ### Different PTMs
 
